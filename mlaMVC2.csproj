@@ -1,0 +1,916 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{839322A2-4589-4AA5-9A86-EF7DE405AC83}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>mlaMVC2</RootNamespace>
+    <AssemblyName>mlaMVC2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Accurint_batch_setupController.cs" />
+    <Compile Include="Controllers\ActcodeController.cs" />
+    <Compile Include="Controllers\Actcode_ltrController.cs" />
+    <Compile Include="Controllers\Action_schedController.cs" />
+    <Compile Include="Controllers\Action_setupController.cs" />
+    <Compile Include="Controllers\Aic_codeController.cs" />
+    <Compile Include="Controllers\Aic_requestController.cs" />
+    <Compile Include="Controllers\AjController.cs" />
+    <Compile Include="Controllers\AjdetController.cs" />
+    <Compile Include="Controllers\ApController.cs" />
+    <Compile Include="Controllers\ApdetController.cs" />
+    <Compile Include="Controllers\ApidescController.cs" />
+    <Compile Include="Controllers\ArController.cs" />
+    <Compile Include="Controllers\ArdetController.cs" />
+    <Compile Include="Controllers\AssignController.cs" />
+    <Compile Include="Controllers\AttController.cs" />
+    <Compile Include="Controllers\BankController.cs" />
+    <Compile Include="Controllers\BankdupsController.cs" />
+    <Compile Include="Controllers\BnchmrkController.cs" />
+    <Compile Include="Controllers\Bureau_optionsController.cs" />
+    <Compile Include="Controllers\CbinqdeptsController.cs" />
+    <Compile Include="Controllers\CbinqfieldsController.cs" />
+    <Compile Include="Controllers\ChartController.cs" />
+    <Compile Include="Controllers\CheckverController.cs" />
+    <Compile Include="Controllers\ChkverreasonController.cs" />
+    <Compile Include="Controllers\Clt230_viewController.cs" />
+    <Compile Include="Controllers\CltactController.cs" />
+    <Compile Include="Controllers\CltapprovedltrController.cs" />
+    <Compile Include="Controllers\CltController.cs" />
+    <Compile Include="Controllers\CltltrController.cs" />
+    <Compile Include="Controllers\CltphonController.cs" />
+    <Compile Include="Controllers\CltrcvrController.cs" />
+    <Compile Include="Controllers\ClttrustController.cs" />
+    <Compile Include="Controllers\Clttrust_historicalController.cs" />
+    <Compile Include="Controllers\ClttypeController.cs" />
+    <Compile Include="Controllers\CltudfController.cs" />
+    <Compile Include="Controllers\CltxrefController.cs" />
+    <Compile Include="Controllers\Clt_onlineController.cs" />
+    <Compile Include="Controllers\CoaController.cs" />
+    <Compile Include="Controllers\CoadetController.cs" />
+    <Compile Include="Controllers\CollpdetController.cs" />
+    <Compile Include="Controllers\CollplanController.cs" />
+    <Compile Include="Controllers\ContpdetController.cs" />
+    <Compile Include="Controllers\ContplanController.cs" />
+    <Compile Include="Controllers\CostsController.cs" />
+    <Compile Include="Controllers\CourtcodController.cs" />
+    <Compile Include="Controllers\Credit_bureauController.cs" />
+    <Compile Include="Controllers\DbtractController.cs" />
+    <Compile Include="Controllers\DbtraddrController.cs" />
+    <Compile Include="Controllers\DbtraicController.cs" />
+    <Compile Include="Controllers\DbtrakaController.cs" />
+    <Compile Include="Controllers\DbtrapiController.cs" />
+    <Compile Include="Controllers\DbtrbankController.cs" />
+    <Compile Include="Controllers\DbtrcbinqController.cs" />
+    <Compile Include="Controllers\DbtrController.cs" />
+    <Compile Include="Controllers\DbtrctcController.cs" />
+    <Compile Include="Controllers\DbtrdialController.cs" />
+    <Compile Include="Controllers\DbtrdupController.cs" />
+    <Compile Include="Controllers\DbtrempController.cs" />
+    <Compile Include="Controllers\DbtrltrController.cs" />
+    <Compile Include="Controllers\DbtroldController.cs" />
+    <Compile Include="Controllers\DbtrpaymController.cs" />
+    <Compile Include="Controllers\DbtrphonController.cs" />
+    <Compile Include="Controllers\DbtrpostController.cs" />
+    <Compile Include="Controllers\DbtrpromController.cs" />
+    <Compile Include="Controllers\DbtrrmsController.cs" />
+    <Compile Include="Controllers\DbtrsentController.cs" />
+    <Compile Include="Controllers\DbtrudfController.cs" />
+    <Compile Include="Controllers\DbtrxdbtController.cs" />
+    <Compile Include="Controllers\DbtrxrefController.cs" />
+    <Compile Include="Controllers\Debt2yy_viewController.cs" />
+    <Compile Include="Controllers\DebtadjController.cs" />
+    <Compile Include="Controllers\DebtController.cs" />
+    <Compile Include="Controllers\DebtfeeController.cs" />
+    <Compile Include="Controllers\DebtfwdController.cs" />
+    <Compile Include="Controllers\DebtlglController.cs" />
+    <Compile Include="Controllers\DebttypeController.cs" />
+    <Compile Include="Controllers\DebtudfController.cs" />
+    <Compile Include="Controllers\Debt_bureauController.cs" />
+    <Compile Include="Controllers\Dialer_actionsController.cs" />
+    <Compile Include="Controllers\DstController.cs" />
+    <Compile Include="Controllers\DsttypeController.cs" />
+    <Compile Include="Controllers\EodlogController.cs" />
+    <Compile Include="Controllers\EodprocController.cs" />
+    <Compile Include="Controllers\EodrepController.cs" />
+    <Compile Include="Controllers\FeecodeController.cs" />
+    <Compile Include="Controllers\FeepdetController.cs" />
+    <Compile Include="Controllers\FeeplanController.cs" />
+    <Compile Include="Controllers\HolidayController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Ic_requestController.cs" />
+    <Compile Include="Controllers\ImpfieldController.cs" />
+    <Compile Include="Controllers\ImpgroupController.cs" />
+    <Compile Include="Controllers\ImportController.cs" />
+    <Compile Include="Controllers\IndexingController.cs" />
+    <Compile Include="Controllers\LanguageController.cs" />
+    <Compile Include="Controllers\LetterController.cs" />
+    <Compile Include="Controllers\Letter_state_subController.cs" />
+    <Compile Include="Controllers\ListoptxwrkController.cs" />
+    <Compile Include="Controllers\List_optionController.cs" />
+    <Compile Include="Controllers\LocktableController.cs" />
+    <Compile Include="Controllers\LtrfieldController.cs" />
+    <Compile Include="Controllers\MatchprmController.cs" />
+    <Compile Include="Controllers\MicrchkController.cs" />
+    <Compile Include="Controllers\PeriodController.cs" />
+    <Compile Include="Controllers\PeryearController.cs" />
+    <Compile Include="Controllers\PmtbController.cs" />
+    <Compile Include="Controllers\PmtbdebtController.cs" />
+    <Compile Include="Controllers\PmtbfeeController.cs" />
+    <Compile Include="Controllers\PmtcodeController.cs" />
+    <Compile Include="Controllers\PmtController.cs" />
+    <Compile Include="Controllers\PmtfeeController.cs" />
+    <Compile Include="Controllers\PmtuserController.cs" />
+    <Compile Include="Controllers\Pmt_post_sessionController.cs" />
+    <Compile Include="Controllers\RmsbankController.cs" />
+    <Compile Include="Controllers\Rms_archiveController.cs" />
+    <Compile Include="Controllers\Rms_codeController.cs" />
+    <Compile Include="Controllers\SalesrepController.cs" />
+    <Compile Include="Controllers\ScanoutController.cs" />
+    <Compile Include="Controllers\SentltrController.cs" />
+    <Compile Include="Controllers\SkController.cs" />
+    <Compile Include="Controllers\StatcodeController.cs" />
+    <Compile Include="Controllers\StoregrpController.cs" />
+    <Compile Include="Controllers\StuserController.cs" />
+    <Compile Include="Controllers\St_optionsController.cs" />
+    <Compile Include="Controllers\TemplateController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="Controllers\TzController.cs" />
+    <Compile Include="Controllers\TzdetController.cs" />
+    <Compile Include="Controllers\UdfcodeController.cs" />
+    <Compile Include="Controllers\UdfpdetController.cs" />
+    <Compile Include="Controllers\UdfplanController.cs" />
+    <Compile Include="Controllers\UdftypeController.cs" />
+    <Compile Include="Controllers\Ul_connection_scriptController.cs" />
+    <Compile Include="Controllers\Ul_scriptController.cs" />
+    <Compile Include="Controllers\Ul_scripts_modifiedController.cs" />
+    <Compile Include="Controllers\Ul_tableController.cs" />
+    <Compile Include="Controllers\Ul_table_scriptController.cs" />
+    <Compile Include="Controllers\Ul_userController.cs" />
+    <Compile Include="Controllers\UserstatController.cs" />
+    <Compile Include="Controllers\UserxsalesController.cs" />
+    <Compile Include="Controllers\UserxwrkController.cs" />
+    <Compile Include="Controllers\VendamtController.cs" />
+    <Compile Include="Controllers\VendController.cs" />
+    <Compile Include="Controllers\WorklistController.cs" />
+    <Compile Include="Controllers\ZipController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\accurint_batch_setup.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\actcode.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\actcode_ltr.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\action_sched.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\action_setup.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aic_code.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aic_request.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aj.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ajdet.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ap.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\apdet.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\apidesc.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ar.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ardet.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\assign.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\att.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\bank.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\bankdups.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\bnchmrk.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\bureau_options.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\cbinqdepts.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\cbinqfields.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\chart.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\checkver.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\chkverreason.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\clt.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\clt230_view.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\cltact.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\cltapprovedltr.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\cltltr.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\cltphon.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\cltrcvr.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\clttrust.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\clttrust_historical.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\clttype.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\cltudf.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\cltxref.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\clt_online.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\coa.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\coadet.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\collpdet.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\collplan.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\contpdet.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\contplan.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\costs.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\courtcod.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\credit_bureau.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbtr.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbtract.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbtraddr.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbtraic.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbtraka.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbtrapi.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbtrbank.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbtrcbinq.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbtrctc.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbtrdial.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbtrdup.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbtremp.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbtrltr.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbtrold.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbtrpaym.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbtrphon.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbtrpost.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbtrprom.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbtrrms.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbtrsent.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbtrudf.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbtrxdbt.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbtrxref.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\debt.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\debt2yy_view.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\debtadj.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\debtfee.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\debtfwd.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\debtlgl.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\debttype.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\debtudf.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\debt_bureau.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dialer_actions.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dst.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dsttype.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\eodlog.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\eodproc.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\eodrep.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\feecode.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\feepdet.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\feeplan.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\holiday.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ic_request.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\impfield.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\impgroup.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\import.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\indexing.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\language.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\letter.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\letter_state_sub.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\listoptxwrk.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\list_option.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\locktable.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ltrfield.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\matchprm.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\micrchk.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\period.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\peryear.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\pmt.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\pmtb.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\pmtbdebt.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\pmtbfee.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\pmtcode.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\pmtfee.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\pmtuser.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\pmt_post_session.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\rmsbank.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\rms_archive.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\rms_code.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\salesrep.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\scanout.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sentltr.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sk.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\statcode.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\storegrp.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\stuser.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\st_options.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\template.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\test.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tz.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tzdet.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\udfcode.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\udfpdet.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\udfplan.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\udftype.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ul_connection_script.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ul_script.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ul_scripts_modified.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ul_table.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ul_table_script.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ul_user.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserModels.cs" />
+    <Compile Include="Models\userstat.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\userxsales.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\userxwrk.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\vend.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\vendamt.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\worklist.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\zip.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <EntityDeploy Include="Models\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="packages.config" />
+    <None Include="Scripts\jquery-2.1.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-2.1.1.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Account\ChangePassword.cshtml" />
+    <Content Include="Views\Account\ChangePasswordSuccess.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\CreateUser.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\Accurint_batch_setup\Index.cshtml" />
+    <Content Include="Views\Actcode\Index.cshtml" />
+    <Content Include="Views\Actcode_ltr\Index.cshtml" />
+    <Content Include="Views\Action_sched\Index.cshtml" />
+    <Content Include="Views\Action_setup\Index.cshtml" />
+    <Content Include="Views\Aic_code\Index.cshtml" />
+    <Content Include="Views\Aic_request\Index.cshtml" />
+    <Content Include="Views\Aj\Index.cshtml" />
+    <Content Include="Views\Ajdet\Index.cshtml" />
+    <Content Include="Views\Ap\Index.cshtml" />
+    <Content Include="Views\Apdet\Index.cshtml" />
+    <Content Include="Views\Apidesc\Index.cshtml" />
+    <Content Include="Views\Ar\Index.cshtml" />
+    <Content Include="Views\Ardet\Index.cshtml" />
+    <Content Include="Views\Assign\Index.cshtml" />
+    <Content Include="Views\Att\Index.cshtml" />
+    <Content Include="Views\Bank\Index.cshtml" />
+    <Content Include="Views\Bankdups\Index.cshtml" />
+    <Content Include="Views\Bnchmrk\Index.cshtml" />
+    <Content Include="Views\Bureau_options\Index.cshtml" />
+    <Content Include="Views\Cbinqdepts\Index.cshtml" />
+    <Content Include="Views\Cbinqfields\Index.cshtml" />
+    <Content Include="Views\Chart\Index.cshtml" />
+    <Content Include="Views\Checkver\Index.cshtml" />
+    <Content Include="Views\Chkverreason\Index.cshtml" />
+    <Content Include="Views\Clt\Index.cshtml" />
+    <Content Include="Views\Clt_online\Index.cshtml" />
+    <Content Include="Views\Clt230_view\Index.cshtml" />
+    <Content Include="Views\Cltact\Index.cshtml" />
+    <Content Include="Views\Cltapprovedltr\Index.cshtml" />
+    <Content Include="Views\Cltltr\Index.cshtml" />
+    <Content Include="Views\Cltphon\Index.cshtml" />
+    <Content Include="Views\Cltrcvr\Index.cshtml" />
+    <Content Include="Views\Clttrust\Index.cshtml" />
+    <Content Include="Views\Clttrust_historical\Index.cshtml" />
+    <Content Include="Views\Clttype\Index.cshtml" />
+    <Content Include="Views\Cltudf\Index.cshtml" />
+    <Content Include="Views\Cltxref\Index.cshtml" />
+    <Content Include="Views\Coa\Index.cshtml" />
+    <Content Include="Views\Coadet\Index.cshtml" />
+    <Content Include="Views\Collpdet\Index.cshtml" />
+    <Content Include="Views\Collplan\Index.cshtml" />
+    <Content Include="Views\Contpdet\Index.cshtml" />
+    <Content Include="Views\Contplan\Index.cshtml" />
+    <Content Include="Views\Costs\Index.cshtml" />
+    <Content Include="Views\Courtcod\Index.cshtml" />
+    <Content Include="Views\Credit_bureau\Index.cshtml" />
+    <Content Include="Views\Dbtr\Index.cshtml" />
+    <Content Include="Views\Dbtract\Index.cshtml" />
+    <Content Include="Views\Dbtraddr\Index.cshtml" />
+    <Content Include="Views\Dbtraic\Index.cshtml" />
+    <Content Include="Views\Dbtraka\Index.cshtml" />
+    <Content Include="Views\Dbtrapi\Index.cshtml" />
+    <Content Include="Views\Dbtrbank\Index.cshtml" />
+    <Content Include="Views\Dbtrcbinq\Index.cshtml" />
+    <Content Include="Views\Dbtrctc\Index.cshtml" />
+    <Content Include="Views\Dbtrdial\Index.cshtml" />
+    <Content Include="Views\Dbtrdup\Index.cshtml" />
+    <Content Include="Views\Dbtremp\Index.cshtml" />
+    <Content Include="Views\Dbtrltr\Index.cshtml" />
+    <Content Include="Views\Dbtrold\Index.cshtml" />
+    <Content Include="Views\Dbtrpaym\Index.cshtml" />
+    <Content Include="Views\Dbtrphon\Index.cshtml" />
+    <Content Include="Views\Dbtrpost\Index.cshtml" />
+    <Content Include="Views\Dbtrprom\Index.cshtml" />
+    <Content Include="Views\Dbtrrms\Index.cshtml" />
+    <Content Include="Views\Dbtrsent\Index.cshtml" />
+    <Content Include="Views\Dbtrudf\Index.cshtml" />
+    <Content Include="Views\Dbtrxdbt\Index.cshtml" />
+    <Content Include="Views\Dbtrxref\Index.cshtml" />
+    <Content Include="Views\Debt\Index.cshtml" />
+    <Content Include="Views\Debt_bureau\Index.cshtml" />
+    <Content Include="Views\Debt2yy_view\Index.cshtml" />
+    <Content Include="Views\Debtadj\Index.cshtml" />
+    <Content Include="Views\Debtfee\Index.cshtml" />
+    <Content Include="Views\Debtfwd\Index.cshtml" />
+    <Content Include="Views\Debtlgl\Index.cshtml" />
+    <Content Include="Views\Debttype\Index.cshtml" />
+    <Content Include="Views\Debtudf\Index.cshtml" />
+    <Content Include="Views\Dialer_actions\Index.cshtml" />
+    <Content Include="Views\Dst\Index.cshtml" />
+    <Content Include="Views\Dsttype\Index.cshtml" />
+    <Content Include="Views\Eodlog\Index.cshtml" />
+    <Content Include="Views\Eodproc\Index.cshtml" />
+    <Content Include="Views\Eodrep\Index.cshtml" />
+    <Content Include="Views\Feecode\Index.cshtml" />
+    <Content Include="Views\Feepdet\Index.cshtml" />
+    <Content Include="Views\Feeplan\Index.cshtml" />
+    <Content Include="Views\Holiday\Index.cshtml" />
+    <Content Include="Views\Ic_request\Index.cshtml" />
+    <Content Include="Views\Impfield\Index.cshtml" />
+    <Content Include="Views\Impgroup\Index.cshtml" />
+    <Content Include="Views\Import\Index.cshtml" />
+    <Content Include="Views\Indexing\Index.cshtml" />
+    <Content Include="Views\Language\Index.cshtml" />
+    <Content Include="Views\Letter\Index.cshtml" />
+    <Content Include="Views\Letter_state_sub\Index.cshtml" />
+    <Content Include="Views\List_option\Index.cshtml" />
+    <Content Include="Views\Listoptxwrk\Index.cshtml" />
+    <Content Include="Views\Locktable\Index.cshtml" />
+    <Content Include="Views\Ltrfield\Index.cshtml" />
+    <Content Include="Views\Matchprm\Index.cshtml" />
+    <Content Include="Views\Micrchk\Index.cshtml" />
+    <Content Include="Views\Period\Index.cshtml" />
+    <Content Include="Views\Peryear\Index.cshtml" />
+    <Content Include="Views\Pmt\Index.cshtml" />
+    <Content Include="Views\Pmt_post_session\Index.cshtml" />
+    <Content Include="Views\Pmtb\Index.cshtml" />
+    <Content Include="Views\Pmtbdebt\Index.cshtml" />
+    <Content Include="Views\Pmtbfee\Index.cshtml" />
+    <Content Include="Views\Pmtcode\Index.cshtml" />
+    <Content Include="Views\Pmtfee\Index.cshtml" />
+    <Content Include="Views\Pmtuser\Index.cshtml" />
+    <Content Include="Views\Rms_archive\Index.cshtml" />
+    <Content Include="Views\Rms_code\Index.cshtml" />
+    <Content Include="Views\Rmsbank\Index.cshtml" />
+    <Content Include="Views\Salesrep\Index.cshtml" />
+    <Content Include="Views\Scanout\Index.cshtml" />
+    <Content Include="Views\Sentltr\Index.cshtml" />
+    <Content Include="Views\Sk\Index.cshtml" />
+    <Content Include="Views\St_options\Index.cshtml" />
+    <Content Include="Views\Statcode\Index.cshtml" />
+    <Content Include="Views\Storegrp\Index.cshtml" />
+    <Content Include="Views\Stuser\Index.cshtml" />
+    <Content Include="Views\Template\Index.cshtml" />
+    <Content Include="Views\Test\Index.cshtml" />
+    <Content Include="Views\Tz\Index.cshtml" />
+    <Content Include="Views\Tzdet\Index.cshtml" />
+    <Content Include="Views\Udfcode\Index.cshtml" />
+    <Content Include="Views\Udfpdet\Index.cshtml" />
+    <Content Include="Views\Udfplan\Index.cshtml" />
+    <Content Include="Views\Udftype\Index.cshtml" />
+    <Content Include="Views\Ul_connection_script\Index.cshtml" />
+    <Content Include="Views\Ul_script\Index.cshtml" />
+    <Content Include="Views\Ul_scripts_modified\Index.cshtml" />
+    <Content Include="Views\Ul_table\Index.cshtml" />
+    <Content Include="Views\Ul_table_script\Index.cshtml" />
+    <Content Include="Views\Ul_user\Index.cshtml" />
+    <Content Include="Views\Userstat\Index.cshtml" />
+    <Content Include="Views\Userxsales\Index.cshtml" />
+    <Content Include="Views\Userxwrk\Index.cshtml" />
+    <Content Include="Views\Vend\Index.cshtml" />
+    <Content Include="Views\Vendamt\Index.cshtml" />
+    <Content Include="Views\Worklist\Index.cshtml" />
+    <Content Include="Views\Zip\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\jquery-2.1.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>13265</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52871</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

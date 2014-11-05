@@ -1,0 +1,10 @@
+C:\Users\dyates\Documents\Visual Studio 2013\Projects\mlaMVC2\mlaMVC2\bin\mlaMVC2.dll.config
+C:\Users\dyates\Documents\Visual Studio 2013\Projects\mlaMVC2\mlaMVC2\bin\mlaMVC2.dll
+C:\Users\dyates\Documents\Visual Studio 2013\Projects\mlaMVC2\mlaMVC2\bin\mlaMVC2.pdb
+C:\Users\dyates\Documents\Visual Studio 2013\Projects\mlaMVC2\mlaMVC2\obj\Debug\mlaMVC2.dll
+C:\Users\dyates\Documents\Visual Studio 2013\Projects\mlaMVC2\mlaMVC2\obj\Debug\mlaMVC2.pdb
+C:\Users\dyates\Documents\Visual Studio 2013\Projects\mlaMVC2\mlaMVC2\bin\EntityFramework.dll
+C:\Users\dyates\Documents\Visual Studio 2013\Projects\mlaMVC2\mlaMVC2\bin\EntityFramework.SqlServer.dll
+C:\Users\dyates\Documents\Visual Studio 2013\Projects\mlaMVC2\mlaMVC2\bin\MySql.Data.Entity.EF6.dll
+C:\Users\dyates\Documents\Visual Studio 2013\Projects\mlaMVC2\mlaMVC2\bin\EntityFramework.xml
+C:\Users\dyates\Documents\Visual Studio 2013\Projects\mlaMVC2\mlaMVC2\bin\EntityFramework.SqlServer.xml

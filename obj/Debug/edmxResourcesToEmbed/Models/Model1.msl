@@ -1,0 +1,2187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Model1ModelStoreContainer" CdmEntityContainer="Model1Entities">
+    <EntitySetMapping Name="accurint_batch_setup">
+      <EntityTypeMapping TypeName="mlaMVC2.accurint_batch_setup">
+        <MappingFragment StoreEntitySet="accurint_batch_setup">
+          <ScalarProperty Name="BATCH_ID" ColumnName="BATCH_ID" />
+          <ScalarProperty Name="BATCH_DESCR" ColumnName="BATCH_DESCR" />
+          <ScalarProperty Name="IMPORT_FILE_LAYOUT" ColumnName="IMPORT_FILE_LAYOUT" />
+          <ScalarProperty Name="FTP_FROM_FILE_MANAGEMENT" ColumnName="FTP_FROM_FILE_MANAGEMENT" />
+          <ScalarProperty Name="FTP_FROM_RENAME_PATH" ColumnName="FTP_FROM_RENAME_PATH" />
+          <ScalarProperty Name="IMPORT_PATH" ColumnName="IMPORT_PATH" />
+          <ScalarProperty Name="IMPORT_FILE_MANAGEMENT" ColumnName="IMPORT_FILE_MANAGEMENT" />
+          <ScalarProperty Name="IMPORT_FILE_RENAME_PATH" ColumnName="IMPORT_FILE_RENAME_PATH" />
+          <ScalarProperty Name="IMPORT_ACTION_TYPE" ColumnName="IMPORT_ACTION_TYPE" />
+          <ScalarProperty Name="IMPORT_ACTION_CODE" ColumnName="IMPORT_ACTION_CODE" />
+          <ScalarProperty Name="IMPORT_STATUS_CODE" ColumnName="IMPORT_STATUS_CODE" />
+          <ScalarProperty Name="IMPORT_WORKLIST_ID" ColumnName="IMPORT_WORKLIST_ID" />
+          <ScalarProperty Name="IMPORT_NEXT_CONTACT_ADV" ColumnName="IMPORT_NEXT_CONTACT_ADV" />
+          <ScalarProperty Name="IMPORT_COMMENT" ColumnName="IMPORT_COMMENT" />
+          <ScalarProperty Name="EXPORT_FIELDS" ColumnName="EXPORT_FIELDS" />
+          <ScalarProperty Name="EXPORT_PATH" ColumnName="EXPORT_PATH" />
+          <ScalarProperty Name="EXPORT_FILE_MANAGEMENT" ColumnName="EXPORT_FILE_MANAGEMENT" />
+          <ScalarProperty Name="EXPORT_FILE_RENAME_PATH" ColumnName="EXPORT_FILE_RENAME_PATH" />
+          <ScalarProperty Name="FTP_TO_FILE_MANAGEMENT" ColumnName="FTP_TO_FILE_MANAGEMENT" />
+          <ScalarProperty Name="EXPORT_COMMENT" ColumnName="EXPORT_COMMENT" />
+          <ScalarProperty Name="EXPORT_CRITERIA" ColumnName="EXPORT_CRITERIA" />
+          <ScalarProperty Name="FTP_USER_ID" ColumnName="FTP_USER_ID" />
+          <ScalarProperty Name="FTP_PASSWORD" ColumnName="FTP_PASSWORD" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="actcode">
+      <EntityTypeMapping TypeName="mlaMVC2.actcode">
+        <MappingFragment StoreEntitySet="actcode">
+          <ScalarProperty Name="ACTCODE_ID" ColumnName="ACTCODE_ID" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="ACT_COMMENT" ColumnName="ACT_COMMENT" />
+          <ScalarProperty Name="STATUS_CODE" ColumnName="STATUS_CODE" />
+          <ScalarProperty Name="NEXT_CONTACT_DATE_ADV" ColumnName="NEXT_CONTACT_DATE_ADV" />
+          <ScalarProperty Name="WORKLIST_ID" ColumnName="WORKLIST_ID" />
+          <ScalarProperty Name="DIALER" ColumnName="DIALER" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="TEXT" ColumnName="TEXT" />
+          <ScalarProperty Name="CB_DEPT" ColumnName="CB_DEPT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="actcode_ltr">
+      <EntityTypeMapping TypeName="mlaMVC2.actcode_ltr">
+        <MappingFragment StoreEntitySet="actcode_ltr">
+          <ScalarProperty Name="ACTCODE_ID" ColumnName="ACTCODE_ID" />
+          <ScalarProperty Name="LETTER_ID" ColumnName="LETTER_ID" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="DATE_TO_SEND_ADV" ColumnName="DATE_TO_SEND_ADV" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="action_sched">
+      <EntityTypeMapping TypeName="mlaMVC2.action_sched">
+        <MappingFragment StoreEntitySet="action_sched">
+          <ScalarProperty Name="ACTION_ITEM_ID" ColumnName="ACTION_ITEM_ID" />
+          <ScalarProperty Name="RUN_DATE" ColumnName="RUN_DATE" />
+          <ScalarProperty Name="ACTCODE_ID" ColumnName="ACTCODE_ID" />
+          <ScalarProperty Name="SCHEDULED" ColumnName="SCHEDULED" />
+          <ScalarProperty Name="SCRIPT" ColumnName="SCRIPT" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="action_setup">
+      <EntityTypeMapping TypeName="mlaMVC2.action_setup">
+        <MappingFragment StoreEntitySet="action_setup">
+          <ScalarProperty Name="ACTION_ITEM_ID" ColumnName="ACTION_ITEM_ID" />
+          <ScalarProperty Name="RUN_DATE" ColumnName="RUN_DATE" />
+          <ScalarProperty Name="ACTCODE_ID" ColumnName="ACTCODE_ID" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="SCHEDULED" ColumnName="SCHEDULED" />
+          <ScalarProperty Name="OCCURRENCES" ColumnName="OCCURRENCES" />
+          <ScalarProperty Name="SCRIPT" ColumnName="SCRIPT" />
+          <ScalarProperty Name="ACTION_OPTION" ColumnName="ACTION_OPTION" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aic_code">
+      <EntityTypeMapping TypeName="mlaMVC2.aic_code">
+        <MappingFragment StoreEntitySet="aic_code">
+          <ScalarProperty Name="CODE_TYPE" ColumnName="CODE_TYPE" />
+          <ScalarProperty Name="FROM_CODE" ColumnName="FROM_CODE" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="TO_CODE" ColumnName="TO_CODE" />
+          <ScalarProperty Name="AIC_OPTION" ColumnName="AIC_OPTION" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aic_request">
+      <EntityTypeMapping TypeName="mlaMVC2.aic_request">
+        <MappingFragment StoreEntitySet="aic_request">
+          <ScalarProperty Name="REQUEST_CODE" ColumnName="REQUEST_CODE" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aj">
+      <EntityTypeMapping TypeName="mlaMVC2.aj">
+        <MappingFragment StoreEntitySet="aj">
+          <ScalarProperty Name="AJ_ID" ColumnName="AJ_ID" />
+          <ScalarProperty Name="AJ_DATE" ColumnName="AJ_DATE" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ajdet">
+      <EntityTypeMapping TypeName="mlaMVC2.ajdet">
+        <MappingFragment StoreEntitySet="ajdet">
+          <ScalarProperty Name="AJ_ID" ColumnName="AJ_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="TRN_DATE" ColumnName="TRN_DATE" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="AMT" ColumnName="AMT" />
+          <ScalarProperty Name="CR_ID" ColumnName="CR_ID" />
+          <ScalarProperty Name="DB_ID" ColumnName="DB_ID" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ap">
+      <EntityTypeMapping TypeName="mlaMVC2.ap">
+        <MappingFragment StoreEntitySet="ap">
+          <ScalarProperty Name="AP_ID" ColumnName="AP_ID" />
+          <ScalarProperty Name="AP_DATE" ColumnName="AP_DATE" />
+          <ScalarProperty Name="CLT_ID" ColumnName="CLT_ID" />
+          <ScalarProperty Name="VEND_ID" ColumnName="VEND_ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ADDR1" ColumnName="ADDR1" />
+          <ScalarProperty Name="ADDR2" ColumnName="ADDR2" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="ZIP" ColumnName="ZIP" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="RECUR_FREQ" ColumnName="RECUR_FREQ" />
+          <ScalarProperty Name="RECUR_TIMES" ColumnName="RECUR_TIMES" />
+          <ScalarProperty Name="INVOICE_NO" ColumnName="INVOICE_NO" />
+          <ScalarProperty Name="DUE_DATE" ColumnName="DUE_DATE" />
+          <ScalarProperty Name="OUTSTANDING" ColumnName="OUTSTANDING" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="apdet">
+      <EntityTypeMapping TypeName="mlaMVC2.apdet">
+        <MappingFragment StoreEntitySet="apdet">
+          <ScalarProperty Name="AP_ID" ColumnName="AP_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="TRN_DATE" ColumnName="TRN_DATE" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="CHECK_NO" ColumnName="CHECK_NO" />
+          <ScalarProperty Name="AMT" ColumnName="AMT" />
+          <ScalarProperty Name="CR_ID" ColumnName="CR_ID" />
+          <ScalarProperty Name="DB_ID" ColumnName="DB_ID" />
+          <ScalarProperty Name="TRUST_PERIOD" ColumnName="TRUST_PERIOD" />
+          <ScalarProperty Name="TRUST_SUB_PERIOD" ColumnName="TRUST_SUB_PERIOD" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="STATUS_DATE" ColumnName="STATUS_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="apidesc">
+      <EntityTypeMapping TypeName="mlaMVC2.apidesc">
+        <MappingFragment StoreEntitySet="apidesc">
+          <ScalarProperty Name="API_CODE" ColumnName="API_CODE" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ar">
+      <EntityTypeMapping TypeName="mlaMVC2.ar">
+        <MappingFragment StoreEntitySet="ar">
+          <ScalarProperty Name="AR_ID" ColumnName="AR_ID" />
+          <ScalarProperty Name="AR_DATE" ColumnName="AR_DATE" />
+          <ScalarProperty Name="CLT_ID" ColumnName="CLT_ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="RECUR_FREQ" ColumnName="RECUR_FREQ" />
+          <ScalarProperty Name="RECUR_TIMES" ColumnName="RECUR_TIMES" />
+          <ScalarProperty Name="OUTSTANDING" ColumnName="OUTSTANDING" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ardet">
+      <EntityTypeMapping TypeName="mlaMVC2.ardet">
+        <MappingFragment StoreEntitySet="ardet">
+          <ScalarProperty Name="AR_ID" ColumnName="AR_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="TRN_DATE" ColumnName="TRN_DATE" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="CHECK_NO" ColumnName="CHECK_NO" />
+          <ScalarProperty Name="AMT" ColumnName="AMT" />
+          <ScalarProperty Name="CR_ID" ColumnName="CR_ID" />
+          <ScalarProperty Name="DB_ID" ColumnName="DB_ID" />
+          <ScalarProperty Name="TRUST_PERIOD" ColumnName="TRUST_PERIOD" />
+          <ScalarProperty Name="TRUST_SUB_PERIOD" ColumnName="TRUST_SUB_PERIOD" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="assign">
+      <EntityTypeMapping TypeName="mlaMVC2.assign">
+        <MappingFragment StoreEntitySet="assign">
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="WORKLIST_ID" ColumnName="WORKLIST_ID" />
+          <ScalarProperty Name="F_ALPHA" ColumnName="F_ALPHA" />
+          <ScalarProperty Name="T_ALPHA" ColumnName="T_ALPHA" />
+          <ScalarProperty Name="F_AMT" ColumnName="F_AMT" />
+          <ScalarProperty Name="T_AMT" ColumnName="T_AMT" />
+          <ScalarProperty Name="F_AGE" ColumnName="F_AGE" />
+          <ScalarProperty Name="T_AGE" ColumnName="T_AGE" />
+          <ScalarProperty Name="CLT_ID" ColumnName="CLT_ID" />
+          <ScalarProperty Name="LANGUAGE" ColumnName="LANGUAGE" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="att">
+      <EntityTypeMapping TypeName="mlaMVC2.att">
+        <MappingFragment StoreEntitySet="att">
+          <ScalarProperty Name="ATT_ID" ColumnName="ATT_ID" />
+          <ScalarProperty Name="FIRM" ColumnName="FIRM" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ADDR1" ColumnName="ADDR1" />
+          <ScalarProperty Name="ADDR2" ColumnName="ADDR2" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="ZIP" ColumnName="ZIP" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="FAX" ColumnName="FAX" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bank">
+      <EntityTypeMapping TypeName="mlaMVC2.bank">
+        <MappingFragment StoreEntitySet="bank">
+          <ScalarProperty Name="TRANSIT_NO" ColumnName="TRANSIT_NO" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ADDR1" ColumnName="ADDR1" />
+          <ScalarProperty Name="ADDR2" ColumnName="ADDR2" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="ZIP" ColumnName="ZIP" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+          <ScalarProperty Name="ABA_NO" ColumnName="ABA_NO" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="RECTYPE" ColumnName="RECTYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bankdups">
+      <EntityTypeMapping TypeName="mlaMVC2.bankdups">
+        <MappingFragment StoreEntitySet="bankdups">
+          <ScalarProperty Name="TRANSIT_NO" ColumnName="TRANSIT_NO" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bnchmrk">
+      <EntityTypeMapping TypeName="mlaMVC2.bnchmrk">
+        <MappingFragment StoreEntitySet="bnchmrk">
+          <ScalarProperty Name="FIELD1" ColumnName="FIELD1" />
+          <ScalarProperty Name="FIELD2" ColumnName="FIELD2" />
+          <ScalarProperty Name="FIELD3" ColumnName="FIELD3" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bureau_options">
+      <EntityTypeMapping TypeName="mlaMVC2.bureau_options">
+        <MappingFragment StoreEntitySet="bureau_options">
+          <ScalarProperty Name="BUREAU_ID" ColumnName="BUREAU_ID" />
+          <ScalarProperty Name="CTRL_NO" ColumnName="CTRL_NO" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="CREDIT_GRANTOR_CODE" ColumnName="CREDIT_GRANTOR_CODE" />
+          <ScalarProperty Name="REPORTER_NAME" ColumnName="REPORTER_NAME" />
+          <ScalarProperty Name="REPORTER_FULL_ADDR" ColumnName="REPORTER_FULL_ADDR" />
+          <ScalarProperty Name="REPORTER_PHONE" ColumnName="REPORTER_PHONE" />
+          <ScalarProperty Name="ID_NO" ColumnName="ID_NO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cbinqdepts">
+      <EntityTypeMapping TypeName="mlaMVC2.cbinqdepts">
+        <MappingFragment StoreEntitySet="cbinqdepts">
+          <ScalarProperty Name="DEPARTMENT" ColumnName="DEPARTMENT" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="FILENAME" ColumnName="FILENAME" />
+          <ScalarProperty Name="CBINQFIELDS" ColumnName="CBINQFIELDS" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cbinqfields">
+      <EntityTypeMapping TypeName="mlaMVC2.cbinqfields">
+        <MappingFragment StoreEntitySet="cbinqfields">
+          <ScalarProperty Name="SERVICE" ColumnName="SERVICE" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="CBINQFIELD" ColumnName="CBINQFIELD" />
+          <ScalarProperty Name="DMDBTRFIELD" ColumnName="DMDBTRFIELD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="chart">
+      <EntityTypeMapping TypeName="mlaMVC2.chart">
+        <MappingFragment StoreEntitySet="chart">
+          <ScalarProperty Name="CHART1" ColumnName="CHART" />
+          <ScalarProperty Name="CASH" ColumnName="CASH" />
+          <ScalarProperty Name="RET_EARN" ColumnName="RET_EARN" />
+          <ScalarProperty Name="PRINC_INCOME" ColumnName="PRINC_INCOME" />
+          <ScalarProperty Name="INT_INCOME" ColumnName="INT_INCOME" />
+          <ScalarProperty Name="FEE_INCOME" ColumnName="FEE_INCOME" />
+          <ScalarProperty Name="CLT_DISB" ColumnName="CLT_DISB" />
+          <ScalarProperty Name="OVERPMT" ColumnName="OVERPMT" />
+          <ScalarProperty Name="CLT_INCOME" ColumnName="CLT_INCOME" />
+          <ScalarProperty Name="ACCT_PAY" ColumnName="ACCT_PAY" />
+          <ScalarProperty Name="ACCT_REC" ColumnName="ACCT_REC" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="checkver">
+      <EntityTypeMapping TypeName="mlaMVC2.checkver">
+        <MappingFragment StoreEntitySet="checkver">
+          <ScalarProperty Name="DEBTOR_ID" ColumnName="DEBTOR_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="TRANSACTION_DATE" ColumnName="TRANSACTION_DATE" />
+          <ScalarProperty Name="TRANSACTION_TYPE" ColumnName="TRANSACTION_TYPE" />
+          <ScalarProperty Name="DEBT_ID" ColumnName="DEBT_ID" />
+          <ScalarProperty Name="DEBT_NO" ColumnName="DEBT_NO" />
+          <ScalarProperty Name="OUT_RECORD" ColumnName="OUT_RECORD" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="chkverreason">
+      <EntityTypeMapping TypeName="mlaMVC2.chkverreason">
+        <MappingFragment StoreEntitySet="chkverreason">
+          <ScalarProperty Name="CHKVER_COMPANY" ColumnName="CHKVER_COMPANY" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="clt">
+      <EntityTypeMapping TypeName="mlaMVC2.clt">
+        <MappingFragment StoreEntitySet="clt">
+          <ScalarProperty Name="CLT_ID" ColumnName="CLT_ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ADDR1" ColumnName="ADDR1" />
+          <ScalarProperty Name="ADDR2" ColumnName="ADDR2" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="STATE" ColumnName="STATE" />
+          <ScalarProperty Name="ZIP" ColumnName="ZIP" />
+          <ScalarProperty Name="SALES_REP" ColumnName="SALES_REP" />
+          <ScalarProperty Name="NEXT_CONTACT_DATE" ColumnName="NEXT_CONTACT_DATE" />
+          <ScalarProperty Name="CLT_TYPE" ColumnName="CLT_TYPE" />
+          <ScalarProperty Name="DEBT_TYPE" ColumnName="DEBT_TYPE" />
+          <ScalarProperty Name="BUREAU_PERMISSION" ColumnName="BUREAU_PERMISSION" />
+          <ScalarProperty Name="BUREAU_REPORT" ColumnName="BUREAU_REPORT" />
+          <ScalarProperty Name="COLLPLAN_ID" ColumnName="COLLPLAN_ID" />
+          <ScalarProperty Name="FEEPLAN_ID" ColumnName="FEEPLAN_ID" />
+          <ScalarProperty Name="CONTPLAN_ID" ColumnName="CONTPLAN_ID" />
+          <ScalarProperty Name="TAX_ID" ColumnName="TAX_ID" />
+          <ScalarProperty Name="TAX_EXEMPT" ColumnName="TAX_EXEMPT" />
+          <ScalarProperty Name="REMIT_TYPE" ColumnName="REMIT_TYPE" />
+          <ScalarProperty Name="BALANCE_DEDUCT" ColumnName="BALANCE_DEDUCT" />
+          <ScalarProperty Name="CREDIT_APPLY" ColumnName="CREDIT_APPLY" />
+          <ScalarProperty Name="CREDIT_REFUND" ColumnName="CREDIT_REFUND" />
+          <ScalarProperty Name="MASTER_ID" ColumnName="MASTER_ID" />
+          <ScalarProperty Name="STATUS_CODE" ColumnName="STATUS_CODE" />
+          <ScalarProperty Name="FWD_AGENCY" ColumnName="FWD_AGENCY" />
+          <ScalarProperty Name="FWD_COLL_RATE" ColumnName="FWD_COLL_RATE" />
+          <ScalarProperty Name="PC_CONV_DELAY" ColumnName="PC_CONV_DELAY" />
+          <ScalarProperty Name="COMPANY_ID" ColumnName="COMPANY_ID" />
+          <ScalarProperty Name="VER_LOCATION_CODE" ColumnName="VER_LOCATION_CODE" />
+          <ScalarProperty Name="VER_STORE_GROUP" ColumnName="VER_STORE_GROUP" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="SCAN_STORE_NO" ColumnName="SCAN_STORE_NO" />
+          <ScalarProperty Name="SCAN_MERCHANT_ID" ColumnName="SCAN_MERCHANT_ID" />
+          <ScalarProperty Name="NEXT_CONTACT_TIME" ColumnName="NEXT_CONTACT_TIME" />
+          <ScalarProperty Name="PRIORITY" ColumnName="PRIORITY" />
+          <ScalarProperty Name="UDFPLAN_ID" ColumnName="UDFPLAN_ID" />
+          <ScalarProperty Name="HIPAA_REG" ColumnName="HIPAA_REG" />
+          <ScalarProperty Name="MATCH_TYPE" ColumnName="MATCH_TYPE" />
+          <ScalarProperty Name="EXTRA_STATEMENT_FIELD" ColumnName="EXTRA_STATEMENT_FIELD" />
+          <ScalarProperty Name="EXTRA_STATEMENT_LABEL" ColumnName="EXTRA_STATEMENT_LABEL" />
+          <ScalarProperty Name="TAXCODE_ID" ColumnName="TAXCODE_ID" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="clt_online">
+      <EntityTypeMapping TypeName="mlaMVC2.clt_online">
+        <MappingFragment StoreEntitySet="clt_online">
+          <ScalarProperty Name="record_id" ColumnName="record_id" />
+          <ScalarProperty Name="clt_id" ColumnName="clt_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="clt_enabled" ColumnName="clt_enabled" />
+          <ScalarProperty Name="clt_type" ColumnName="clt_type" />
+          <ScalarProperty Name="clt_user_id" ColumnName="clt_user_id" />
+          <ScalarProperty Name="clt_user_pwd" ColumnName="clt_user_pwd" />
+          <ScalarProperty Name="clt_user_enabled" ColumnName="clt_user_enabled" />
+          <ScalarProperty Name="clt_user_type" ColumnName="clt_user_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="clt230_view">
+      <EntityTypeMapping TypeName="mlaMVC2.clt230_view">
+        <MappingFragment StoreEntitySet="clt230_view">
+          <ScalarProperty Name="RECORD_ID" ColumnName="RECORD_ID" />
+          <ScalarProperty Name="COMPANY_ADDR1" ColumnName="COMPANY_ADDR1" />
+          <ScalarProperty Name="COMPANY_CITY_ST_ZIP" ColumnName="COMPANY_CITY_ST_ZIP" />
+          <ScalarProperty Name="COMPANY_PHONE" ColumnName="COMPANY_PHONE" />
+          <ScalarProperty Name="COMPANY_FAX" ColumnName="COMPANY_FAX" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="CONTACT_NAME" ColumnName="CONTACT_NAME" />
+          <ScalarProperty Name="CLT_ADDR1" ColumnName="CLT_ADDR1" />
+          <ScalarProperty Name="CLT_CITY_ST_ZIP" ColumnName="CLT_CITY_ST_ZIP" />
+          <ScalarProperty Name="CLT_ID" ColumnName="CLT_ID" />
+          <ScalarProperty Name="PERIOD" ColumnName="PERIOD" />
+          <ScalarProperty Name="LD_LIST_ACCTS" ColumnName="LD_LIST_ACCTS" />
+          <ScalarProperty Name="LD_LIST_AMT" ColumnName="LD_LIST_AMT" />
+          <ScalarProperty Name="AVG_MONTH_LIST" ColumnName="AVG_MONTH_LIST" />
+          <ScalarProperty Name="LD_AVE_AGE" ColumnName="LD_AVE_AGE" />
+          <ScalarProperty Name="LD_GROSS" ColumnName="LD_GROSS" />
+          <ScalarProperty Name="LD_RECOVER_PERCENT" ColumnName="LD_RECOVER_PERCENT" />
+          <ScalarProperty Name="LD_RETURN_ACCTS" ColumnName="LD_RETURN_ACCTS" />
+          <ScalarProperty Name="LD_RETURN_AMT" ColumnName="LD_RETURN_AMT" />
+          <ScalarProperty Name="LD_ACTIVE_PAID_ACCTS" ColumnName="LD_ACTIVE_PAID_ACCTS" />
+          <ScalarProperty Name="LD_ACTIVE_PAID_AMT" ColumnName="LD_ACTIVE_PAID_AMT" />
+          <ScalarProperty Name="MASTER_ID" ColumnName="MASTER_ID" />
+          <ScalarProperty Name="RETURN_AMT" ColumnName="RETURN_AMT" />
+          <ScalarProperty Name="ADDR1" ColumnName="ADDR1" />
+          <ScalarProperty Name="STATUS_CODE" ColumnName="STATUS_CODE" />
+          <ScalarProperty Name="CITY_ST_ZIP" ColumnName="CITY_ST_ZIP" />
+          <ScalarProperty Name="LD_AGE" ColumnName="LD_AGE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cltact">
+      <EntityTypeMapping TypeName="mlaMVC2.cltact">
+        <MappingFragment StoreEntitySet="cltact">
+          <ScalarProperty Name="CLT_ID" ColumnName="CLT_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="ACT_DATE" ColumnName="ACT_DATE" />
+          <ScalarProperty Name="ACT_TIME" ColumnName="ACT_TIME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="COMMENTS" ColumnName="COMMENTS" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="GMT_OFFSET" ColumnName="GMT_OFFSET" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cltapprovedltr">
+      <EntityTypeMapping TypeName="mlaMVC2.cltapprovedltr">
+        <MappingFragment StoreEntitySet="cltapprovedltr">
+          <ScalarProperty Name="CLT_ID" ColumnName="CLT_ID" />
+          <ScalarProperty Name="LETTER_ID" ColumnName="LETTER_ID" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="DEBTOR_LIMIT" ColumnName="DEBTOR_LIMIT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cltltr">
+      <EntityTypeMapping TypeName="mlaMVC2.cltltr">
+        <MappingFragment StoreEntitySet="cltltr">
+          <ScalarProperty Name="CLT_ID" ColumnName="CLT_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="LETTER_TO_SEND" ColumnName="LETTER_TO_SEND" />
+          <ScalarProperty Name="DATE_TO_SEND" ColumnName="DATE_TO_SEND" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cltphon">
+      <EntityTypeMapping TypeName="mlaMVC2.cltphon">
+        <MappingFragment StoreEntitySet="cltphon">
+          <ScalarProperty Name="CLT_ID" ColumnName="CLT_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="CONTACT_NAME" ColumnName="CONTACT_NAME" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cltrcvr">
+      <EntityTypeMapping TypeName="mlaMVC2.cltrcvr">
+        <MappingFragment StoreEntitySet="cltrcvr">
+          <ScalarProperty Name="CLT_ID" ColumnName="CLT_ID" />
+          <ScalarProperty Name="PERIOD" ColumnName="PERIOD" />
+          <ScalarProperty Name="LD_LIST_ACCTS" ColumnName="LD_LIST_ACCTS" />
+          <ScalarProperty Name="LD_AGE" ColumnName="LD_AGE" />
+          <ScalarProperty Name="LD_LIST_AMT" ColumnName="LD_LIST_AMT" />
+          <ScalarProperty Name="LD_RETURN_ACCTS" ColumnName="LD_RETURN_ACCTS" />
+          <ScalarProperty Name="LD_RETURN_AMT" ColumnName="LD_RETURN_AMT" />
+          <ScalarProperty Name="LD_GROSS" ColumnName="LD_GROSS" />
+          <ScalarProperty Name="LD_NET" ColumnName="LD_NET" />
+          <ScalarProperty Name="RETURN_ACCTS" ColumnName="RETURN_ACCTS" />
+          <ScalarProperty Name="RETURN_AMT" ColumnName="RETURN_AMT" />
+          <ScalarProperty Name="GROSS" ColumnName="GROSS" />
+          <ScalarProperty Name="NET" ColumnName="NET" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="LD_CHARGEOFF_AMT" ColumnName="LD_CHARGEOFF_AMT" />
+          <ScalarProperty Name="LD_RETURN_PAID_AMT" ColumnName="LD_RETURN_PAID_AMT" />
+          <ScalarProperty Name="RETURN_PAID_AMT" ColumnName="RETURN_PAID_AMT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="clttrust">
+      <EntityTypeMapping TypeName="mlaMVC2.clttrust">
+        <MappingFragment StoreEntitySet="clttrust">
+          <ScalarProperty Name="CLT_ID" ColumnName="CLT_ID" />
+          <ScalarProperty Name="PERIOD" ColumnName="PERIOD" />
+          <ScalarProperty Name="SUB_PERIOD" ColumnName="SUB_PERIOD" />
+          <ScalarProperty Name="PRIOR_CREDIT" ColumnName="PRIOR_CREDIT" />
+          <ScalarProperty Name="CREDIT_APPLY_AMT" ColumnName="CREDIT_APPLY_AMT" />
+          <ScalarProperty Name="CREDIT_REFUND_AMT" ColumnName="CREDIT_REFUND_AMT" />
+          <ScalarProperty Name="PRIOR_BALANCE" ColumnName="PRIOR_BALANCE" />
+          <ScalarProperty Name="BALANCE_DEDUCT_AMT" ColumnName="BALANCE_DEDUCT_AMT" />
+          <ScalarProperty Name="CHECK_AMT" ColumnName="CHECK_AMT" />
+          <ScalarProperty Name="REMIT_AMT" ColumnName="REMIT_AMT" />
+          <ScalarProperty Name="FILENAME" ColumnName="FILENAME" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="clttrust_historical">
+      <EntityTypeMapping TypeName="mlaMVC2.clttrust_historical">
+        <MappingFragment StoreEntitySet="clttrust_historical">
+          <ScalarProperty Name="CLT_ID" ColumnName="CLT_ID" />
+          <ScalarProperty Name="SUB_CLT_ID" ColumnName="SUB_CLT_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="PERIOD" ColumnName="PERIOD" />
+          <ScalarProperty Name="SUB_PERIOD" ColumnName="SUB_PERIOD" />
+          <ScalarProperty Name="TRN_DATE" ColumnName="TRN_DATE" />
+          <ScalarProperty Name="TRN_DESCR" ColumnName="TRN_DESCR" />
+          <ScalarProperty Name="TRN_AMOUNT" ColumnName="TRN_AMOUNT" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="clttype">
+      <EntityTypeMapping TypeName="mlaMVC2.clttype">
+        <MappingFragment StoreEntitySet="clttype">
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="UDFPLAN_ID" ColumnName="UDFPLAN_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cltudf">
+      <EntityTypeMapping TypeName="mlaMVC2.cltudf">
+        <MappingFragment StoreEntitySet="cltudf">
+          <ScalarProperty Name="CLT_ID" ColumnName="CLT_ID" />
+          <ScalarProperty Name="LABEL" ColumnName="LABEL" />
+          <ScalarProperty Name="LONGSTR" ColumnName="LONGSTR" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="DATE1" ColumnName="DATE1" />
+          <ScalarProperty Name="AMT" ColumnName="AMT" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cltxref">
+      <EntityTypeMapping TypeName="mlaMVC2.cltxref">
+        <MappingFragment StoreEntitySet="cltxref">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FIELDNAME" ColumnName="FIELDNAME" />
+          <ScalarProperty Name="FVALUE" ColumnName="FVALUE" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="coa">
+      <EntityTypeMapping TypeName="mlaMVC2.coa">
+        <MappingFragment StoreEntitySet="coa">
+          <ScalarProperty Name="ACCT_ID" ColumnName="ACCT_ID" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="CHART" ColumnName="CHART" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="coadet">
+      <EntityTypeMapping TypeName="mlaMVC2.coadet">
+        <MappingFragment StoreEntitySet="coadet">
+          <ScalarProperty Name="ACCT_ID" ColumnName="ACCT_ID" />
+          <ScalarProperty Name="PERIOD" ColumnName="PERIOD" />
+          <ScalarProperty Name="OPEN_BAL" ColumnName="OPEN_BAL" />
+          <ScalarProperty Name="DEBITS" ColumnName="DEBITS" />
+          <ScalarProperty Name="CREDITS" ColumnName="CREDITS" />
+          <ScalarProperty Name="BUDGET" ColumnName="BUDGET" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="collpdet">
+      <EntityTypeMapping TypeName="mlaMVC2.collpdet">
+        <MappingFragment StoreEntitySet="collpdet">
+          <ScalarProperty Name="COLLPLAN_ID" ColumnName="COLLPLAN_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="COLL_RATE" ColumnName="COLL_RATE" />
+          <ScalarProperty Name="F_LIST_AMT" ColumnName="F_LIST_AMT" />
+          <ScalarProperty Name="T_LIST_AMT" ColumnName="T_LIST_AMT" />
+          <ScalarProperty Name="F_BALANCE" ColumnName="F_BALANCE" />
+          <ScalarProperty Name="T_BALANCE" ColumnName="T_BALANCE" />
+          <ScalarProperty Name="F_PMT_AMT" ColumnName="F_PMT_AMT" />
+          <ScalarProperty Name="T_PMT_AMT" ColumnName="T_PMT_AMT" />
+          <ScalarProperty Name="F_LIST_AGE" ColumnName="F_LIST_AGE" />
+          <ScalarProperty Name="T_LIST_AGE" ColumnName="T_LIST_AGE" />
+          <ScalarProperty Name="F_SERV_AGE" ColumnName="F_SERV_AGE" />
+          <ScalarProperty Name="T_SERV_AGE" ColumnName="T_SERV_AGE" />
+          <ScalarProperty Name="F_STATUS" ColumnName="F_STATUS" />
+          <ScalarProperty Name="T_STATUS" ColumnName="T_STATUS" />
+          <ScalarProperty Name="F_PLACE_AGE" ColumnName="F_PLACE_AGE" />
+          <ScalarProperty Name="T_PLACE_AGE" ColumnName="T_PLACE_AGE" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="collplan">
+      <EntityTypeMapping TypeName="mlaMVC2.collplan">
+        <MappingFragment StoreEntitySet="collplan">
+          <ScalarProperty Name="COLLPLAN_ID" ColumnName="COLLPLAN_ID" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="contpdet">
+      <EntityTypeMapping TypeName="mlaMVC2.contpdet">
+        <MappingFragment StoreEntitySet="contpdet">
+          <ScalarProperty Name="CONTPLAN_ID" ColumnName="CONTPLAN_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="AGE" ColumnName="AGE" />
+          <ScalarProperty Name="LETTER_TO_SEND" ColumnName="LETTER_TO_SEND" />
+          <ScalarProperty Name="F_CUR_BAL" ColumnName="F_CUR_BAL" />
+          <ScalarProperty Name="T_CUR_BAL" ColumnName="T_CUR_BAL" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="contplan">
+      <EntityTypeMapping TypeName="mlaMVC2.contplan">
+        <MappingFragment StoreEntitySet="contplan">
+          <ScalarProperty Name="CONTPLAN_ID" ColumnName="CONTPLAN_ID" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="costs">
+      <EntityTypeMapping TypeName="mlaMVC2.costs">
+        <MappingFragment StoreEntitySet="costs">
+          <ScalarProperty Name="DEBT_ID" ColumnName="DEBT_ID" />
+          <ScalarProperty Name="DEBT_NO" ColumnName="DEBT_NO" />
+          <ScalarProperty Name="CLERICAL_LABOR" ColumnName="CLERICAL_LABOR" />
+          <ScalarProperty Name="COLL_LABOR" ColumnName="COLL_LABOR" />
+          <ScalarProperty Name="MGMT_LABOR" ColumnName="MGMT_LABOR" />
+          <ScalarProperty Name="OTHER_LABOR" ColumnName="OTHER_LABOR" />
+          <ScalarProperty Name="PRINTING" ColumnName="PRINTING" />
+          <ScalarProperty Name="MAILING" ColumnName="MAILING" />
+          <ScalarProperty Name="LONG_DISTANCE" ColumnName="LONG_DISTANCE" />
+          <ScalarProperty Name="SKIP_TRACING" ColumnName="SKIP_TRACING" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="courtcod">
+      <EntityTypeMapping TypeName="mlaMVC2.courtcod">
+        <MappingFragment StoreEntitySet="courtcod">
+          <ScalarProperty Name="COURT_CODE" ColumnName="COURT_CODE" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="ADDR1" ColumnName="ADDR1" />
+          <ScalarProperty Name="ADDR2" ColumnName="ADDR2" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="ZIP" ColumnName="ZIP" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="credit_bureau">
+      <EntityTypeMapping TypeName="mlaMVC2.credit_bureau">
+        <MappingFragment StoreEntitySet="credit_bureau">
+          <ScalarProperty Name="BUREAU_ID" ColumnName="BUREAU_ID" />
+          <ScalarProperty Name="BUREAU_NAME" ColumnName="BUREAU_NAME" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbtr">
+      <EntityTypeMapping TypeName="mlaMVC2.dbtr">
+        <MappingFragment StoreEntitySet="dbtr">
+          <ScalarProperty Name="DEBTOR_ID" ColumnName="DEBTOR_ID" />
+          <ScalarProperty Name="NAME1" ColumnName="NAME1" />
+          <ScalarProperty Name="NAME2" ColumnName="NAME2" />
+          <ScalarProperty Name="SORT_NAME" ColumnName="SORT_NAME" />
+          <ScalarProperty Name="SSN1" ColumnName="SSN1" />
+          <ScalarProperty Name="SSN2" ColumnName="SSN2" />
+          <ScalarProperty Name="DOB1" ColumnName="DOB1" />
+          <ScalarProperty Name="DOB2" ColumnName="DOB2" />
+          <ScalarProperty Name="DL1" ColumnName="DL1" />
+          <ScalarProperty Name="DL2" ColumnName="DL2" />
+          <ScalarProperty Name="DL_STATE1" ColumnName="DL_STATE1" />
+          <ScalarProperty Name="DL_STATE2" ColumnName="DL_STATE2" />
+          <ScalarProperty Name="LANGUAGE" ColumnName="LANGUAGE" />
+          <ScalarProperty Name="PRIORITY" ColumnName="PRIORITY" />
+          <ScalarProperty Name="STATUS_CODE" ColumnName="STATUS_CODE" />
+          <ScalarProperty Name="STATUS_DATE" ColumnName="STATUS_DATE" />
+          <ScalarProperty Name="DEBTOR_TYPE" ColumnName="DEBTOR_TYPE" />
+          <ScalarProperty Name="ASSIGN_ID" ColumnName="ASSIGN_ID" />
+          <ScalarProperty Name="NEXT_CONTACT_DATE" ColumnName="NEXT_CONTACT_DATE" />
+          <ScalarProperty Name="NEXT_CONTACT_TIME" ColumnName="NEXT_CONTACT_TIME" />
+          <ScalarProperty Name="AGCY_ATT_ID" ColumnName="AGCY_ATT_ID" />
+          <ScalarProperty Name="AGCY_ATT_DETAILS" ColumnName="AGCY_ATT_DETAILS" />
+          <ScalarProperty Name="DBTR_ATT_ID" ColumnName="DBTR_ATT_ID" />
+          <ScalarProperty Name="DBTR_ATT_DETAILS" ColumnName="DBTR_ATT_DETAILS" />
+          <ScalarProperty Name="PM_AUTH_REQ" ColumnName="PM_AUTH_REQ" />
+          <ScalarProperty Name="PM_AUTH_REC" ColumnName="PM_AUTH_REC" />
+          <ScalarProperty Name="PROM_KEPT" ColumnName="PROM_KEPT" />
+          <ScalarProperty Name="PROM_BROK" ColumnName="PROM_BROK" />
+          <ScalarProperty Name="REFERENCE_NO" ColumnName="REFERENCE_NO" />
+          <ScalarProperty Name="DIALER" ColumnName="DIALER" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="RMS_ACCT_ID" ColumnName="RMS_ACCT_ID" />
+          <ScalarProperty Name="KENWOOD_CODE" ColumnName="KENWOOD_CODE" />
+          <ScalarProperty Name="WARNING" ColumnName="WARNING" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbtract">
+      <EntityTypeMapping TypeName="mlaMVC2.dbtract">
+        <MappingFragment StoreEntitySet="dbtract">
+          <ScalarProperty Name="DEBTOR_ID" ColumnName="DEBTOR_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="ACT_DATE" ColumnName="ACT_DATE" />
+          <ScalarProperty Name="ACT_TIME" ColumnName="ACT_TIME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="COMMENTS" ColumnName="COMMENTS" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="GMT_OFFSET" ColumnName="GMT_OFFSET" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbtraddr">
+      <EntityTypeMapping TypeName="mlaMVC2.dbtraddr">
+        <MappingFragment StoreEntitySet="dbtraddr">
+          <ScalarProperty Name="DEBTOR_ID" ColumnName="DEBTOR_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="ADDR1" ColumnName="ADDR1" />
+          <ScalarProperty Name="ADDR2" ColumnName="ADDR2" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="ZIP" ColumnName="ZIP" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="BUREAU_DBTRNAMEXADDR" ColumnName="BUREAU_DBTRNAMEXADDR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbtraic">
+      <EntityTypeMapping TypeName="mlaMVC2.dbtraic">
+        <MappingFragment StoreEntitySet="dbtraic">
+          <ScalarProperty Name="DEBTOR_ID" ColumnName="DEBTOR_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="TRANSACTION_DATE" ColumnName="TRANSACTION_DATE" />
+          <ScalarProperty Name="REQUEST_CODE" ColumnName="REQUEST_CODE" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbtraka">
+      <EntityTypeMapping TypeName="mlaMVC2.dbtraka">
+        <MappingFragment StoreEntitySet="dbtraka">
+          <ScalarProperty Name="DEBTOR_ID" ColumnName="DEBTOR_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="AKA_NAME" ColumnName="AKA_NAME" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbtrapi">
+      <EntityTypeMapping TypeName="mlaMVC2.dbtrapi">
+        <MappingFragment StoreEntitySet="dbtrapi">
+          <ScalarProperty Name="DEBTOR_ID" ColumnName="DEBTOR_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="API_CODE" ColumnName="API_CODE" />
+          <ScalarProperty Name="REPORT_DATE" ColumnName="REPORT_DATE" />
+          <ScalarProperty Name="RESULTS" ColumnName="RESULTS" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbtrbank">
+      <EntityTypeMapping TypeName="mlaMVC2.dbtrbank">
+        <MappingFragment StoreEntitySet="dbtrbank">
+          <ScalarProperty Name="DEBTOR_ID" ColumnName="DEBTOR_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="ACCT" ColumnName="ACCT" />
+          <ScalarProperty Name="TRANSIT_NO" ColumnName="TRANSIT_NO" />
+          <ScalarProperty Name="DETAILS" ColumnName="DETAILS" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbtrcbinq">
+      <EntityTypeMapping TypeName="mlaMVC2.dbtrcbinq">
+        <MappingFragment StoreEntitySet="dbtrcbinq">
+          <ScalarProperty Name="DEBTOR_ID" ColumnName="DEBTOR_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="DEPARTMENT" ColumnName="DEPARTMENT" />
+          <ScalarProperty Name="REQUESTED" ColumnName="REQUESTED" />
+          <ScalarProperty Name="SUBMITTED" ColumnName="SUBMITTED" />
+          <ScalarProperty Name="RECEIVED" ColumnName="RECEIVED" />
+          <ScalarProperty Name="REQUEST_INFO" ColumnName="REQUEST_INFO" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbtrctc">
+      <EntityTypeMapping TypeName="mlaMVC2.dbtrctc">
+        <MappingFragment StoreEntitySet="dbtrctc">
+          <ScalarProperty Name="DEBTOR_ID" ColumnName="DEBTOR_ID" />
+          <ScalarProperty Name="EXPTYPE" ColumnName="EXPTYPE" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbtrdial">
+      <EntityTypeMapping TypeName="mlaMVC2.dbtrdial">
+        <MappingFragment StoreEntitySet="dbtrdial">
+          <ScalarProperty Name="DEBTOR_ID" ColumnName="DEBTOR_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="TRANSACTION_DATE" ColumnName="TRANSACTION_DATE" />
+          <ScalarProperty Name="LOG" ColumnName="LOG" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbtrdup">
+      <EntityTypeMapping TypeName="mlaMVC2.dbtrdup">
+        <MappingFragment StoreEntitySet="dbtrdup">
+          <ScalarProperty Name="MASTER_ID" ColumnName="MASTER_ID" />
+          <ScalarProperty Name="MATCH_ID" ColumnName="MATCH_ID" />
+          <ScalarProperty Name="FIELDSCORES" ColumnName="FIELDSCORES" />
+          <ScalarProperty Name="SCORE" ColumnName="SCORE" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbtremp">
+      <EntityTypeMapping TypeName="mlaMVC2.dbtremp">
+        <MappingFragment StoreEntitySet="dbtremp">
+          <ScalarProperty Name="DEBTOR_ID" ColumnName="DEBTOR_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ADDR1" ColumnName="ADDR1" />
+          <ScalarProperty Name="ADDR2" ColumnName="ADDR2" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="ZIP" ColumnName="ZIP" />
+          <ScalarProperty Name="DETAILS" ColumnName="DETAILS" />
+          <ScalarProperty Name="DUM_PHONE" ColumnName="DUM_PHONE" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="BUREAU_DBTRNAMEXEMP" ColumnName="BUREAU_DBTRNAMEXEMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbtrltr">
+      <EntityTypeMapping TypeName="mlaMVC2.dbtrltr">
+        <MappingFragment StoreEntitySet="dbtrltr">
+          <ScalarProperty Name="DEBTOR_ID" ColumnName="DEBTOR_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="DEBT_ID" ColumnName="DEBT_ID" />
+          <ScalarProperty Name="DEBT_NO" ColumnName="DEBT_NO" />
+          <ScalarProperty Name="LETTER_TO_SEND" ColumnName="LETTER_TO_SEND" />
+          <ScalarProperty Name="DATE_TO_SEND" ColumnName="DATE_TO_SEND" />
+          <ScalarProperty Name="LETTER_ADDR" ColumnName="LETTER_ADDR" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbtrold">
+      <EntityTypeMapping TypeName="mlaMVC2.dbtrold">
+        <MappingFragment StoreEntitySet="dbtrold">
+          <ScalarProperty Name="DEBTOR_ID" ColumnName="DEBTOR_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="FIELDNAME" ColumnName="FIELDNAME" />
+          <ScalarProperty Name="OLDVALUE" ColumnName="OLDVALUE" />
+          <ScalarProperty Name="CHANGE_DATE" ColumnName="CHANGE_DATE" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbtrpaym">
+      <EntityTypeMapping TypeName="mlaMVC2.dbtrpaym">
+        <MappingFragment StoreEntitySet="dbtrpaym">
+          <ScalarProperty Name="DEBTOR_ID" ColumnName="DEBTOR_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="MICR" ColumnName="MICR" />
+          <ScalarProperty Name="PM_DATE" ColumnName="PM_DATE" />
+          <ScalarProperty Name="PM_AMT" ColumnName="PM_AMT" />
+          <ScalarProperty Name="CHECK_NO" ColumnName="CHECK_NO" />
+          <ScalarProperty Name="CHECK_NAME" ColumnName="CHECK_NAME" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbtrphon">
+      <EntityTypeMapping TypeName="mlaMVC2.dbtrphon">
+        <MappingFragment StoreEntitySet="dbtrphon">
+          <ScalarProperty Name="DEBTOR_ID" ColumnName="DEBTOR_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="BUREAU_DBTRNAMEXPHON" ColumnName="BUREAU_DBTRNAMEXPHON" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbtrpost">
+      <EntityTypeMapping TypeName="mlaMVC2.dbtrpost">
+        <MappingFragment StoreEntitySet="dbtrpost">
+          <ScalarProperty Name="DEBTOR_ID" ColumnName="DEBTOR_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="POST_DATE" ColumnName="POST_DATE" />
+          <ScalarProperty Name="POST_AMT" ColumnName="POST_AMT" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbtrprom">
+      <EntityTypeMapping TypeName="mlaMVC2.dbtrprom">
+        <MappingFragment StoreEntitySet="dbtrprom">
+          <ScalarProperty Name="DEBTOR_ID" ColumnName="DEBTOR_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="PROM_DATE" ColumnName="PROM_DATE" />
+          <ScalarProperty Name="PROM_AMT" ColumnName="PROM_AMT" />
+          <ScalarProperty Name="PAID_AMT" ColumnName="PAID_AMT" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbtrrms">
+      <EntityTypeMapping TypeName="mlaMVC2.dbtrrms">
+        <MappingFragment StoreEntitySet="dbtrrms">
+          <ScalarProperty Name="DEBTOR_ID" ColumnName="DEBTOR_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="BANK_ID" ColumnName="BANK_ID" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="STATUS_DATE" ColumnName="STATUS_DATE" />
+          <ScalarProperty Name="TRANS_AMOUNT" ColumnName="TRANS_AMOUNT" />
+          <ScalarProperty Name="OUT_RECORD" ColumnName="OUT_RECORD" />
+          <ScalarProperty Name="PURGE" ColumnName="PURGE" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbtrsent">
+      <EntityTypeMapping TypeName="mlaMVC2.dbtrsent">
+        <MappingFragment StoreEntitySet="dbtrsent">
+          <ScalarProperty Name="DEBTOR_ID" ColumnName="DEBTOR_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="LETTER_ID" ColumnName="LETTER_ID" />
+          <ScalarProperty Name="SENT_DATE" ColumnName="SENT_DATE" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbtrudf">
+      <EntityTypeMapping TypeName="mlaMVC2.dbtrudf">
+        <MappingFragment StoreEntitySet="dbtrudf">
+          <ScalarProperty Name="DEBTOR_ID" ColumnName="DEBTOR_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="LABEL" ColumnName="LABEL" />
+          <ScalarProperty Name="DATE1" ColumnName="DATE1" />
+          <ScalarProperty Name="AMT" ColumnName="AMT" />
+          <ScalarProperty Name="LONGSTR" ColumnName="LONGSTR" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbtrxdbt">
+      <EntityTypeMapping TypeName="mlaMVC2.dbtrxdbt">
+        <MappingFragment StoreEntitySet="dbtrxdbt">
+          <ScalarProperty Name="DEBTOR_ID" ColumnName="DEBTOR_ID" />
+          <ScalarProperty Name="DEBT_ID" ColumnName="DEBT_ID" />
+          <ScalarProperty Name="DEBT_NO" ColumnName="DEBT_NO" />
+          <ScalarProperty Name="BUREAU_CODE" ColumnName="BUREAU_CODE" />
+          <ScalarProperty Name="BUREAU_DATE" ColumnName="BUREAU_DATE" />
+          <ScalarProperty Name="CHK_VER_CODE" ColumnName="CHK_VER_CODE" />
+          <ScalarProperty Name="CHK_VER_TRANSIT_NO" ColumnName="CHK_VER_TRANSIT_NO" />
+          <ScalarProperty Name="CHK_VER_ACCT_NO" ColumnName="CHK_VER_ACCT_NO" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="SCAN_STATUS" ColumnName="SCAN_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbtrxref">
+      <EntityTypeMapping TypeName="mlaMVC2.dbtrxref">
+        <MappingFragment StoreEntitySet="dbtrxref">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FIELDNAME" ColumnName="FIELDNAME" />
+          <ScalarProperty Name="FVALUE" ColumnName="FVALUE" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="debt">
+      <EntityTypeMapping TypeName="mlaMVC2.debt">
+        <MappingFragment StoreEntitySet="debt">
+          <ScalarProperty Name="DEBT_ID" ColumnName="DEBT_ID" />
+          <ScalarProperty Name="DEBT_NO" ColumnName="DEBT_NO" />
+          <ScalarProperty Name="CLT_ID" ColumnName="CLT_ID" />
+          <ScalarProperty Name="CLT_REF_NO" ColumnName="CLT_REF_NO" />
+          <ScalarProperty Name="ORIG_CLT" ColumnName="ORIG_CLT" />
+          <ScalarProperty Name="ENTERED_DATE" ColumnName="ENTERED_DATE" />
+          <ScalarProperty Name="LIST_DATE" ColumnName="LIST_DATE" />
+          <ScalarProperty Name="SERV_DATE" ColumnName="SERV_DATE" />
+          <ScalarProperty Name="LAST_CHARGE_DATE" ColumnName="LAST_CHARGE_DATE" />
+          <ScalarProperty Name="STATUTE_DATE" ColumnName="STATUTE_DATE" />
+          <ScalarProperty Name="DEBT_TYPE" ColumnName="DEBT_TYPE" />
+          <ScalarProperty Name="DEBT_DESCR" ColumnName="DEBT_DESCR" />
+          <ScalarProperty Name="COMMENTS" ColumnName="COMMENTS" />
+          <ScalarProperty Name="STATUS_CODE" ColumnName="STATUS_CODE" />
+          <ScalarProperty Name="STATUS_DATE" ColumnName="STATUS_DATE" />
+          <ScalarProperty Name="SALES_REP" ColumnName="SALES_REP" />
+          <ScalarProperty Name="BUREAU_REPORT" ColumnName="BUREAU_REPORT" />
+          <ScalarProperty Name="ORIG_PRINC_AMT" ColumnName="ORIG_PRINC_AMT" />
+          <ScalarProperty Name="PRINC_PAID" ColumnName="PRINC_PAID" />
+          <ScalarProperty Name="ADJUST_PRINC" ColumnName="ADJUST_PRINC" />
+          <ScalarProperty Name="ORIG_INT_AMT" ColumnName="ORIG_INT_AMT" />
+          <ScalarProperty Name="INT_PAID" ColumnName="INT_PAID" />
+          <ScalarProperty Name="ADJUST_INT" ColumnName="ADJUST_INT" />
+          <ScalarProperty Name="INT_RATE" ColumnName="INT_RATE" />
+          <ScalarProperty Name="INT_CALC_DATE" ColumnName="INT_CALC_DATE" />
+          <ScalarProperty Name="UNPAID_INT_ACCRUED" ColumnName="UNPAID_INT_ACCRUED" />
+          <ScalarProperty Name="DAILY_INT_AMT" ColumnName="DAILY_INT_AMT" />
+          <ScalarProperty Name="COLLPLAN_ID" ColumnName="COLLPLAN_ID" />
+          <ScalarProperty Name="FEEPLAN_ID" ColumnName="FEEPLAN_ID" />
+          <ScalarProperty Name="CONTPLAN_ID" ColumnName="CONTPLAN_ID" />
+          <ScalarProperty Name="PRIMARY_DEBTOR_ID" ColumnName="PRIMARY_DEBTOR_ID" />
+          <ScalarProperty Name="DELQ_DATE" ColumnName="DELQ_DATE" />
+          <ScalarProperty Name="REFERENCE_NO" ColumnName="REFERENCE_NO" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="POS_CLERK" ColumnName="POS_CLERK" />
+          <ScalarProperty Name="SECOND_DEPOSIT" ColumnName="SECOND_DEPOSIT" />
+          <ScalarProperty Name="UPDATE_FEES" ColumnName="UPDATE_FEES" />
+          <ScalarProperty Name="UDFPLAN_ID" ColumnName="UDFPLAN_ID" />
+          <ScalarProperty Name="DBTRUDFPLAN_ID" ColumnName="DBTRUDFPLAN_ID" />
+          <ScalarProperty Name="CHARGEOFF_DATE" ColumnName="CHARGEOFF_DATE" />
+          <ScalarProperty Name="LAST_ORIG_PMT_AMT" ColumnName="LAST_ORIG_PMT_AMT" />
+          <ScalarProperty Name="LAST_ORIG_PMT_DATE" ColumnName="LAST_ORIG_PMT_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="debt_bureau">
+      <EntityTypeMapping TypeName="mlaMVC2.debt_bureau">
+        <MappingFragment StoreEntitySet="debt_bureau">
+          <ScalarProperty Name="DEBT_ID" ColumnName="DEBT_ID" />
+          <ScalarProperty Name="DEBT_NO" ColumnName="DEBT_NO" />
+          <ScalarProperty Name="BUREAU_PORTFOLIO_IND" ColumnName="BUREAU_PORTFOLIO_IND" />
+          <ScalarProperty Name="BUREAU_PORTFOLIO_NAME" ColumnName="BUREAU_PORTFOLIO_NAME" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="debt2yy_view">
+      <EntityTypeMapping TypeName="mlaMVC2.debt2yy_view">
+        <MappingFragment StoreEntitySet="debt2yy_view">
+          <ScalarProperty Name="RECORD_ID" ColumnName="RECORD_ID" />
+          <ScalarProperty Name="COMPANY_ADDR1" ColumnName="COMPANY_ADDR1" />
+          <ScalarProperty Name="COMPANY_CITY_ST_ZIP" ColumnName="COMPANY_CITY_ST_ZIP" />
+          <ScalarProperty Name="COMPANY_PHONE" ColumnName="COMPANY_PHONE" />
+          <ScalarProperty Name="COMPANY_FAX" ColumnName="COMPANY_FAX" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="CONTACT_NAME" ColumnName="CONTACT_NAME" />
+          <ScalarProperty Name="ADDR1" ColumnName="ADDR1" />
+          <ScalarProperty Name="CITY_ST_ZIP" ColumnName="CITY_ST_ZIP" />
+          <ScalarProperty Name="CLT_ID" ColumnName="CLT_ID" />
+          <ScalarProperty Name="PRIMARY_SORT_NAME" ColumnName="PRIMARY_SORT_NAME" />
+          <ScalarProperty Name="CLT_REF_NO" ColumnName="CLT_REF_NO" />
+          <ScalarProperty Name="LIST_DATE" ColumnName="LIST_DATE" />
+          <ScalarProperty Name="ORIG_PRINC_AMT" ColumnName="ORIG_PRINC_AMT" />
+          <ScalarProperty Name="PRINC_PAID" ColumnName="PRINC_PAID" />
+          <ScalarProperty Name="PRINC_BAL" ColumnName="PRINC_BAL" />
+          <ScalarProperty Name="STATUS_DESCR" ColumnName="STATUS_DESCR" />
+          <ScalarProperty Name="CLT_NAME" ColumnName="CLT_NAME" />
+          <ScalarProperty Name="CLT_ADDR1" ColumnName="CLT_ADDR1" />
+          <ScalarProperty Name="CLT_CITY_ST_ZIP" ColumnName="CLT_CITY_ST_ZIP" />
+          <ScalarProperty Name="DEBT_ID" ColumnName="DEBT_ID" />
+          <ScalarProperty Name="DEBT_NO" ColumnName="DEBT_NO" />
+          <ScalarProperty Name="ORIG_CLT" ColumnName="ORIG_CLT" />
+          <ScalarProperty Name="ENTERED_DATE" ColumnName="ENTERED_DATE" />
+          <ScalarProperty Name="SERV_DATE" ColumnName="SERV_DATE" />
+          <ScalarProperty Name="LAST_CHARGE_DATE" ColumnName="LAST_CHARGE_DATE" />
+          <ScalarProperty Name="STATUTE_DATE" ColumnName="STATUTE_DATE" />
+          <ScalarProperty Name="DEBT_TYPE" ColumnName="DEBT_TYPE" />
+          <ScalarProperty Name="DEBT_DESCR" ColumnName="DEBT_DESCR" />
+          <ScalarProperty Name="COMMENTS" ColumnName="COMMENTS" />
+          <ScalarProperty Name="STATUS_CODE" ColumnName="STATUS_CODE" />
+          <ScalarProperty Name="STATUS_DATE" ColumnName="STATUS_DATE" />
+          <ScalarProperty Name="SALES_REP" ColumnName="SALES_REP" />
+          <ScalarProperty Name="BUREAU_REPORT" ColumnName="BUREAU_REPORT" />
+          <ScalarProperty Name="ADJUST_PRINC" ColumnName="ADJUST_PRINC" />
+          <ScalarProperty Name="ORIG_INT_AMT" ColumnName="ORIG_INT_AMT" />
+          <ScalarProperty Name="INT_PAID" ColumnName="INT_PAID" />
+          <ScalarProperty Name="ADJUST_INT" ColumnName="ADJUST_INT" />
+          <ScalarProperty Name="INT_RATE" ColumnName="INT_RATE" />
+          <ScalarProperty Name="INT_CALC_DATE" ColumnName="INT_CALC_DATE" />
+          <ScalarProperty Name="UNPAID_INT_ACCRUED" ColumnName="UNPAID_INT_ACCRUED" />
+          <ScalarProperty Name="DAILY_INT_AMT" ColumnName="DAILY_INT_AMT" />
+          <ScalarProperty Name="COLLPLAN_ID" ColumnName="COLLPLAN_ID" />
+          <ScalarProperty Name="FEEPLAN_ID" ColumnName="FEEPLAN_ID" />
+          <ScalarProperty Name="CONTPLAN_ID" ColumnName="CONTPLAN_ID" />
+          <ScalarProperty Name="PRIMARY_DEBTOR_ID" ColumnName="PRIMARY_DEBTOR_ID" />
+          <ScalarProperty Name="DELQ_DATE" ColumnName="DELQ_DATE" />
+          <ScalarProperty Name="REFERENCE_NO" ColumnName="REFERENCE_NO" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="POS_CLERK" ColumnName="POS_CLERK" />
+          <ScalarProperty Name="SECOND_DEPOSIT" ColumnName="SECOND_DEPOSIT" />
+          <ScalarProperty Name="UPDATE_FEES" ColumnName="UPDATE_FEES" />
+          <ScalarProperty Name="UDFPLAN_ID" ColumnName="UDFPLAN_ID" />
+          <ScalarProperty Name="DBTRUDFPLAN_ID" ColumnName="DBTRUDFPLAN_ID" />
+          <ScalarProperty Name="CHARGEOFF_DATE" ColumnName="CHARGEOFF_DATE" />
+          <ScalarProperty Name="LAST_ORIG_PMT_AMT" ColumnName="LAST_ORIG_PMT_AMT" />
+          <ScalarProperty Name="LAST_ORIG_PMT_DATE" ColumnName="LAST_ORIG_PMT_DATE" />
+          <ScalarProperty Name="ACA_MARKET" ColumnName="ACA_MARKET" />
+          <ScalarProperty Name="ACA_SERVICE" ColumnName="ACA_SERVICE" />
+          <ScalarProperty Name="DEBT_ID_NO" ColumnName="DEBT_ID_NO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="debtadj">
+      <EntityTypeMapping TypeName="mlaMVC2.debtadj">
+        <MappingFragment StoreEntitySet="debtadj">
+          <ScalarProperty Name="DEBT_ID" ColumnName="DEBT_ID" />
+          <ScalarProperty Name="DEBT_NO" ColumnName="DEBT_NO" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="ADJ_CODE" ColumnName="ADJ_CODE" />
+          <ScalarProperty Name="ADJ_AMT" ColumnName="ADJ_AMT" />
+          <ScalarProperty Name="ADJ_DATE" ColumnName="ADJ_DATE" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="debtfee">
+      <EntityTypeMapping TypeName="mlaMVC2.debtfee">
+        <MappingFragment StoreEntitySet="debtfee">
+          <ScalarProperty Name="DEBT_ID" ColumnName="DEBT_ID" />
+          <ScalarProperty Name="DEBT_NO" ColumnName="DEBT_NO" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="FEE_CODE" ColumnName="FEE_CODE" />
+          <ScalarProperty Name="FEE_AMT" ColumnName="FEE_AMT" />
+          <ScalarProperty Name="FEE_PAID" ColumnName="FEE_PAID" />
+          <ScalarProperty Name="ADJUST_FEE" ColumnName="ADJUST_FEE" />
+          <ScalarProperty Name="THIS_REBATE_PAID" ColumnName="THIS_REBATE_PAID" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="debtfwd">
+      <EntityTypeMapping TypeName="mlaMVC2.debtfwd">
+        <MappingFragment StoreEntitySet="debtfwd">
+          <ScalarProperty Name="DEBT_ID" ColumnName="DEBT_ID" />
+          <ScalarProperty Name="DEBT_NO" ColumnName="DEBT_NO" />
+          <ScalarProperty Name="FWD_ID" ColumnName="FWD_ID" />
+          <ScalarProperty Name="FWD_COLL_RATE" ColumnName="FWD_COLL_RATE" />
+          <ScalarProperty Name="FWD_DATE" ColumnName="FWD_DATE" />
+          <ScalarProperty Name="FWD_TEXT" ColumnName="FWD_TEXT" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="debtlgl">
+      <EntityTypeMapping TypeName="mlaMVC2.debtlgl">
+        <MappingFragment StoreEntitySet="debtlgl">
+          <ScalarProperty Name="DEBT_ID" ColumnName="DEBT_ID" />
+          <ScalarProperty Name="DEBT_NO" ColumnName="DEBT_NO" />
+          <ScalarProperty Name="LEGAL_DATE" ColumnName="LEGAL_DATE" />
+          <ScalarProperty Name="LEGAL_COUNTY" ColumnName="LEGAL_COUNTY" />
+          <ScalarProperty Name="LEGAL_COURT_CODE" ColumnName="LEGAL_COURT_CODE" />
+          <ScalarProperty Name="LEGAL_CASE_NO" ColumnName="LEGAL_CASE_NO" />
+          <ScalarProperty Name="LEGAL_INT" ColumnName="LEGAL_INT" />
+          <ScalarProperty Name="FILING_DATE" ColumnName="FILING_DATE" />
+          <ScalarProperty Name="PROCESS_DATE" ColumnName="PROCESS_DATE" />
+          <ScalarProperty Name="PROCESS_SERVER" ColumnName="PROCESS_SERVER" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="debttype">
+      <EntityTypeMapping TypeName="mlaMVC2.debttype">
+        <MappingFragment StoreEntitySet="debttype">
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="STATUTE_YEARS" ColumnName="STATUTE_YEARS" />
+          <ScalarProperty Name="ICON" ColumnName="ICON" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="DBTRUDFPLAN_ID" ColumnName="DBTRUDFPLAN_ID" />
+          <ScalarProperty Name="DEBTUDFPLAN_ID" ColumnName="DEBTUDFPLAN_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="debtudf">
+      <EntityTypeMapping TypeName="mlaMVC2.debtudf">
+        <MappingFragment StoreEntitySet="debtudf">
+          <ScalarProperty Name="DEBT_ID" ColumnName="DEBT_ID" />
+          <ScalarProperty Name="DEBT_NO" ColumnName="DEBT_NO" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="LABEL" ColumnName="LABEL" />
+          <ScalarProperty Name="DATE1" ColumnName="DATE1" />
+          <ScalarProperty Name="AMT" ColumnName="AMT" />
+          <ScalarProperty Name="LONGSTR" ColumnName="LONGSTR" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dialer_actions">
+      <EntityTypeMapping TypeName="mlaMVC2.dialer_actions">
+        <MappingFragment StoreEntitySet="dialer_actions">
+          <ScalarProperty Name="DIALER_TYPE" ColumnName="DIALER_TYPE" />
+          <ScalarProperty Name="RESULT" ColumnName="RESULT" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="ACTCODE_ID" ColumnName="ACTCODE_ID" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dst">
+      <EntityTypeMapping TypeName="mlaMVC2.dst">
+        <MappingFragment StoreEntitySet="dst">
+          <ScalarProperty Name="YEAR" ColumnName="YEAR" />
+          <ScalarProperty Name="UTA_DST_ON" ColumnName="UTA_DST_ON" />
+          <ScalarProperty Name="EURO_DST_ON" ColumnName="EURO_DST_ON" />
+          <ScalarProperty Name="DST_OFF" ColumnName="DST_OFF" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dsttype">
+      <EntityTypeMapping TypeName="mlaMVC2.dsttype">
+        <MappingFragment StoreEntitySet="dsttype">
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="eodlog">
+      <EntityTypeMapping TypeName="mlaMVC2.eodlog">
+        <MappingFragment StoreEntitySet="eodlog">
+          <ScalarProperty Name="EOD_DATE" ColumnName="EOD_DATE" />
+          <ScalarProperty Name="NEXT_WORK_DAY" ColumnName="NEXT_WORK_DAY" />
+          <ScalarProperty Name="STATION_SK" ColumnName="STATION_SK" />
+          <ScalarProperty Name="LOG" ColumnName="LOG" />
+          <ScalarProperty Name="MODULES" ColumnName="MODULES" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="eodproc">
+      <EntityTypeMapping TypeName="mlaMVC2.eodproc">
+        <MappingFragment StoreEntitySet="eodproc">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PROCESS" ColumnName="PROCESS" />
+          <ScalarProperty Name="SENDER" ColumnName="SENDER" />
+          <ScalarProperty Name="P1" ColumnName="P1" />
+          <ScalarProperty Name="P2" ColumnName="P2" />
+          <ScalarProperty Name="P3" ColumnName="P3" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="eodrep">
+      <EntityTypeMapping TypeName="mlaMVC2.eodrep">
+        <MappingFragment StoreEntitySet="eodrep">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="REPORTNAME" ColumnName="REPORTNAME" />
+          <ScalarProperty Name="RESPONSES" ColumnName="RESPONSES" />
+          <ScalarProperty Name="COPIES" ColumnName="COPIES" />
+          <ScalarProperty Name="PRINTER" ColumnName="PRINTER" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="FILENAME" ColumnName="FILENAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="feecode">
+      <EntityTypeMapping TypeName="mlaMVC2.feecode">
+        <MappingFragment StoreEntitySet="feecode">
+          <ScalarProperty Name="FEE_CODE_ID" ColumnName="FEE_CODE_ID" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="COLL_RATE" ColumnName="COLL_RATE" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="feepdet">
+      <EntityTypeMapping TypeName="mlaMVC2.feepdet">
+        <MappingFragment StoreEntitySet="feepdet">
+          <ScalarProperty Name="FEEPLAN_ID" ColumnName="FEEPLAN_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="FEE_CODE" ColumnName="FEE_CODE" />
+          <ScalarProperty Name="AMT" ColumnName="AMT" />
+          <ScalarProperty Name="AGE" ColumnName="AGE" />
+          <ScalarProperty Name="MIN" ColumnName="MIN" />
+          <ScalarProperty Name="MAX" ColumnName="MAX" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="feeplan">
+      <EntityTypeMapping TypeName="mlaMVC2.feeplan">
+        <MappingFragment StoreEntitySet="feeplan">
+          <ScalarProperty Name="FEEPLAN_ID" ColumnName="FEEPLAN_ID" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="holiday">
+      <EntityTypeMapping TypeName="mlaMVC2.holiday">
+        <MappingFragment StoreEntitySet="holiday">
+          <ScalarProperty Name="HOLIDAY_DATE" ColumnName="HOLIDAY_DATE" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ic_request">
+      <EntityTypeMapping TypeName="mlaMVC2.ic_request">
+        <MappingFragment StoreEntitySet="ic_request">
+          <ScalarProperty Name="REQUEST_TYPE" ColumnName="REQUEST_TYPE" />
+          <ScalarProperty Name="REQUEST_CODE" ColumnName="REQUEST_CODE" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="impfield">
+      <EntityTypeMapping TypeName="mlaMVC2.impfield">
+        <MappingFragment StoreEntitySet="impfield">
+          <ScalarProperty Name="IMPORT_ID" ColumnName="IMPORT_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="FIELD_NAME" ColumnName="FIELD_NAME" />
+          <ScalarProperty Name="LENGTH" ColumnName="LENGTH" />
+          <ScalarProperty Name="GROUP_ID" ColumnName="GROUP_ID" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="impgroup">
+      <EntityTypeMapping TypeName="mlaMVC2.impgroup">
+        <MappingFragment StoreEntitySet="impgroup">
+          <ScalarProperty Name="IMPORT_ID" ColumnName="IMPORT_ID" />
+          <ScalarProperty Name="GROUP_ID" ColumnName="GROUP_ID" />
+          <ScalarProperty Name="FILE" ColumnName="FILE" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="import">
+      <EntityTypeMapping TypeName="mlaMVC2.import">
+        <MappingFragment StoreEntitySet="import">
+          <ScalarProperty Name="IMPORT_ID" ColumnName="IMPORT_ID" />
+          <ScalarProperty Name="FILE" ColumnName="FILE" />
+          <ScalarProperty Name="DELIMITER" ColumnName="DELIMITER" />
+          <ScalarProperty Name="END_OF_REC_MARK" ColumnName="END_OF_REC_MARK" />
+          <ScalarProperty Name="HEADER" ColumnName="HEADER" />
+          <ScalarProperty Name="TRAILER" ColumnName="TRAILER" />
+          <ScalarProperty Name="IMPLIED_DECIMAL" ColumnName="IMPLIED_DECIMAL" />
+          <ScalarProperty Name="DATE_FORMAT" ColumnName="DATE_FORMAT" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="HEADER_LENGTH" ColumnName="HEADER_LENGTH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="indexing">
+      <EntityTypeMapping TypeName="mlaMVC2.indexing">
+        <MappingFragment StoreEntitySet="indexing">
+          <ScalarProperty Name="TABLENAME" ColumnName="TABLENAME" />
+          <ScalarProperty Name="SEARCHFIELDS" ColumnName="SEARCHFIELDS" />
+          <ScalarProperty Name="DISPLAYSQL" ColumnName="DISPLAYSQL" />
+          <ScalarProperty Name="CRITERIASQL" ColumnName="CRITERIASQL" />
+          <ScalarProperty Name="IDFIELD" ColumnName="IDFIELD" />
+          <ScalarProperty Name="SORTSTRING" ColumnName="SORTSTRING" />
+          <ScalarProperty Name="XREFFILENAME" ColumnName="XREFFILENAME" />
+          <ScalarProperty Name="XREFFIELDS" ColumnName="XREFFIELDS" />
+          <ScalarProperty Name="MASTERFIELDNAMES" ColumnName="MASTERFIELDNAMES" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="language">
+      <EntityTypeMapping TypeName="mlaMVC2.language">
+        <MappingFragment StoreEntitySet="language">
+          <ScalarProperty Name="LANGUAGE_ID" ColumnName="LANGUAGE_ID" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="letter">
+      <EntityTypeMapping TypeName="mlaMVC2.letter">
+        <MappingFragment StoreEntitySet="letter">
+          <ScalarProperty Name="LETTER_ID" ColumnName="LETTER_ID" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="DOCUMENT_NAME" ColumnName="DOCUMENT_NAME" />
+          <ScalarProperty Name="DATA_SOURCE" ColumnName="DATA_SOURCE" />
+          <ScalarProperty Name="DATA_FILE" ColumnName="DATA_FILE" />
+          <ScalarProperty Name="FORM_TYPE" ColumnName="FORM_TYPE" />
+          <ScalarProperty Name="SELECTED_FIELDS" ColumnName="SELECTED_FIELDS" />
+          <ScalarProperty Name="OUTSOURCE_ID" ColumnName="OUTSOURCE_ID" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="letter_state_sub">
+      <EntityTypeMapping TypeName="mlaMVC2.letter_state_sub">
+        <MappingFragment StoreEntitySet="letter_state_sub">
+          <ScalarProperty Name="LETTER_ID" ColumnName="LETTER_ID" />
+          <ScalarProperty Name="SUB_LETTER_ID" ColumnName="SUB_LETTER_ID" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="list_option">
+      <EntityTypeMapping TypeName="mlaMVC2.list_option">
+        <MappingFragment StoreEntitySet="list_option">
+          <ScalarProperty Name="OPT_ID" ColumnName="OPT_ID" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="CRITERIA" ColumnName="CRITERIA" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="listoptxwrk">
+      <EntityTypeMapping TypeName="mlaMVC2.listoptxwrk">
+        <MappingFragment StoreEntitySet="listoptxwrk">
+          <ScalarProperty Name="WORKLIST_ID" ColumnName="WORKLIST_ID" />
+          <ScalarProperty Name="LIST_OPTION_ID" ColumnName="LIST_OPTION_ID" />
+          <ScalarProperty Name="PRIORITY" ColumnName="PRIORITY" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="locktable">
+      <EntityTypeMapping TypeName="mlaMVC2.locktable">
+        <MappingFragment StoreEntitySet="locktable">
+          <ScalarProperty Name="TABLENAME" ColumnName="TABLENAME" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DB_ID" ColumnName="DB_ID" />
+          <ScalarProperty Name="COMPUTER_NAME" ColumnName="COMPUTER_NAME" />
+          <ScalarProperty Name="CONNECTION_NUMBER" ColumnName="CONNECTION_NUMBER" />
+          <ScalarProperty Name="HNDL" ColumnName="HNDL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ltrfield">
+      <EntityTypeMapping TypeName="mlaMVC2.ltrfield">
+        <MappingFragment StoreEntitySet="ltrfield">
+          <ScalarProperty Name="DATA_FILE" ColumnName="DATA_FILE" />
+          <ScalarProperty Name="FIELD_NAME" ColumnName="FIELD_NAME" />
+          <ScalarProperty Name="FIELD_FNCTN" ColumnName="FIELD_FNCTN" />
+          <ScalarProperty Name="FORMATTING_FNCTN" ColumnName="FORMATTING_FNCTN" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="matchprm">
+      <EntityTypeMapping TypeName="mlaMVC2.matchprm">
+        <MappingFragment StoreEntitySet="matchprm">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME_SCORE" ColumnName="NAME_SCORE" />
+          <ScalarProperty Name="SSN_SCORE" ColumnName="SSN_SCORE" />
+          <ScalarProperty Name="DL_SCORE" ColumnName="DL_SCORE" />
+          <ScalarProperty Name="PHONE_SCORE" ColumnName="PHONE_SCORE" />
+          <ScalarProperty Name="ADDRESS_SCORE" ColumnName="ADDRESS_SCORE" />
+          <ScalarProperty Name="DOB_SCORE" ColumnName="DOB_SCORE" />
+          <ScalarProperty Name="TOTAL_SCORE" ColumnName="TOTAL_SCORE" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="micrchk">
+      <EntityTypeMapping TypeName="mlaMVC2.micrchk">
+        <MappingFragment StoreEntitySet="micrchk">
+          <ScalarProperty Name="MICRCHK_ID" ColumnName="MICRCHK_ID" />
+          <ScalarProperty Name="MICR" ColumnName="MICR" />
+          <ScalarProperty Name="TRANSIT_NO" ColumnName="TRANSIT_NO" />
+          <ScalarProperty Name="ABA_NO" ColumnName="ABA_NO" />
+          <ScalarProperty Name="ACCT_NO" ColumnName="ACCT_NO" />
+          <ScalarProperty Name="CHECK_NO" ColumnName="CHECK_NO" />
+          <ScalarProperty Name="CHK_DATE" ColumnName="CHK_DATE" />
+          <ScalarProperty Name="CHK_AMT" ColumnName="CHK_AMT" />
+          <ScalarProperty Name="PAYER_NAME" ColumnName="PAYER_NAME" />
+          <ScalarProperty Name="PAYER_ADDR1" ColumnName="PAYER_ADDR1" />
+          <ScalarProperty Name="PAYER_ADDR2" ColumnName="PAYER_ADDR2" />
+          <ScalarProperty Name="PAYER_CITY" ColumnName="PAYER_CITY" />
+          <ScalarProperty Name="PAYER_ZIP" ColumnName="PAYER_ZIP" />
+          <ScalarProperty Name="PAYER_PHONE" ColumnName="PAYER_PHONE" />
+          <ScalarProperty Name="PAYEE_NAME" ColumnName="PAYEE_NAME" />
+          <ScalarProperty Name="PAYEE_ADDR1" ColumnName="PAYEE_ADDR1" />
+          <ScalarProperty Name="PAYEE_ADDR2" ColumnName="PAYEE_ADDR2" />
+          <ScalarProperty Name="PAYEE_CITY" ColumnName="PAYEE_CITY" />
+          <ScalarProperty Name="PAYEE_STATE" ColumnName="PAYEE_STATE" />
+          <ScalarProperty Name="PAYEE_ZIP" ColumnName="PAYEE_ZIP" />
+          <ScalarProperty Name="PAYEE_PHONE" ColumnName="PAYEE_PHONE" />
+          <ScalarProperty Name="BANK_NAME" ColumnName="BANK_NAME" />
+          <ScalarProperty Name="BANK_ADDR1" ColumnName="BANK_ADDR1" />
+          <ScalarProperty Name="BANK_ADDR2" ColumnName="BANK_ADDR2" />
+          <ScalarProperty Name="BANK_CITY" ColumnName="BANK_CITY" />
+          <ScalarProperty Name="BANK_ZIP" ColumnName="BANK_ZIP" />
+          <ScalarProperty Name="BANK_PHONE" ColumnName="BANK_PHONE" />
+          <ScalarProperty Name="SIG_TEXT" ColumnName="SIG_TEXT" />
+          <ScalarProperty Name="MEMO_TEXT" ColumnName="MEMO_TEXT" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="period">
+      <EntityTypeMapping TypeName="mlaMVC2.period">
+        <MappingFragment StoreEntitySet="period">
+          <ScalarProperty Name="PERIOD_YEAR" ColumnName="PERIOD_YEAR" />
+          <ScalarProperty Name="PERIOD1" ColumnName="PERIOD" />
+          <ScalarProperty Name="BEG_DATE" ColumnName="BEG_DATE" />
+          <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="peryear">
+      <EntityTypeMapping TypeName="mlaMVC2.peryear">
+        <MappingFragment StoreEntitySet="peryear">
+          <ScalarProperty Name="PERIOD_YEAR" ColumnName="PERIOD_YEAR" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pmt">
+      <EntityTypeMapping TypeName="mlaMVC2.pmt">
+        <MappingFragment StoreEntitySet="pmt">
+          <ScalarProperty Name="PMT_ID" ColumnName="PMT_ID" />
+          <ScalarProperty Name="PMTB_ID" ColumnName="PMTB_ID" />
+          <ScalarProperty Name="DEBT_ID" ColumnName="DEBT_ID" />
+          <ScalarProperty Name="DEBT_NO" ColumnName="DEBT_NO" />
+          <ScalarProperty Name="DEBTOR_ID" ColumnName="DEBTOR_ID" />
+          <ScalarProperty Name="CLT_ID" ColumnName="CLT_ID" />
+          <ScalarProperty Name="SALES_REP" ColumnName="SALES_REP" />
+          <ScalarProperty Name="PMT_DATE" ColumnName="PMT_DATE" />
+          <ScalarProperty Name="PMT_CODE" ColumnName="PMT_CODE" />
+          <ScalarProperty Name="DIRECT" ColumnName="DIRECT" />
+          <ScalarProperty Name="CHECK_NO" ColumnName="CHECK_NO" />
+          <ScalarProperty Name="COLLPLAN_ID" ColumnName="COLLPLAN_ID" />
+          <ScalarProperty Name="TRUST_POST_PERIOD" ColumnName="TRUST_POST_PERIOD" />
+          <ScalarProperty Name="OVERPMT" ColumnName="OVERPMT" />
+          <ScalarProperty Name="OTHER_AGENCY_FEE" ColumnName="OTHER_AGENCY_FEE" />
+          <ScalarProperty Name="PRINC_AMT" ColumnName="PRINC_AMT" />
+          <ScalarProperty Name="CLT_PRINC_AMT" ColumnName="CLT_PRINC_AMT" />
+          <ScalarProperty Name="INT_AMT" ColumnName="INT_AMT" />
+          <ScalarProperty Name="SHOW_INT_AMT" ColumnName="SHOW_INT_AMT" />
+          <ScalarProperty Name="CLT_INT_AMT" ColumnName="CLT_INT_AMT" />
+          <ScalarProperty Name="FEE_AMT" ColumnName="FEE_AMT" />
+          <ScalarProperty Name="SHOW_FEE_AMT" ColumnName="SHOW_FEE_AMT" />
+          <ScalarProperty Name="CLT_FEE_AMT" ColumnName="CLT_FEE_AMT" />
+          <ScalarProperty Name="REBATE_AMT" ColumnName="REBATE_AMT" />
+          <ScalarProperty Name="SALES_TAX_AMT" ColumnName="SALES_TAX_AMT" />
+          <ScalarProperty Name="BACKOUT_ID" ColumnName="BACKOUT_ID" />
+          <ScalarProperty Name="TRUST_POST_SUB_PERIOD" ColumnName="TRUST_POST_SUB_PERIOD" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="UNSHARED_INT_AMT" ColumnName="UNSHARED_INT_AMT" />
+          <ScalarProperty Name="UNSHARED_FEE_AMT" ColumnName="UNSHARED_FEE_AMT" />
+          <ScalarProperty Name="POSTED_DATE" ColumnName="POSTED_DATE" />
+          <ScalarProperty Name="WORKLIST_ID" ColumnName="WORKLIST_ID" />
+          <ScalarProperty Name="SESSION_ID" ColumnName="SESSION_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pmt_post_session">
+      <EntityTypeMapping TypeName="mlaMVC2.pmt_post_session">
+        <MappingFragment StoreEntitySet="pmt_post_session">
+          <ScalarProperty Name="SESSION_ID" ColumnName="SESSION_ID" />
+          <ScalarProperty Name="SESSION_DATE_TIME" ColumnName="SESSION_DATE_TIME" />
+          <ScalarProperty Name="POSTING_USER" ColumnName="POSTING_USER" />
+          <ScalarProperty Name="COMPUTER_NAME" ColumnName="COMPUTER_NAME" />
+          <ScalarProperty Name="SESSION_NUMBER" ColumnName="SESSION_NUMBER" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pmtb">
+      <EntityTypeMapping TypeName="mlaMVC2.pmtb">
+        <MappingFragment StoreEntitySet="pmtb">
+          <ScalarProperty Name="PMTB_ID" ColumnName="PMTB_ID" />
+          <ScalarProperty Name="CHECK_NO" ColumnName="CHECK_NO" />
+          <ScalarProperty Name="PMT_CODE" ColumnName="PMT_CODE" />
+          <ScalarProperty Name="PMT_AMT" ColumnName="PMT_AMT" />
+          <ScalarProperty Name="OTHER_AGENCY_FEE" ColumnName="OTHER_AGENCY_FEE" />
+          <ScalarProperty Name="APPLIED_AMT" ColumnName="APPLIED_AMT" />
+          <ScalarProperty Name="DEBTOR_ID" ColumnName="DEBTOR_ID" />
+          <ScalarProperty Name="OTHER_AGENCY_ID" ColumnName="OTHER_AGENCY_ID" />
+          <ScalarProperty Name="PAYER_NAME" ColumnName="PAYER_NAME" />
+          <ScalarProperty Name="PAYER_ADDR1" ColumnName="PAYER_ADDR1" />
+          <ScalarProperty Name="PAYER_ADDR2" ColumnName="PAYER_ADDR2" />
+          <ScalarProperty Name="PAYER_CITY" ColumnName="PAYER_CITY" />
+          <ScalarProperty Name="PAYER_ZIP" ColumnName="PAYER_ZIP" />
+          <ScalarProperty Name="PAYER_DATE" ColumnName="PAYER_DATE" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="PMTB_USER" ColumnName="PMTB_USER" />
+          <ScalarProperty Name="MICR" ColumnName="MICR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pmtbdebt">
+      <EntityTypeMapping TypeName="mlaMVC2.pmtbdebt">
+        <MappingFragment StoreEntitySet="pmtbdebt">
+          <ScalarProperty Name="PMTB_ID" ColumnName="PMTB_ID" />
+          <ScalarProperty Name="DEBT_ID" ColumnName="DEBT_ID" />
+          <ScalarProperty Name="DEBT_NO" ColumnName="DEBT_NO" />
+          <ScalarProperty Name="PMT_DATE" ColumnName="PMT_DATE" />
+          <ScalarProperty Name="PRINC_AMT" ColumnName="PRINC_AMT" />
+          <ScalarProperty Name="INT_AMT" ColumnName="INT_AMT" />
+          <ScalarProperty Name="FEE_AMT" ColumnName="FEE_AMT" />
+          <ScalarProperty Name="NEW_STATUS" ColumnName="NEW_STATUS" />
+          <ScalarProperty Name="BACKOUT_ID" ColumnName="BACKOUT_ID" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pmtbfee">
+      <EntityTypeMapping TypeName="mlaMVC2.pmtbfee">
+        <MappingFragment StoreEntitySet="pmtbfee">
+          <ScalarProperty Name="PMTB_ID" ColumnName="PMTB_ID" />
+          <ScalarProperty Name="DEBT_ID" ColumnName="DEBT_ID" />
+          <ScalarProperty Name="DEBT_NO" ColumnName="DEBT_NO" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="FEE_CODE" ColumnName="FEE_CODE" />
+          <ScalarProperty Name="THIS_FEE_AMT" ColumnName="THIS_FEE_AMT" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pmtcode">
+      <EntityTypeMapping TypeName="mlaMVC2.pmtcode">
+        <MappingFragment StoreEntitySet="pmtcode">
+          <ScalarProperty Name="PMT_CODE" ColumnName="PMT_CODE" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pmtfee">
+      <EntityTypeMapping TypeName="mlaMVC2.pmtfee">
+        <MappingFragment StoreEntitySet="pmtfee">
+          <ScalarProperty Name="PMT_ID" ColumnName="PMT_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="FEE_CODE" ColumnName="FEE_CODE" />
+          <ScalarProperty Name="THIS_FEE_AMT" ColumnName="THIS_FEE_AMT" />
+          <ScalarProperty Name="THIS_SHOW_FEE_AMT" ColumnName="THIS_SHOW_FEE_AMT" />
+          <ScalarProperty Name="THIS_CLT_FEE_AMT" ColumnName="THIS_CLT_FEE_AMT" />
+          <ScalarProperty Name="THIS_REBATE_AMT" ColumnName="THIS_REBATE_AMT" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pmtuser">
+      <EntityTypeMapping TypeName="mlaMVC2.pmtuser">
+        <MappingFragment StoreEntitySet="pmtuser">
+          <ScalarProperty Name="PMT_ID" ColumnName="PMT_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="LIST_TYPE" ColumnName="LIST_TYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rms_archive">
+      <EntityTypeMapping TypeName="mlaMVC2.rms_archive">
+        <MappingFragment StoreEntitySet="rms_archive">
+          <ScalarProperty Name="FILE_DATE" ColumnName="FILE_DATE" />
+          <ScalarProperty Name="FILE_NAME" ColumnName="FILE_NAME" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rms_code">
+      <EntityTypeMapping TypeName="mlaMVC2.rms_code">
+        <MappingFragment StoreEntitySet="rms_code">
+          <ScalarProperty Name="BANK_ID" ColumnName="BANK_ID" />
+          <ScalarProperty Name="CODE_TYPE" ColumnName="CODE_TYPE" />
+          <ScalarProperty Name="FROM_CODE" ColumnName="FROM_CODE" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="TO_CODE" ColumnName="TO_CODE" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rmsbank">
+      <EntityTypeMapping TypeName="mlaMVC2.rmsbank">
+        <MappingFragment StoreEntitySet="rmsbank">
+          <ScalarProperty Name="BANK_ID" ColumnName="BANK_ID" />
+          <ScalarProperty Name="BANK_NAME" ColumnName="BANK_NAME" />
+          <ScalarProperty Name="CLT_ID" ColumnName="CLT_ID" />
+          <ScalarProperty Name="MAX_AGE" ColumnName="MAX_AGE" />
+          <ScalarProperty Name="CLOSING_STATUS" ColumnName="CLOSING_STATUS" />
+          <ScalarProperty Name="INFO_REQUESTED_WORKLIST" ColumnName="INFO_REQUESTED_WORKLIST" />
+          <ScalarProperty Name="COLLPLAN_ID" ColumnName="COLLPLAN_ID" />
+          <ScalarProperty Name="CONTPLAN_ID" ColumnName="CONTPLAN_ID" />
+          <ScalarProperty Name="ORIG_CLT" ColumnName="ORIG_CLT" />
+          <ScalarProperty Name="DEBT_TYPE" ColumnName="DEBT_TYPE" />
+          <ScalarProperty Name="FEEPLAN_ID" ColumnName="FEEPLAN_ID" />
+          <ScalarProperty Name="STATUS_CODE" ColumnName="STATUS_CODE" />
+          <ScalarProperty Name="PRIORITY" ColumnName="PRIORITY" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="salesrep">
+      <EntityTypeMapping TypeName="mlaMVC2.salesrep">
+        <MappingFragment StoreEntitySet="salesrep">
+          <ScalarProperty Name="SALES_REP_ID" ColumnName="SALES_REP_ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="TERRITORY" ColumnName="TERRITORY" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="scanout">
+      <EntityTypeMapping TypeName="mlaMVC2.scanout">
+        <MappingFragment StoreEntitySet="scanout">
+          <ScalarProperty Name="DEBTOR_ID" ColumnName="DEBTOR_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="TRANSACTION_DATE" ColumnName="TRANSACTION_DATE" />
+          <ScalarProperty Name="DEBT_ID" ColumnName="DEBT_ID" />
+          <ScalarProperty Name="DEBT_NO" ColumnName="DEBT_NO" />
+          <ScalarProperty Name="OUT_RECORD" ColumnName="OUT_RECORD" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sentltr">
+      <EntityTypeMapping TypeName="mlaMVC2.sentltr">
+        <MappingFragment StoreEntitySet="sentltr">
+          <ScalarProperty Name="SENT_LTR_ID" ColumnName="SENT_LTR_ID" />
+          <ScalarProperty Name="LETTER_DATE" ColumnName="LETTER_DATE" />
+          <ScalarProperty Name="DEBTOR_ID" ColumnName="DEBTOR_ID" />
+          <ScalarProperty Name="LETTER_ID" ColumnName="LETTER_ID" />
+          <ScalarProperty Name="DEBT_ID" ColumnName="DEBT_ID" />
+          <ScalarProperty Name="DEBT_NO" ColumnName="DEBT_NO" />
+          <ScalarProperty Name="LETTER_ADDR" ColumnName="LETTER_ADDR" />
+          <ScalarProperty Name="ADDR1" ColumnName="ADDR1" />
+          <ScalarProperty Name="ADDR2" ColumnName="ADDR2" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="ZIP" ColumnName="ZIP" />
+          <ScalarProperty Name="FORM_TYPE" ColumnName="FORM_TYPE" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sk">
+      <EntityTypeMapping TypeName="mlaMVC2.sk">
+        <MappingFragment StoreEntitySet="sk">
+          <ScalarProperty Name="FILENAME" ColumnName="FILENAME" />
+          <ScalarProperty Name="NEXT_ID" ColumnName="NEXT_ID" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="st_options">
+      <EntityTypeMapping TypeName="mlaMVC2.st_options">
+        <MappingFragment StoreEntitySet="st_options">
+          <ScalarProperty Name="ST_OPTIONS_ID" ColumnName="ST_OPTIONS_ID" />
+          <ScalarProperty Name="ST_OPTIONS1" ColumnName="ST_OPTIONS" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="statcode">
+      <EntityTypeMapping TypeName="mlaMVC2.statcode">
+        <MappingFragment StoreEntitySet="statcode">
+          <ScalarProperty Name="STATCODE_ID" ColumnName="STATCODE_ID" />
+          <ScalarProperty Name="ABBREV" ColumnName="ABBREV" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="storegrp">
+      <EntityTypeMapping TypeName="mlaMVC2.storegrp">
+        <MappingFragment StoreEntitySet="storegrp">
+          <ScalarProperty Name="STORE_GROUP" ColumnName="STORE_GROUP" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stuser">
+      <EntityTypeMapping TypeName="mlaMVC2.stuser">
+        <MappingFragment StoreEntitySet="stuser">
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="ST_PASSWORD" ColumnName="ST_PASSWORD" />
+          <ScalarProperty Name="CLT_IDS" ColumnName="CLT_IDS" />
+          <ScalarProperty Name="MENUGRANTS" ColumnName="MENUGRANTS" />
+          <ScalarProperty Name="WINDOWROGRANTS" ColumnName="WINDOWROGRANTS" />
+          <ScalarProperty Name="WINDOWSETTINGS" ColumnName="WINDOWSETTINGS" />
+          <ScalarProperty Name="COLLECTORDETWINS" ColumnName="COLLECTORDETWINS" />
+          <ScalarProperty Name="LABOR_TYPE" ColumnName="LABOR_TYPE" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="THIN_CLT_LOCATION" ColumnName="THIN_CLT_LOCATION" />
+          <ScalarProperty Name="THIN_CLT_TIMEZONE" ColumnName="THIN_CLT_TIMEZONE" />
+          <ScalarProperty Name="THIN_CLT_DELTA" ColumnName="THIN_CLT_DELTA" />
+          <ScalarProperty Name="TEMPLATE_ID" ColumnName="TEMPLATE_ID" />
+          <ScalarProperty Name="TEAM" ColumnName="TEAM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="template">
+      <EntityTypeMapping TypeName="mlaMVC2.template">
+        <MappingFragment StoreEntitySet="template">
+          <ScalarProperty Name="TMP_ID" ColumnName="TMP_ID" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="COLLDETWINS" ColumnName="COLLDETWINS" />
+          <ScalarProperty Name="WINDOWSETTINGS" ColumnName="WINDOWSETTINGS" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="test">
+      <EntityTypeMapping TypeName="mlaMVC2.test">
+        <MappingFragment StoreEntitySet="test">
+          <ScalarProperty Name="Record" ColumnName="Record" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tz">
+      <EntityTypeMapping TypeName="mlaMVC2.tz">
+        <MappingFragment StoreEntitySet="tz">
+          <ScalarProperty Name="TZ_ID" ColumnName="TZ_ID" />
+          <ScalarProperty Name="ABBREV" ColumnName="ABBREV" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="UTC_DELTA" ColumnName="UTC_DELTA" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tzdet">
+      <EntityTypeMapping TypeName="mlaMVC2.tzdet">
+        <MappingFragment StoreEntitySet="tzdet">
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="TZ_ID" ColumnName="TZ_ID" />
+          <ScalarProperty Name="DST_TYPE" ColumnName="DST_TYPE" />
+          <ScalarProperty Name="ABBREV" ColumnName="ABBREV" />
+          <ScalarProperty Name="BEGIN_DT" ColumnName="BEGIN_DT" />
+          <ScalarProperty Name="END_DT" ColumnName="END_DT" />
+          <ScalarProperty Name="DST_DELTA" ColumnName="DST_DELTA" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="udfcode">
+      <EntityTypeMapping TypeName="mlaMVC2.udfcode">
+        <MappingFragment StoreEntitySet="udfcode">
+          <ScalarProperty Name="LABEL" ColumnName="LABEL" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="MASK" ColumnName="MASK" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="SORT_VALUE" ColumnName="SORT_VALUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="udfpdet">
+      <EntityTypeMapping TypeName="mlaMVC2.udfpdet">
+        <MappingFragment StoreEntitySet="udfpdet">
+          <ScalarProperty Name="UDFPLAN_ID" ColumnName="UDFPLAN_ID" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="LABEL" ColumnName="LABEL" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="udfplan">
+      <EntityTypeMapping TypeName="mlaMVC2.udfplan">
+        <MappingFragment StoreEntitySet="udfplan">
+          <ScalarProperty Name="UDFPLAN_ID" ColumnName="UDFPLAN_ID" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="udftype">
+      <EntityTypeMapping TypeName="mlaMVC2.udftype">
+        <MappingFragment StoreEntitySet="udftype">
+          <ScalarProperty Name="UDF_TYPE" ColumnName="UDF_TYPE" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ul_connection_script">
+      <EntityTypeMapping TypeName="mlaMVC2.ul_connection_script">
+        <MappingFragment StoreEntitySet="ul_connection_script">
+          <ScalarProperty Name="event" ColumnName="event" />
+          <ScalarProperty Name="script_id" ColumnName="script_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ul_script">
+      <EntityTypeMapping TypeName="mlaMVC2.ul_script">
+        <MappingFragment StoreEntitySet="ul_script">
+          <ScalarProperty Name="script_id" ColumnName="script_id" />
+          <ScalarProperty Name="script" ColumnName="script" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ul_scripts_modified">
+      <EntityTypeMapping TypeName="mlaMVC2.ul_scripts_modified">
+        <MappingFragment StoreEntitySet="ul_scripts_modified">
+          <ScalarProperty Name="last_modified" ColumnName="last_modified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ul_table">
+      <EntityTypeMapping TypeName="mlaMVC2.ul_table">
+        <MappingFragment StoreEntitySet="ul_table">
+          <ScalarProperty Name="table_id" ColumnName="table_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ul_table_script">
+      <EntityTypeMapping TypeName="mlaMVC2.ul_table_script">
+        <MappingFragment StoreEntitySet="ul_table_script">
+          <ScalarProperty Name="table_id" ColumnName="table_id" />
+          <ScalarProperty Name="event" ColumnName="event" />
+          <ScalarProperty Name="script_id" ColumnName="script_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ul_user">
+      <EntityTypeMapping TypeName="mlaMVC2.ul_user">
+        <MappingFragment StoreEntitySet="ul_user">
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="commit_state" ColumnName="commit_state" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="userstat">
+      <EntityTypeMapping TypeName="mlaMVC2.userstat">
+        <MappingFragment StoreEntitySet="userstat">
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="STAT_DATE" ColumnName="STAT_DATE" />
+          <ScalarProperty Name="WORKED" ColumnName="WORKED" />
+          <ScalarProperty Name="TOTAL_TIME" ColumnName="TOTAL_TIME" />
+          <ScalarProperty Name="LETTERS" ColumnName="LETTERS" />
+          <ScalarProperty Name="PROMISES" ColumnName="PROMISES" />
+          <ScalarProperty Name="POST_DATES" ColumnName="POST_DATES" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="userxsales">
+      <EntityTypeMapping TypeName="mlaMVC2.userxsales">
+        <MappingFragment StoreEntitySet="userxsales">
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="SALES_REP_ID" ColumnName="SALES_REP_ID" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="userxwrk">
+      <EntityTypeMapping TypeName="mlaMVC2.userxwrk">
+        <MappingFragment StoreEntitySet="userxwrk">
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="WORKLIST_ID" ColumnName="WORKLIST_ID" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vend">
+      <EntityTypeMapping TypeName="mlaMVC2.vend">
+        <MappingFragment StoreEntitySet="vend">
+          <ScalarProperty Name="VEND_ID" ColumnName="VEND_ID" />
+          <ScalarProperty Name="COMPANY" ColumnName="COMPANY" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ADDR1" ColumnName="ADDR1" />
+          <ScalarProperty Name="ADDR2" ColumnName="ADDR2" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="ZIP" ColumnName="ZIP" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+          <ScalarProperty Name="COMMENTS" ColumnName="COMMENTS" />
+          <ScalarProperty Name="TAX_ID" ColumnName="TAX_ID" />
+          <ScalarProperty Name="ACCT_REF_NO" ColumnName="ACCT_REF_NO" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vendamt">
+      <EntityTypeMapping TypeName="mlaMVC2.vendamt">
+        <MappingFragment StoreEntitySet="vendamt">
+          <ScalarProperty Name="VEND_ID" ColumnName="VEND_ID" />
+          <ScalarProperty Name="VEND_YEAR" ColumnName="VEND_YEAR" />
+          <ScalarProperty Name="AMT" ColumnName="AMT" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="worklist">
+      <EntityTypeMapping TypeName="mlaMVC2.worklist">
+        <MappingFragment StoreEntitySet="worklist">
+          <ScalarProperty Name="WORKLIST_ID" ColumnName="WORKLIST_ID" />
+          <ScalarProperty Name="ALIAS" ColumnName="ALIAS" />
+          <ScalarProperty Name="WORKLIST_TYPE" ColumnName="WORKLIST_TYPE" />
+          <ScalarProperty Name="LANGUAGE" ColumnName="LANGUAGE" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zip">
+      <EntityTypeMapping TypeName="mlaMVC2.zip">
+        <MappingFragment StoreEntitySet="zip">
+          <ScalarProperty Name="ZIP1" ColumnName="ZIP" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+          <ScalarProperty Name="USER_ID_STAMP" ColumnName="USER_ID_STAMP" />
+          <ScalarProperty Name="TIMEZONE" ColumnName="TIMEZONE" />
+          <ScalarProperty Name="DST_TYPE" ColumnName="DST_TYPE" />
+          <ScalarProperty Name="COUNTY" ColumnName="COUNTY" />
+          <ScalarProperty Name="COUNTRY" ColumnName="COUNTRY" />
+          <ScalarProperty Name="AREA_CODE" ColumnName="AREA_CODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

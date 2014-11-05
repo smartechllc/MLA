@@ -1,0 +1,2716 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model1Model.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="Model1ModelStoreContainer">
+    <EntitySet Name="accurint_batch_setup" EntityType="Model1Model.Store.accurint_batch_setup" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="actcode" EntityType="Model1Model.Store.actcode" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="actcode_ltr" EntityType="Model1Model.Store.actcode_ltr" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="action_sched" EntityType="Model1Model.Store.action_sched" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="action_setup" EntityType="Model1Model.Store.action_setup" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="aic_code" EntityType="Model1Model.Store.aic_code" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="aic_request" EntityType="Model1Model.Store.aic_request" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="aj" EntityType="Model1Model.Store.aj" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="ajdet" EntityType="Model1Model.Store.ajdet" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="ap" EntityType="Model1Model.Store.ap" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="apdet" EntityType="Model1Model.Store.apdet" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="apidesc" EntityType="Model1Model.Store.apidesc" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="ar" EntityType="Model1Model.Store.ar" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="ardet" EntityType="Model1Model.Store.ardet" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="assign" EntityType="Model1Model.Store.assign" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="att" EntityType="Model1Model.Store.att" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="bank" EntityType="Model1Model.Store.bank" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="bankdups" EntityType="Model1Model.Store.bankdups" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="bnchmrk" EntityType="Model1Model.Store.bnchmrk" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="bureau_options" EntityType="Model1Model.Store.bureau_options" store:Type="Tables" store:Schema="test" store:Name="bureau_options" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator">
+      <DefiningQuery>SELECT
+`bureau_options`.`BUREAU_ID`, 
+`bureau_options`.`CTRL_NO`, 
+`bureau_options`.`TIME_STAMP`, 
+`bureau_options`.`USER_ID_STAMP`, 
+`bureau_options`.`CREDIT_GRANTOR_CODE`, 
+`bureau_options`.`REPORTER_NAME`, 
+`bureau_options`.`REPORTER_FULL_ADDR`, 
+`bureau_options`.`REPORTER_PHONE`, 
+`bureau_options`.`ID_NO`
+FROM `bureau_options` AS `bureau_options`</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="cbinqdepts" EntityType="Model1Model.Store.cbinqdepts" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="cbinqfields" EntityType="Model1Model.Store.cbinqfields" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="chart" EntityType="Model1Model.Store.chart" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="checkver" EntityType="Model1Model.Store.checkver" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="chkverreason" EntityType="Model1Model.Store.chkverreason" store:Type="Tables" store:Schema="test" store:Name="chkverreason" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator">
+      <DefiningQuery>SELECT
+`chkverreason`.`CHKVER_COMPANY`, 
+`chkverreason`.`DESCR`, 
+`chkverreason`.`TIME_STAMP`, 
+`chkverreason`.`USER_ID_STAMP`
+FROM `chkverreason` AS `chkverreason`</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="clt" EntityType="Model1Model.Store.clt" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="clt_online" EntityType="Model1Model.Store.clt_online" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="clt230_view" EntityType="Model1Model.Store.clt230_view" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="cltact" EntityType="Model1Model.Store.cltact" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="cltapprovedltr" EntityType="Model1Model.Store.cltapprovedltr" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="cltltr" EntityType="Model1Model.Store.cltltr" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="cltphon" EntityType="Model1Model.Store.cltphon" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="cltrcvr" EntityType="Model1Model.Store.cltrcvr" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="clttrust" EntityType="Model1Model.Store.clttrust" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="clttrust_historical" EntityType="Model1Model.Store.clttrust_historical" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="clttype" EntityType="Model1Model.Store.clttype" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="cltudf" EntityType="Model1Model.Store.cltudf" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="cltxref" EntityType="Model1Model.Store.cltxref" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="coa" EntityType="Model1Model.Store.coa" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="coadet" EntityType="Model1Model.Store.coadet" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="collpdet" EntityType="Model1Model.Store.collpdet" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="collplan" EntityType="Model1Model.Store.collplan" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="contpdet" EntityType="Model1Model.Store.contpdet" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="contplan" EntityType="Model1Model.Store.contplan" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="costs" EntityType="Model1Model.Store.costs" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="courtcod" EntityType="Model1Model.Store.courtcod" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="credit_bureau" EntityType="Model1Model.Store.credit_bureau" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="dbtr" EntityType="Model1Model.Store.dbtr" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="dbtract" EntityType="Model1Model.Store.dbtract" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="dbtraddr" EntityType="Model1Model.Store.dbtraddr" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="dbtraic" EntityType="Model1Model.Store.dbtraic" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="dbtraka" EntityType="Model1Model.Store.dbtraka" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="dbtrapi" EntityType="Model1Model.Store.dbtrapi" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="dbtrbank" EntityType="Model1Model.Store.dbtrbank" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="dbtrcbinq" EntityType="Model1Model.Store.dbtrcbinq" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="dbtrctc" EntityType="Model1Model.Store.dbtrctc" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="dbtrdial" EntityType="Model1Model.Store.dbtrdial" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="dbtrdup" EntityType="Model1Model.Store.dbtrdup" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="dbtremp" EntityType="Model1Model.Store.dbtremp" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="dbtrltr" EntityType="Model1Model.Store.dbtrltr" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="dbtrold" EntityType="Model1Model.Store.dbtrold" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="dbtrpaym" EntityType="Model1Model.Store.dbtrpaym" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="dbtrphon" EntityType="Model1Model.Store.dbtrphon" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="dbtrpost" EntityType="Model1Model.Store.dbtrpost" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="dbtrprom" EntityType="Model1Model.Store.dbtrprom" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="dbtrrms" EntityType="Model1Model.Store.dbtrrms" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="dbtrsent" EntityType="Model1Model.Store.dbtrsent" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="dbtrudf" EntityType="Model1Model.Store.dbtrudf" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="dbtrxdbt" EntityType="Model1Model.Store.dbtrxdbt" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="dbtrxref" EntityType="Model1Model.Store.dbtrxref" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="debt" EntityType="Model1Model.Store.debt" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="debt_bureau" EntityType="Model1Model.Store.debt_bureau" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="debt2yy_view" EntityType="Model1Model.Store.debt2yy_view" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="debtadj" EntityType="Model1Model.Store.debtadj" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="debtfee" EntityType="Model1Model.Store.debtfee" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="debtfwd" EntityType="Model1Model.Store.debtfwd" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="debtlgl" EntityType="Model1Model.Store.debtlgl" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="debttype" EntityType="Model1Model.Store.debttype" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="debtudf" EntityType="Model1Model.Store.debtudf" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="dialer_actions" EntityType="Model1Model.Store.dialer_actions" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="dst" EntityType="Model1Model.Store.dst" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="dsttype" EntityType="Model1Model.Store.dsttype" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="eodlog" EntityType="Model1Model.Store.eodlog" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="eodproc" EntityType="Model1Model.Store.eodproc" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="eodrep" EntityType="Model1Model.Store.eodrep" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="feecode" EntityType="Model1Model.Store.feecode" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="feepdet" EntityType="Model1Model.Store.feepdet" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="feeplan" EntityType="Model1Model.Store.feeplan" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="holiday" EntityType="Model1Model.Store.holiday" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="ic_request" EntityType="Model1Model.Store.ic_request" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="impfield" EntityType="Model1Model.Store.impfield" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="impgroup" EntityType="Model1Model.Store.impgroup" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="import" EntityType="Model1Model.Store.import" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="indexing" EntityType="Model1Model.Store.indexing" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="language" EntityType="Model1Model.Store.language" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="letter" EntityType="Model1Model.Store.letter" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="letter_state_sub" EntityType="Model1Model.Store.letter_state_sub" store:Type="Tables" store:Schema="test" store:Name="letter_state_sub" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator">
+      <DefiningQuery>SELECT
+`letter_state_sub`.`LETTER_ID`, 
+`letter_state_sub`.`SUB_LETTER_ID`, 
+`letter_state_sub`.`USER_ID_STAMP`, 
+`letter_state_sub`.`TIME_STAMP`
+FROM `letter_state_sub` AS `letter_state_sub`</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="list_option" EntityType="Model1Model.Store.list_option" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="listoptxwrk" EntityType="Model1Model.Store.listoptxwrk" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="locktable" EntityType="Model1Model.Store.locktable" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="ltrfield" EntityType="Model1Model.Store.ltrfield" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="matchprm" EntityType="Model1Model.Store.matchprm" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="micrchk" EntityType="Model1Model.Store.micrchk" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="period" EntityType="Model1Model.Store.period" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="peryear" EntityType="Model1Model.Store.peryear" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="pmt" EntityType="Model1Model.Store.pmt" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="pmt_post_session" EntityType="Model1Model.Store.pmt_post_session" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="pmtb" EntityType="Model1Model.Store.pmtb" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="pmtbdebt" EntityType="Model1Model.Store.pmtbdebt" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="pmtbfee" EntityType="Model1Model.Store.pmtbfee" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="pmtcode" EntityType="Model1Model.Store.pmtcode" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="pmtfee" EntityType="Model1Model.Store.pmtfee" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="pmtuser" EntityType="Model1Model.Store.pmtuser" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="rms_archive" EntityType="Model1Model.Store.rms_archive" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="rms_code" EntityType="Model1Model.Store.rms_code" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="rmsbank" EntityType="Model1Model.Store.rmsbank" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="salesrep" EntityType="Model1Model.Store.salesrep" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="scanout" EntityType="Model1Model.Store.scanout" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="sentltr" EntityType="Model1Model.Store.sentltr" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="sk" EntityType="Model1Model.Store.sk" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="st_options" EntityType="Model1Model.Store.st_options" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="statcode" EntityType="Model1Model.Store.statcode" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="storegrp" EntityType="Model1Model.Store.storegrp" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="stuser" EntityType="Model1Model.Store.stuser" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="template" EntityType="Model1Model.Store.template" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="test" EntityType="Model1Model.Store.test" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="tz" EntityType="Model1Model.Store.tz" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="tzdet" EntityType="Model1Model.Store.tzdet" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="udfcode" EntityType="Model1Model.Store.udfcode" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="udfpdet" EntityType="Model1Model.Store.udfpdet" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="udfplan" EntityType="Model1Model.Store.udfplan" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="udftype" EntityType="Model1Model.Store.udftype" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="ul_connection_script" EntityType="Model1Model.Store.ul_connection_script" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="ul_script" EntityType="Model1Model.Store.ul_script" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="ul_scripts_modified" EntityType="Model1Model.Store.ul_scripts_modified" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="ul_table" EntityType="Model1Model.Store.ul_table" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="ul_table_script" EntityType="Model1Model.Store.ul_table_script" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="ul_user" EntityType="Model1Model.Store.ul_user" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="userstat" EntityType="Model1Model.Store.userstat" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="userxsales" EntityType="Model1Model.Store.userxsales" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="userxwrk" EntityType="Model1Model.Store.userxwrk" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="vend" EntityType="Model1Model.Store.vend" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="vendamt" EntityType="Model1Model.Store.vendamt" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="worklist" EntityType="Model1Model.Store.worklist" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="zip" EntityType="Model1Model.Store.zip" store:Type="Tables" Schema="test" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+  </EntityContainer>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'IMPORT_EOD' in the table 'def.test.accurint_batch_setup' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'IMPORT_DAILY_UPDATE' in the table 'def.test.accurint_batch_setup' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'FTP_FROM_ACCURINT' in the table 'def.test.accurint_batch_setup' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'EXPORT_EOD' in the table 'def.test.accurint_batch_setup' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'EXPORT_DAILY_UPDATE' in the table 'def.test.accurint_batch_setup' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'FTP_TO_ACCURINT' in the table 'def.test.accurint_batch_setup' was excluded.
+-->
+  <EntityType Name="accurint_batch_setup">
+    <Key>
+      <PropertyRef Name="BATCH_ID" />
+    </Key>
+    <Property Name="BATCH_ID" Type="varchar" Nullable="false" MaxLength="11" />
+    <Property Name="BATCH_DESCR" Type="varchar" MaxLength="11" />
+    <Property Name="IMPORT_FILE_LAYOUT" Type="varchar" MaxLength="8" />
+    <Property Name="FTP_FROM_FILE_MANAGEMENT" Type="smallint" />
+    <Property Name="FTP_FROM_RENAME_PATH" Type="blob" />
+    <Property Name="IMPORT_PATH" Type="blob" />
+    <Property Name="IMPORT_FILE_MANAGEMENT" Type="smallint" />
+    <Property Name="IMPORT_FILE_RENAME_PATH" Type="blob" />
+    <Property Name="IMPORT_ACTION_TYPE" Type="smallint" />
+    <Property Name="IMPORT_ACTION_CODE" Type="smallint" />
+    <Property Name="IMPORT_STATUS_CODE" Type="smallint" />
+    <Property Name="IMPORT_WORKLIST_ID" Type="char" MaxLength="1" />
+    <Property Name="IMPORT_NEXT_CONTACT_ADV" Type="smallint" />
+    <Property Name="IMPORT_COMMENT" Type="varchar" MaxLength="18" />
+    <Property Name="EXPORT_FIELDS" Type="blob" />
+    <Property Name="EXPORT_PATH" Type="blob" />
+    <Property Name="EXPORT_FILE_MANAGEMENT" Type="smallint" />
+    <Property Name="EXPORT_FILE_RENAME_PATH" Type="blob" />
+    <Property Name="FTP_TO_FILE_MANAGEMENT" Type="smallint" />
+    <Property Name="EXPORT_COMMENT" Type="varchar" MaxLength="18" />
+    <Property Name="EXPORT_CRITERIA" Type="blob" />
+    <Property Name="FTP_USER_ID" Type="varchar" MaxLength="8" />
+    <Property Name="FTP_PASSWORD" Type="varchar" MaxLength="8" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'DIALER_CODE' in the table 'def.test.actcode' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'PURGE_CONTACT_SCHED' in the table 'def.test.actcode' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'WARNING' in the table 'def.test.actcode' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'CB_REQUEST' in the table 'def.test.actcode' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'CB_SEARCH' in the table 'def.test.actcode' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'DIALER_CALL_INFO' in the table 'def.test.actcode' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'ACT_ITEM_ONLY' in the table 'def.test.actcode' was excluded.
+-->
+  <EntityType Name="actcode">
+    <Key>
+      <PropertyRef Name="ACTCODE_ID" />
+    </Key>
+    <Property Name="ACTCODE_ID" Type="int" Nullable="false" />
+    <Property Name="DESCR" Type="varchar" MaxLength="6" />
+    <Property Name="ACT_COMMENT" Type="blob" />
+    <Property Name="STATUS_CODE" Type="char" MaxLength="1" />
+    <Property Name="NEXT_CONTACT_DATE_ADV" Type="smallint" />
+    <Property Name="WORKLIST_ID" Type="char" MaxLength="1" />
+    <Property Name="DIALER" Type="char" MaxLength="1" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="TYPE" Type="smallint" Nullable="false" />
+    <Property Name="TEXT" Type="blob" />
+    <Property Name="CB_DEPT" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="actcode_ltr">
+    <Key>
+      <PropertyRef Name="ACTCODE_ID" />
+      <PropertyRef Name="LETTER_ID" />
+    </Key>
+    <Property Name="ACTCODE_ID" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="LETTER_ID" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="DESCR" Type="varchar" MaxLength="11" />
+    <Property Name="DATE_TO_SEND_ADV" Type="int" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'COMPLETE' in the table 'def.test.action_sched' was excluded.
+-->
+  <EntityType Name="action_sched">
+    <Key>
+      <PropertyRef Name="ACTION_ITEM_ID" />
+      <PropertyRef Name="RUN_DATE" />
+    </Key>
+    <Property Name="ACTION_ITEM_ID" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="RUN_DATE" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="ACTCODE_ID" Type="int" />
+    <Property Name="SCHEDULED" Type="varchar" MaxLength="4" />
+    <Property Name="SCRIPT" Type="blob" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="TYPE" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="action_setup">
+    <Key>
+      <PropertyRef Name="ACTION_ITEM_ID" />
+    </Key>
+    <Property Name="ACTION_ITEM_ID" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="RUN_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="ACTCODE_ID" Type="int" />
+    <Property Name="DESCRIPTION" Type="varchar" MaxLength="16" />
+    <Property Name="SCHEDULED" Type="varchar" MaxLength="4" />
+    <Property Name="OCCURRENCES" Type="int" />
+    <Property Name="SCRIPT" Type="blob" />
+    <Property Name="ACTION_OPTION" Type="int" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+  </EntityType>
+  <EntityType Name="aic_code">
+    <Key>
+      <PropertyRef Name="CODE_TYPE" />
+      <PropertyRef Name="FROM_CODE" />
+    </Key>
+    <Property Name="CODE_TYPE" Type="smallint" Nullable="false" />
+    <Property Name="FROM_CODE" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="DESCR" Type="varchar" MaxLength="16" />
+    <Property Name="TO_CODE" Type="varchar" MaxLength="83" />
+    <Property Name="AIC_OPTION" Type="smallint" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="aic_request">
+    <Key>
+      <PropertyRef Name="REQUEST_CODE" />
+    </Key>
+    <Property Name="REQUEST_CODE" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="DESCRIPTION" Type="varchar" MaxLength="8" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="aj">
+    <Key>
+      <PropertyRef Name="AJ_ID" />
+    </Key>
+    <Property Name="AJ_ID" Type="int" Nullable="false" />
+    <Property Name="AJ_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="ajdet">
+    <Key>
+      <PropertyRef Name="AJ_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="AJ_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="TRN_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="DESCR" Type="varchar" MaxLength="8" />
+    <Property Name="AMT" Type="decimal" Precision="12" />
+    <Property Name="CR_ID" Type="varchar" MaxLength="2" />
+    <Property Name="DB_ID" Type="varchar" MaxLength="2" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'STATE' in the table 'def.test.ap' was excluded.
+-->
+  <EntityType Name="ap">
+    <Key>
+      <PropertyRef Name="AP_ID" />
+    </Key>
+    <Property Name="AP_ID" Type="int" Nullable="false" />
+    <Property Name="AP_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="CLT_ID" Type="varchar" MaxLength="2" />
+    <Property Name="VEND_ID" Type="varchar" MaxLength="1" />
+    <Property Name="NAME" Type="varchar" MaxLength="11" />
+    <Property Name="ADDR1" Type="varchar" MaxLength="11" />
+    <Property Name="ADDR2" Type="varchar" MaxLength="11" />
+    <Property Name="CITY" Type="varchar" MaxLength="8" />
+    <Property Name="ZIP" Type="varchar" MaxLength="3" />
+    <Property Name="STATUS" Type="smallint" />
+    <Property Name="RECUR_FREQ" Type="smallint" />
+    <Property Name="RECUR_TIMES" Type="smallint" />
+    <Property Name="INVOICE_NO" Type="varchar" MaxLength="3" />
+    <Property Name="DUE_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="OUTSTANDING" Type="decimal" Precision="12" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'TYPE' in the table 'def.test.apdet' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'POST' in the table 'def.test.apdet' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'CHECK_STATUS' in the table 'def.test.apdet' was excluded.
+-->
+  <EntityType Name="apdet">
+    <Key>
+      <PropertyRef Name="AP_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="AP_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="TRN_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="DESCR" Type="varchar" MaxLength="8" />
+    <Property Name="CHECK_NO" Type="int" />
+    <Property Name="AMT" Type="decimal" Precision="12" />
+    <Property Name="CR_ID" Type="varchar" MaxLength="2" />
+    <Property Name="DB_ID" Type="varchar" MaxLength="2" />
+    <Property Name="TRUST_PERIOD" Type="varchar" MaxLength="2" />
+    <Property Name="TRUST_SUB_PERIOD" Type="smallint" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="STATUS_DATE" Type="varchar" MaxLength="8" />
+  </EntityType>
+  <EntityType Name="apidesc">
+    <Key>
+      <PropertyRef Name="API_CODE" />
+    </Key>
+    <Property Name="API_CODE" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="DESCR" Type="varchar" MaxLength="13" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="ar">
+    <Key>
+      <PropertyRef Name="AR_ID" />
+    </Key>
+    <Property Name="AR_ID" Type="int" Nullable="false" />
+    <Property Name="AR_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="CLT_ID" Type="varchar" MaxLength="2" />
+    <Property Name="NAME" Type="varchar" MaxLength="11" />
+    <Property Name="STATUS" Type="smallint" />
+    <Property Name="RECUR_FREQ" Type="smallint" />
+    <Property Name="RECUR_TIMES" Type="smallint" />
+    <Property Name="OUTSTANDING" Type="decimal" Precision="12" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'TYPE' in the table 'def.test.ardet' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'POST' in the table 'def.test.ardet' was excluded.
+-->
+  <EntityType Name="ardet">
+    <Key>
+      <PropertyRef Name="AR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="AR_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="TRN_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="DESCR" Type="varchar" MaxLength="8" />
+    <Property Name="CHECK_NO" Type="int" />
+    <Property Name="AMT" Type="decimal" Precision="12" />
+    <Property Name="CR_ID" Type="varchar" MaxLength="2" />
+    <Property Name="DB_ID" Type="varchar" MaxLength="2" />
+    <Property Name="TRUST_PERIOD" Type="varchar" MaxLength="2" />
+    <Property Name="TRUST_SUB_PERIOD" Type="smallint" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="assign">
+    <Key>
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="WORKLIST_ID" Type="char" MaxLength="1" />
+    <Property Name="F_ALPHA" Type="char" MaxLength="1" />
+    <Property Name="T_ALPHA" Type="char" MaxLength="1" />
+    <Property Name="F_AMT" Type="decimal" Precision="12" />
+    <Property Name="T_AMT" Type="decimal" Precision="12" />
+    <Property Name="F_AGE" Type="int" />
+    <Property Name="T_AGE" Type="int" />
+    <Property Name="CLT_ID" Type="varchar" MaxLength="2" />
+    <Property Name="LANGUAGE" Type="varchar" MaxLength="7" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'STATE' in the table 'def.test.att' was excluded.
+-->
+  <EntityType Name="att">
+    <Key>
+      <PropertyRef Name="ATT_ID" />
+    </Key>
+    <Property Name="ATT_ID" Type="int" Nullable="false" />
+    <Property Name="FIRM" Type="varchar" MaxLength="11" />
+    <Property Name="NAME" Type="varchar" MaxLength="11" />
+    <Property Name="ADDR1" Type="varchar" MaxLength="11" />
+    <Property Name="ADDR2" Type="varchar" MaxLength="11" />
+    <Property Name="CITY" Type="varchar" MaxLength="8" />
+    <Property Name="ZIP" Type="varchar" MaxLength="3" />
+    <Property Name="PHONE" Type="varchar" MaxLength="4" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="FAX" Type="varchar" MaxLength="4" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'STATE' in the table 'def.test.bank' was excluded.
+-->
+  <EntityType Name="bank">
+    <Key>
+      <PropertyRef Name="TRANSIT_NO" />
+    </Key>
+    <Property Name="TRANSIT_NO" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="NAME" Type="varchar" MaxLength="11" />
+    <Property Name="ADDR1" Type="varchar" MaxLength="11" />
+    <Property Name="ADDR2" Type="varchar" MaxLength="11" />
+    <Property Name="CITY" Type="varchar" MaxLength="8" />
+    <Property Name="ZIP" Type="varchar" MaxLength="3" />
+    <Property Name="PHONE" Type="varchar" MaxLength="4" />
+    <Property Name="ABA_NO" Type="varchar" MaxLength="3" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="RECTYPE" Type="smallint" />
+  </EntityType>
+  <EntityType Name="bankdups">
+    <Key>
+      <PropertyRef Name="TRANSIT_NO" />
+      <PropertyRef Name="NAME" />
+    </Key>
+    <Property Name="TRANSIT_NO" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="NAME" Type="varchar" Nullable="false" MaxLength="33" />
+  </EntityType>
+  <EntityType Name="bnchmrk">
+    <Key>
+      <PropertyRef Name="FIELD1" />
+    </Key>
+    <Property Name="FIELD1" Type="int" Nullable="false" />
+    <Property Name="FIELD2" Type="int" />
+    <Property Name="FIELD3" Type="varchar" MaxLength="8" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'COMPANY_ID' in the table 'def.test.bureau_options' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'CRLF' in the table 'def.test.bureau_options' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'METRO_FORMAT' in the table 'def.test.bureau_options' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'REPORTER_INFO_OPTION' in the table 'def.test.bureau_options' was excluded.
+warning 6031: The column 'COMPANY_ID' on the table/view 'def.test.bureau_options' was excluded, and is a key column.  The remaining key(s) were used and table/view has been created as read-only.
+-->
+  <EntityType Name="bureau_options">
+    <Key>
+      <PropertyRef Name="BUREAU_ID" />
+    </Key>
+    <Property Name="BUREAU_ID" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="CTRL_NO" Type="varchar" MaxLength="3" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="CREDIT_GRANTOR_CODE" Type="varchar" MaxLength="3" />
+    <Property Name="REPORTER_NAME" Type="varchar" MaxLength="13" />
+    <Property Name="REPORTER_FULL_ADDR" Type="varchar" MaxLength="32" />
+    <Property Name="REPORTER_PHONE" Type="varchar" MaxLength="3" />
+    <Property Name="ID_NO" Type="varchar" MaxLength="6" />
+  </EntityType>
+  <EntityType Name="cbinqdepts">
+    <Key>
+      <PropertyRef Name="DEPARTMENT" />
+    </Key>
+    <Property Name="DEPARTMENT" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="DESCR" Type="varchar" MaxLength="11" />
+    <Property Name="FILENAME" Type="varchar" MaxLength="83" />
+    <Property Name="CBINQFIELDS" Type="blob" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="cbinqfields">
+    <Key>
+      <PropertyRef Name="SERVICE" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="SERVICE" Type="smallint" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="CBINQFIELD" Type="varchar" MaxLength="11" />
+    <Property Name="DMDBTRFIELD" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'ACCTNG_TYPE' in the table 'def.test.chart' was excluded.
+-->
+  <EntityType Name="chart">
+    <Key>
+      <PropertyRef Name="CHART" />
+    </Key>
+    <Property Name="CHART" Type="smallint" Nullable="false" />
+    <Property Name="CASH" Type="varchar" MaxLength="2" />
+    <Property Name="RET_EARN" Type="varchar" MaxLength="2" />
+    <Property Name="PRINC_INCOME" Type="varchar" MaxLength="2" />
+    <Property Name="INT_INCOME" Type="varchar" MaxLength="2" />
+    <Property Name="FEE_INCOME" Type="varchar" MaxLength="2" />
+    <Property Name="CLT_DISB" Type="varchar" MaxLength="2" />
+    <Property Name="OVERPMT" Type="varchar" MaxLength="2" />
+    <Property Name="CLT_INCOME" Type="varchar" MaxLength="2" />
+    <Property Name="ACCT_PAY" Type="varchar" MaxLength="2" />
+    <Property Name="ACCT_REC" Type="varchar" MaxLength="2" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'STATUS' in the table 'def.test.checkver' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'PURGE' in the table 'def.test.checkver' was excluded.
+-->
+  <EntityType Name="checkver">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="TRANSACTION_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="TRANSACTION_TYPE" Type="int" />
+    <Property Name="DEBT_ID" Type="int" />
+    <Property Name="DEBT_NO" Type="int" />
+    <Property Name="OUT_RECORD" Type="varchar" MaxLength="83" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'REASON_CODE' in the table 'def.test.chkverreason' was excluded.
+warning 6031: The column 'REASON_CODE' on the table/view 'def.test.chkverreason' was excluded, and is a key column.  The remaining key(s) were used and table/view has been created as read-only.
+-->
+  <EntityType Name="chkverreason">
+    <Key>
+      <PropertyRef Name="CHKVER_COMPANY" />
+    </Key>
+    <Property Name="CHKVER_COMPANY" Type="int" Nullable="false" />
+    <Property Name="DESCR" Type="varchar" MaxLength="13" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="clt">
+    <Key>
+      <PropertyRef Name="CLT_ID" />
+    </Key>
+    <Property Name="CLT_ID" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="NAME" Type="char" MaxLength="40" />
+    <Property Name="ADDR1" Type="char" MaxLength="35" />
+    <Property Name="ADDR2" Type="char" MaxLength="35" />
+    <Property Name="CITY" Type="char" MaxLength="25" />
+    <Property Name="STATE" Type="char" MaxLength="2" />
+    <Property Name="ZIP" Type="char" MaxLength="10" />
+    <Property Name="SALES_REP" Type="char" MaxLength="3" />
+    <Property Name="NEXT_CONTACT_DATE" Type="varchar" MaxLength="9" />
+    <Property Name="CLT_TYPE" Type="char" MaxLength="3" />
+    <Property Name="DEBT_TYPE" Type="char" MaxLength="3" />
+    <Property Name="BUREAU_PERMISSION" Type="char" MaxLength="1" />
+    <Property Name="BUREAU_REPORT" Type="char" MaxLength="1" />
+    <Property Name="COLLPLAN_ID" Type="char" MaxLength="3" />
+    <Property Name="FEEPLAN_ID" Type="char" MaxLength="3" />
+    <Property Name="CONTPLAN_ID" Type="char" MaxLength="3" />
+    <Property Name="TAX_ID" Type="varchar" MaxLength="11" />
+    <Property Name="TAX_EXEMPT" Type="char" MaxLength="1" />
+    <Property Name="REMIT_TYPE" Type="char" MaxLength="1" />
+    <Property Name="BALANCE_DEDUCT" Type="char" MaxLength="1" />
+    <Property Name="CREDIT_APPLY" Type="char" MaxLength="1" />
+    <Property Name="CREDIT_REFUND" Type="char" MaxLength="1" />
+    <Property Name="MASTER_ID" Type="char" MaxLength="8" />
+    <Property Name="STATUS_CODE" Type="char" MaxLength="1" />
+    <Property Name="FWD_AGENCY" Type="char" MaxLength="1" />
+    <Property Name="FWD_COLL_RATE" Type="decimal" Precision="19" Scale="13" />
+    <Property Name="PC_CONV_DELAY" Type="smallint" />
+    <Property Name="COMPANY_ID" Type="char" MaxLength="1" />
+    <Property Name="VER_LOCATION_CODE" Type="int" />
+    <Property Name="VER_STORE_GROUP" Type="smallint" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="9" />
+    <Property Name="USER_ID_STAMP" Type="varchar" MaxLength="3" />
+    <Property Name="SCAN_STORE_NO" Type="varchar" MaxLength="5" />
+    <Property Name="SCAN_MERCHANT_ID" Type="varchar" MaxLength="3" />
+    <Property Name="NEXT_CONTACT_TIME" Type="varchar" MaxLength="9" />
+    <Property Name="PRIORITY" Type="smallint" />
+    <Property Name="UDFPLAN_ID" Type="varchar" MaxLength="4" />
+    <Property Name="HIPAA_REG" Type="char" MaxLength="1" />
+    <Property Name="MATCH_TYPE" Type="char" MaxLength="1" />
+    <Property Name="EXTRA_STATEMENT_FIELD" Type="char" MaxLength="50" />
+    <Property Name="EXTRA_STATEMENT_LABEL" Type="char" MaxLength="50" />
+    <Property Name="TAXCODE_ID" Type="char" MaxLength="3" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="clt_online">
+    <Key>
+      <PropertyRef Name="record_id" />
+    </Key>
+    <Property Name="record_id" Type="int" Nullable="false" />
+    <Property Name="clt_id" Type="int" />
+    <Property Name="name" Type="varchar" MaxLength="40" />
+    <Property Name="clt_enabled" Type="int" />
+    <Property Name="clt_type" Type="int" />
+    <Property Name="clt_user_id" Type="varchar" MaxLength="8" />
+    <Property Name="clt_user_pwd" Type="varchar" MaxLength="8" />
+    <Property Name="clt_user_enabled" Type="int" />
+    <Property Name="clt_user_type" Type="int" />
+  </EntityType>
+  <EntityType Name="clt230_view">
+    <Key>
+      <PropertyRef Name="RECORD_ID" />
+    </Key>
+    <Property Name="RECORD_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="COMPANY_ADDR1" Type="varchar" MaxLength="40" />
+    <Property Name="COMPANY_CITY_ST_ZIP" Type="varchar" MaxLength="40" />
+    <Property Name="COMPANY_PHONE" Type="varchar" MaxLength="20" />
+    <Property Name="COMPANY_FAX" Type="varchar" MaxLength="20" />
+    <Property Name="NAME" Type="varchar" MaxLength="40" />
+    <Property Name="CONTACT_NAME" Type="varchar" MaxLength="40" />
+    <Property Name="CLT_ADDR1" Type="varchar" MaxLength="40" />
+    <Property Name="CLT_CITY_ST_ZIP" Type="varchar" MaxLength="40" />
+    <Property Name="CLT_ID" Type="varchar" MaxLength="8" />
+    <Property Name="PERIOD" Type="varchar" MaxLength="7" />
+    <Property Name="LD_LIST_ACCTS" Type="int" />
+    <Property Name="LD_LIST_AMT" Type="decimal" Precision="19" Scale="13" />
+    <Property Name="AVG_MONTH_LIST" Type="varchar" MaxLength="45" />
+    <Property Name="LD_AVE_AGE" Type="int" />
+    <Property Name="LD_GROSS" Type="decimal" Precision="19" Scale="13" />
+    <Property Name="LD_RECOVER_PERCENT" Type="decimal" Precision="28" Scale="13" />
+    <Property Name="LD_RETURN_ACCTS" Type="int" />
+    <Property Name="LD_RETURN_AMT" Type="decimal" Precision="19" Scale="13" />
+    <Property Name="LD_ACTIVE_PAID_ACCTS" Type="int" />
+    <Property Name="LD_ACTIVE_PAID_AMT" Type="decimal" Precision="19" Scale="13" />
+    <Property Name="MASTER_ID" Type="varchar" MaxLength="8" />
+    <Property Name="RETURN_AMT" Type="decimal" Precision="19" Scale="13" />
+    <Property Name="ADDR1" Type="varchar" MaxLength="40" />
+    <Property Name="STATUS_CODE" Type="varchar" MaxLength="3" />
+    <Property Name="CITY_ST_ZIP" Type="varchar" MaxLength="40" />
+    <Property Name="LD_AGE" Type="int" />
+  </EntityType>
+  <EntityType Name="cltact">
+    <Key>
+      <PropertyRef Name="CLT_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="CLT_ID" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="ACT_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="ACT_TIME" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID" Type="char" MaxLength="1" />
+    <Property Name="COMMENTS" Type="varchar" MaxLength="18" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="GMT_OFFSET" Type="smallint" />
+  </EntityType>
+  <EntityType Name="cltapprovedltr">
+    <Key>
+      <PropertyRef Name="CLT_ID" />
+      <PropertyRef Name="LETTER_ID" />
+    </Key>
+    <Property Name="CLT_ID" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="LETTER_ID" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="DEBTOR_LIMIT" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="cltltr">
+    <Key>
+      <PropertyRef Name="CLT_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="CLT_ID" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="LETTER_TO_SEND" Type="varchar" MaxLength="4" />
+    <Property Name="DATE_TO_SEND" Type="varchar" MaxLength="8" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="cltphon">
+    <Key>
+      <PropertyRef Name="CLT_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="CLT_ID" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="CONTACT_NAME" Type="varchar" MaxLength="11" />
+    <Property Name="PHONE" Type="varchar" MaxLength="4" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="cltrcvr">
+    <Key>
+      <PropertyRef Name="CLT_ID" />
+      <PropertyRef Name="PERIOD" />
+    </Key>
+    <Property Name="CLT_ID" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="PERIOD" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="LD_LIST_ACCTS" Type="int" />
+    <Property Name="LD_AGE" Type="int" />
+    <Property Name="LD_LIST_AMT" Type="decimal" Precision="12" />
+    <Property Name="LD_RETURN_ACCTS" Type="int" />
+    <Property Name="LD_RETURN_AMT" Type="decimal" Precision="12" />
+    <Property Name="LD_GROSS" Type="decimal" Precision="12" />
+    <Property Name="LD_NET" Type="decimal" Precision="12" />
+    <Property Name="RETURN_ACCTS" Type="int" />
+    <Property Name="RETURN_AMT" Type="decimal" Precision="12" />
+    <Property Name="GROSS" Type="decimal" Precision="12" />
+    <Property Name="NET" Type="decimal" Precision="12" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="LD_CHARGEOFF_AMT" Type="decimal" Precision="12" />
+    <Property Name="LD_RETURN_PAID_AMT" Type="decimal" Precision="12" />
+    <Property Name="RETURN_PAID_AMT" Type="decimal" Precision="12" />
+  </EntityType>
+  <EntityType Name="clttrust">
+    <Key>
+      <PropertyRef Name="CLT_ID" />
+      <PropertyRef Name="PERIOD" />
+      <PropertyRef Name="SUB_PERIOD" />
+    </Key>
+    <Property Name="CLT_ID" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="PERIOD" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="SUB_PERIOD" Type="smallint" Nullable="false" />
+    <Property Name="PRIOR_CREDIT" Type="decimal" Precision="12" />
+    <Property Name="CREDIT_APPLY_AMT" Type="decimal" Precision="12" />
+    <Property Name="CREDIT_REFUND_AMT" Type="decimal" Precision="12" />
+    <Property Name="PRIOR_BALANCE" Type="decimal" Precision="12" />
+    <Property Name="BALANCE_DEDUCT_AMT" Type="decimal" Precision="12" />
+    <Property Name="CHECK_AMT" Type="decimal" Precision="12" />
+    <Property Name="REMIT_AMT" Type="decimal" Precision="12" />
+    <Property Name="FILENAME" Type="varchar" MaxLength="2" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'TYPE' in the table 'def.test.clttrust_historical' was excluded.
+-->
+  <EntityType Name="clttrust_historical">
+    <Key>
+      <PropertyRef Name="CLT_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="CLT_ID" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="SUB_CLT_ID" Type="varchar" MaxLength="2" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="PERIOD" Type="varchar" MaxLength="2" />
+    <Property Name="SUB_PERIOD" Type="smallint" />
+    <Property Name="TRN_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="TRN_DESCR" Type="varchar" MaxLength="8" />
+    <Property Name="TRN_AMOUNT" Type="double" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'BUREAU_CREDITOR_CLASS_CODE' in the table 'def.test.clttype' was excluded.
+-->
+  <EntityType Name="clttype">
+    <Key>
+      <PropertyRef Name="TYPE" />
+    </Key>
+    <Property Name="TYPE" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DESCR" Type="varchar" MaxLength="8" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="UDFPLAN_ID" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="cltudf">
+    <Key>
+      <PropertyRef Name="CLT_ID" />
+    </Key>
+    <Property Name="CLT_ID" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="LABEL" Type="varchar" MaxLength="30" />
+    <Property Name="LONGSTR" Type="varchar" MaxLength="256" />
+    <Property Name="ITEM_NO" Type="int" />
+    <Property Name="DATE1" Type="varchar" MaxLength="10" />
+    <Property Name="AMT" Type="decimal" Precision="19" Scale="2" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="10" />
+    <Property Name="USER_ID_STAMP" Type="varchar" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="cltxref">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="FIELDNAME" />
+      <PropertyRef Name="FVALUE" />
+    </Key>
+    <Property Name="ID" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="FIELDNAME" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="FVALUE" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'LEDGER_TYPE' in the table 'def.test.coa' was excluded.
+-->
+  <EntityType Name="coa">
+    <Key>
+      <PropertyRef Name="ACCT_ID" />
+    </Key>
+    <Property Name="ACCT_ID" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="DESCR" Type="varchar" MaxLength="8" />
+    <Property Name="CHART" Type="smallint" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="coadet">
+    <Key>
+      <PropertyRef Name="ACCT_ID" />
+      <PropertyRef Name="PERIOD" />
+    </Key>
+    <Property Name="ACCT_ID" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="PERIOD" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="OPEN_BAL" Type="decimal" Precision="12" />
+    <Property Name="DEBITS" Type="decimal" Precision="12" />
+    <Property Name="CREDITS" Type="decimal" Precision="12" />
+    <Property Name="BUDGET" Type="decimal" Precision="12" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="collpdet">
+    <Key>
+      <PropertyRef Name="COLLPLAN_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="COLLPLAN_ID" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="COLL_RATE" Type="double" />
+    <Property Name="F_LIST_AMT" Type="decimal" Precision="12" />
+    <Property Name="T_LIST_AMT" Type="decimal" Precision="12" />
+    <Property Name="F_BALANCE" Type="decimal" Precision="12" />
+    <Property Name="T_BALANCE" Type="decimal" Precision="12" />
+    <Property Name="F_PMT_AMT" Type="decimal" Precision="12" />
+    <Property Name="T_PMT_AMT" Type="decimal" Precision="12" />
+    <Property Name="F_LIST_AGE" Type="int" />
+    <Property Name="T_LIST_AGE" Type="int" />
+    <Property Name="F_SERV_AGE" Type="int" />
+    <Property Name="T_SERV_AGE" Type="int" />
+    <Property Name="F_STATUS" Type="char" MaxLength="1" />
+    <Property Name="T_STATUS" Type="char" MaxLength="1" />
+    <Property Name="F_PLACE_AGE" Type="int" />
+    <Property Name="T_PLACE_AGE" Type="int" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'SHARE_INTEREST' in the table 'def.test.collplan' was excluded.
+-->
+  <EntityType Name="collplan">
+    <Key>
+      <PropertyRef Name="COLLPLAN_ID" />
+    </Key>
+    <Property Name="COLLPLAN_ID" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DESCR" Type="varchar" MaxLength="10" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="contpdet">
+    <Key>
+      <PropertyRef Name="CONTPLAN_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="CONTPLAN_ID" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="AGE" Type="int" />
+    <Property Name="LETTER_TO_SEND" Type="varchar" MaxLength="4" />
+    <Property Name="F_CUR_BAL" Type="decimal" Precision="12" />
+    <Property Name="T_CUR_BAL" Type="decimal" Precision="12" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="contplan">
+    <Key>
+      <PropertyRef Name="CONTPLAN_ID" />
+    </Key>
+    <Property Name="CONTPLAN_ID" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DESCR" Type="varchar" MaxLength="10" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="costs">
+    <Key>
+      <PropertyRef Name="DEBT_ID" />
+      <PropertyRef Name="DEBT_NO" />
+    </Key>
+    <Property Name="DEBT_ID" Type="int" Nullable="false" />
+    <Property Name="DEBT_NO" Type="smallint" Nullable="false" />
+    <Property Name="CLERICAL_LABOR" Type="decimal" Precision="12" />
+    <Property Name="COLL_LABOR" Type="decimal" Precision="12" />
+    <Property Name="MGMT_LABOR" Type="decimal" Precision="12" />
+    <Property Name="OTHER_LABOR" Type="decimal" Precision="12" />
+    <Property Name="PRINTING" Type="decimal" Precision="12" />
+    <Property Name="MAILING" Type="decimal" Precision="12" />
+    <Property Name="LONG_DISTANCE" Type="decimal" Precision="12" />
+    <Property Name="SKIP_TRACING" Type="decimal" Precision="12" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'STATE' in the table 'def.test.courtcod' was excluded.
+-->
+  <EntityType Name="courtcod">
+    <Key>
+      <PropertyRef Name="COURT_CODE" />
+    </Key>
+    <Property Name="COURT_CODE" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="DESCR" Type="varchar" MaxLength="20" />
+    <Property Name="ADDR1" Type="varchar" MaxLength="11" />
+    <Property Name="ADDR2" Type="varchar" MaxLength="11" />
+    <Property Name="CITY" Type="varchar" MaxLength="8" />
+    <Property Name="ZIP" Type="varchar" MaxLength="3" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="PHONE" Type="varchar" MaxLength="4" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'FILE_ID' in the table 'def.test.credit_bureau' was excluded.
+-->
+  <EntityType Name="credit_bureau">
+    <Key>
+      <PropertyRef Name="BUREAU_ID" />
+    </Key>
+    <Property Name="BUREAU_ID" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="BUREAU_NAME" Type="varchar" MaxLength="6" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="dbtr">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="int" Nullable="false" />
+    <Property Name="NAME1" Type="varchar" MaxLength="12" />
+    <Property Name="NAME2" Type="varchar" MaxLength="12" />
+    <Property Name="SORT_NAME" Type="varchar" MaxLength="12" />
+    <Property Name="SSN1" Type="varchar" MaxLength="4" />
+    <Property Name="SSN2" Type="varchar" MaxLength="4" />
+    <Property Name="DOB1" Type="varchar" MaxLength="9" />
+    <Property Name="DOB2" Type="varchar" MaxLength="9" />
+    <Property Name="DL1" Type="varchar" MaxLength="5" />
+    <Property Name="DL2" Type="varchar" MaxLength="5" />
+    <Property Name="DL_STATE1" Type="char" MaxLength="1" />
+    <Property Name="DL_STATE2" Type="char" MaxLength="1" />
+    <Property Name="LANGUAGE" Type="char" MaxLength="1" />
+    <Property Name="PRIORITY" Type="smallint" />
+    <Property Name="STATUS_CODE" Type="char" MaxLength="1" />
+    <Property Name="STATUS_DATE" Type="varchar" MaxLength="9" />
+    <Property Name="DEBTOR_TYPE" Type="char" MaxLength="1" />
+    <Property Name="ASSIGN_ID" Type="char" MaxLength="1" />
+    <Property Name="NEXT_CONTACT_DATE" Type="varchar" MaxLength="9" />
+    <Property Name="NEXT_CONTACT_TIME" Type="varchar" MaxLength="9" />
+    <Property Name="AGCY_ATT_ID" Type="int" />
+    <Property Name="AGCY_ATT_DETAILS" Type="varchar" MaxLength="12" />
+    <Property Name="DBTR_ATT_ID" Type="int" />
+    <Property Name="DBTR_ATT_DETAILS" Type="varchar" MaxLength="12" />
+    <Property Name="PM_AUTH_REQ" Type="char" MaxLength="1" />
+    <Property Name="PM_AUTH_REC" Type="char" MaxLength="1" />
+    <Property Name="PROM_KEPT" Type="int" />
+    <Property Name="PROM_BROK" Type="int" />
+    <Property Name="REFERENCE_NO" Type="varchar" MaxLength="7" />
+    <Property Name="DIALER" Type="char" MaxLength="1" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="9" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="RMS_ACCT_ID" Type="varchar" MaxLength="7" />
+    <Property Name="KENWOOD_CODE" Type="smallint" />
+    <Property Name="WARNING" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'STATUS' in the table 'def.test.dbtract' was excluded.
+-->
+  <EntityType Name="dbtract">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="ACT_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="ACT_TIME" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID" Type="char" MaxLength="1" />
+    <Property Name="COMMENTS" Type="varchar" MaxLength="18" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="GMT_OFFSET" Type="smallint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'STATE' in the table 'def.test.dbtraddr' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'MAIL_RTN' in the table 'def.test.dbtraddr' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'COUNTRY' in the table 'def.test.dbtraddr' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'BUREAU_ADDR_IND' in the table 'def.test.dbtraddr' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'BUREAU_RES_CODE' in the table 'def.test.dbtraddr' was excluded.
+-->
+  <EntityType Name="dbtraddr">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="ADDR1" Type="varchar" MaxLength="11" />
+    <Property Name="ADDR2" Type="varchar" MaxLength="11" />
+    <Property Name="CITY" Type="varchar" MaxLength="8" />
+    <Property Name="ZIP" Type="varchar" MaxLength="3" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="BUREAU_DBTRNAMEXADDR" Type="smallint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'PURGE' in the table 'def.test.dbtraic' was excluded.
+-->
+  <EntityType Name="dbtraic">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="TYPE" Type="smallint" />
+    <Property Name="TRANSACTION_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="REQUEST_CODE" Type="varchar" MaxLength="3" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="dbtraka">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="AKA_NAME" Type="varchar" MaxLength="11" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="dbtrapi">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="API_CODE" Type="varchar" MaxLength="2" />
+    <Property Name="REPORT_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="RESULTS" Type="blob" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="dbtrbank">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="ACCT" Type="varchar" MaxLength="5" />
+    <Property Name="TRANSIT_NO" Type="varchar" MaxLength="3" />
+    <Property Name="DETAILS" Type="varchar" MaxLength="11" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'REC_TYPE' in the table 'def.test.dbtrcbinq' was excluded.
+-->
+  <EntityType Name="dbtrcbinq">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="USER_ID" Type="char" MaxLength="1" />
+    <Property Name="DEPARTMENT" Type="varchar" MaxLength="11" />
+    <Property Name="REQUESTED" Type="varchar" MaxLength="8" />
+    <Property Name="SUBMITTED" Type="varchar" MaxLength="8" />
+    <Property Name="RECEIVED" Type="varchar" MaxLength="8" />
+    <Property Name="REQUEST_INFO" Type="blob" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'WORKED' in the table 'def.test.dbtrctc' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'EXPORTED' in the table 'def.test.dbtrctc' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'RESULTS' in the table 'def.test.dbtrctc' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'CALLBACK' in the table 'def.test.dbtrctc' was excluded.
+-->
+  <EntityType Name="dbtrctc">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="int" Nullable="false" />
+    <Property Name="EXPTYPE" Type="smallint" Nullable="false" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'PURGE' in the table 'def.test.dbtrdial' was excluded.
+-->
+  <EntityType Name="dbtrdial">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="TYPE" Type="char" MaxLength="1" />
+    <Property Name="TRANSACTION_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="LOG" Type="blob" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'WARNING' in the table 'def.test.dbtrdup' was excluded.
+-->
+  <EntityType Name="dbtrdup">
+    <Key>
+      <PropertyRef Name="MASTER_ID" />
+      <PropertyRef Name="MATCH_ID" />
+    </Key>
+    <Property Name="MASTER_ID" Type="int" Nullable="false" />
+    <Property Name="MATCH_ID" Type="int" Nullable="false" />
+    <Property Name="FIELDSCORES" Type="blob" />
+    <Property Name="SCORE" Type="smallint" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'STATE' in the table 'def.test.dbtremp' was excluded.
+-->
+  <EntityType Name="dbtremp">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="NAME" Type="varchar" MaxLength="11" />
+    <Property Name="ADDR1" Type="varchar" MaxLength="11" />
+    <Property Name="ADDR2" Type="varchar" MaxLength="11" />
+    <Property Name="CITY" Type="varchar" MaxLength="8" />
+    <Property Name="ZIP" Type="varchar" MaxLength="3" />
+    <Property Name="DETAILS" Type="varchar" MaxLength="11" />
+    <Property Name="DUM_PHONE" Type="varchar" MaxLength="4" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="BUREAU_DBTRNAMEXEMP" Type="smallint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'MAIL_RTN_LOGGED' in the table 'def.test.dbtrltr' was excluded.
+-->
+  <EntityType Name="dbtrltr">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="DEBT_ID" Type="int" />
+    <Property Name="DEBT_NO" Type="smallint" />
+    <Property Name="LETTER_TO_SEND" Type="varchar" MaxLength="4" />
+    <Property Name="DATE_TO_SEND" Type="varchar" MaxLength="8" />
+    <Property Name="LETTER_ADDR" Type="varchar" MaxLength="5" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="TYPE" Type="smallint" />
+  </EntityType>
+  <EntityType Name="dbtrold">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="USER_ID" Type="char" MaxLength="1" />
+    <Property Name="FIELDNAME" Type="varchar" MaxLength="6" />
+    <Property Name="OLDVALUE" Type="varchar" MaxLength="11" />
+    <Property Name="CHANGE_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="dbtrpaym">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="MICR" Type="varchar" MaxLength="13" />
+    <Property Name="PM_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="PM_AMT" Type="decimal" Precision="14" />
+    <Property Name="CHECK_NO" Type="int" />
+    <Property Name="CHECK_NAME" Type="varchar" MaxLength="13" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'STATUS' in the table 'def.test.dbtrphon' was excluded.
+-->
+  <EntityType Name="dbtrphon">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="PHONE" Type="varchar" MaxLength="4" />
+    <Property Name="DESCR" Type="varchar" MaxLength="4" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="BUREAU_DBTRNAMEXPHON" Type="smallint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'STATUS' in the table 'def.test.dbtrpost' was excluded.
+-->
+  <EntityType Name="dbtrpost">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="POST_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="POST_AMT" Type="decimal" Precision="14" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'STATUS' in the table 'def.test.dbtrprom' was excluded.
+-->
+  <EntityType Name="dbtrprom">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="PROM_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="PROM_AMT" Type="decimal" Precision="14" />
+    <Property Name="PAID_AMT" Type="decimal" Precision="14" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="dbtrrms">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="BANK_ID" Type="varchar" MaxLength="2" />
+    <Property Name="TYPE" Type="smallint" />
+    <Property Name="STATUS" Type="char" MaxLength="1" />
+    <Property Name="STATUS_DATE" Type="varchar" MaxLength="9" />
+    <Property Name="TRANS_AMOUNT" Type="double" />
+    <Property Name="OUT_RECORD" Type="varchar" MaxLength="84" />
+    <Property Name="PURGE" Type="char" MaxLength="1" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="9" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'TYPE' in the table 'def.test.dbtrsent' was excluded.
+-->
+  <EntityType Name="dbtrsent">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="LETTER_ID" Type="varchar" MaxLength="4" />
+    <Property Name="SENT_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+  </EntityType>
+  <EntityType Name="dbtrudf">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="LABEL" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="LABEL" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="DATE1" Type="varchar" MaxLength="8" />
+    <Property Name="AMT" Type="decimal" Precision="14" />
+    <Property Name="LONGSTR" Type="varchar" MaxLength="85" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'ECOA1' in the table 'def.test.dbtrxdbt' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'ECOA2' in the table 'def.test.dbtrxdbt' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'BUREAU_SPEC_CODE' in the table 'def.test.dbtrxdbt' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'BUREAU_COMP_COND_CODE' in the table 'def.test.dbtrxdbt' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'BUREAU_COMP_COND_CODE_REPORTED' in the table 'def.test.dbtrxdbt' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'BUREAU_CONS_INFO_IND1' in the table 'def.test.dbtrxdbt' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'BUREAU_CONS_INFO_IND1_REPORTED' in the table 'def.test.dbtrxdbt' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'BUREAU_CONS_INFO_IND2' in the table 'def.test.dbtrxdbt' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'BUREAU_CONS_INFO_IND2_REPORTED' in the table 'def.test.dbtrxdbt' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'BUREAU_CONS_TRANS_TYPE1' in the table 'def.test.dbtrxdbt' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'BUREAU_CONS_TRANS_TYPE2' in the table 'def.test.dbtrxdbt' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'BUREAU_CHANGE' in the table 'def.test.dbtrxdbt' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'BUREAU_ECOA1_REPORTED' in the table 'def.test.dbtrxdbt' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'BUREAU_ECOA2_REPORTED' in the table 'def.test.dbtrxdbt' was excluded.
+-->
+  <EntityType Name="dbtrxdbt">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="DEBT_ID" />
+      <PropertyRef Name="DEBT_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="int" Nullable="false" />
+    <Property Name="DEBT_ID" Type="int" Nullable="false" />
+    <Property Name="DEBT_NO" Type="smallint" Nullable="false" />
+    <Property Name="BUREAU_CODE" Type="int" />
+    <Property Name="BUREAU_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="CHK_VER_CODE" Type="int" />
+    <Property Name="CHK_VER_TRANSIT_NO" Type="varchar" MaxLength="3" />
+    <Property Name="CHK_VER_ACCT_NO" Type="varchar" MaxLength="6" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="SCAN_STATUS" Type="int" />
+  </EntityType>
+  <EntityType Name="dbtrxref">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="FIELDNAME" />
+      <PropertyRef Name="FVALUE" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="FIELDNAME" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="FVALUE" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="debt">
+    <Key>
+      <PropertyRef Name="DEBT_ID" />
+      <PropertyRef Name="DEBT_NO" />
+    </Key>
+    <Property Name="DEBT_ID" Type="int" Nullable="false" />
+    <Property Name="DEBT_NO" Type="smallint" Nullable="false" />
+    <Property Name="CLT_ID" Type="varchar" MaxLength="3" />
+    <Property Name="CLT_REF_NO" Type="varchar" MaxLength="7" />
+    <Property Name="ORIG_CLT" Type="varchar" MaxLength="14" />
+    <Property Name="ENTERED_DATE" Type="varchar" MaxLength="9" />
+    <Property Name="LIST_DATE" Type="varchar" MaxLength="9" />
+    <Property Name="SERV_DATE" Type="varchar" MaxLength="9" />
+    <Property Name="LAST_CHARGE_DATE" Type="varchar" MaxLength="9" />
+    <Property Name="STATUTE_DATE" Type="varchar" MaxLength="9" />
+    <Property Name="DEBT_TYPE" Type="char" MaxLength="1" />
+    <Property Name="DEBT_DESCR" Type="varchar" MaxLength="14" />
+    <Property Name="COMMENTS" Type="varchar" MaxLength="14" />
+    <Property Name="STATUS_CODE" Type="char" MaxLength="1" />
+    <Property Name="STATUS_DATE" Type="varchar" MaxLength="9" />
+    <Property Name="SALES_REP" Type="char" MaxLength="1" />
+    <Property Name="BUREAU_REPORT" Type="char" MaxLength="1" />
+    <Property Name="ORIG_PRINC_AMT" Type="decimal" Precision="14" />
+    <Property Name="PRINC_PAID" Type="decimal" Precision="14" />
+    <Property Name="ADJUST_PRINC" Type="decimal" Precision="14" />
+    <Property Name="ORIG_INT_AMT" Type="decimal" Precision="14" />
+    <Property Name="INT_PAID" Type="decimal" Precision="14" />
+    <Property Name="ADJUST_INT" Type="decimal" Precision="14" />
+    <Property Name="INT_RATE" Type="double" />
+    <Property Name="INT_CALC_DATE" Type="varchar" MaxLength="9" />
+    <Property Name="UNPAID_INT_ACCRUED" Type="decimal" Precision="14" />
+    <Property Name="DAILY_INT_AMT" Type="double" />
+    <Property Name="COLLPLAN_ID" Type="char" MaxLength="1" />
+    <Property Name="FEEPLAN_ID" Type="char" MaxLength="1" />
+    <Property Name="CONTPLAN_ID" Type="char" MaxLength="1" />
+    <Property Name="PRIMARY_DEBTOR_ID" Type="int" />
+    <Property Name="DELQ_DATE" Type="varchar" MaxLength="9" />
+    <Property Name="REFERENCE_NO" Type="varchar" MaxLength="7" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="9" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="POS_CLERK" Type="varchar" MaxLength="2" />
+    <Property Name="SECOND_DEPOSIT" Type="char" MaxLength="1" />
+    <Property Name="UPDATE_FEES" Type="char" MaxLength="1" />
+    <Property Name="UDFPLAN_ID" Type="varchar" MaxLength="2" />
+    <Property Name="DBTRUDFPLAN_ID" Type="varchar" MaxLength="2" />
+    <Property Name="CHARGEOFF_DATE" Type="varchar" MaxLength="9" />
+    <Property Name="LAST_ORIG_PMT_AMT" Type="decimal" Precision="12" />
+    <Property Name="LAST_ORIG_PMT_DATE" Type="varchar" MaxLength="9" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'BUREAU_PORTFOLIO_REPORTED' in the table 'def.test.debt_bureau' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'BUREAU_CREDITOR_CLASS_CODE' in the table 'def.test.debt_bureau' was excluded.
+-->
+  <EntityType Name="debt_bureau">
+    <Key>
+      <PropertyRef Name="DEBT_ID" />
+      <PropertyRef Name="DEBT_NO" />
+    </Key>
+    <Property Name="DEBT_ID" Type="int" Nullable="false" />
+    <Property Name="DEBT_NO" Type="smallint" Nullable="false" />
+    <Property Name="BUREAU_PORTFOLIO_IND" Type="smallint" />
+    <Property Name="BUREAU_PORTFOLIO_NAME" Type="varchar" MaxLength="10" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="debt2yy_view">
+    <Key>
+      <PropertyRef Name="RECORD_ID" />
+    </Key>
+    <Property Name="RECORD_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="COMPANY_ADDR1" Type="varchar" MaxLength="35" />
+    <Property Name="COMPANY_CITY_ST_ZIP" Type="varchar" MaxLength="40" />
+    <Property Name="COMPANY_PHONE" Type="varchar" MaxLength="20" />
+    <Property Name="COMPANY_FAX" Type="varchar" MaxLength="20" />
+    <Property Name="NAME" Type="varchar" MaxLength="50" />
+    <Property Name="CONTACT_NAME" Type="varchar" MaxLength="50" />
+    <Property Name="ADDR1" Type="varchar" MaxLength="50" />
+    <Property Name="CITY_ST_ZIP" Type="varchar" MaxLength="40" />
+    <Property Name="CLT_ID" Type="varchar" MaxLength="8" />
+    <Property Name="PRIMARY_SORT_NAME" Type="varchar" MaxLength="50" />
+    <Property Name="CLT_REF_NO" Type="varchar" MaxLength="50" />
+    <Property Name="LIST_DATE" Type="varchar" MaxLength="10" />
+    <Property Name="ORIG_PRINC_AMT" Type="decimal" Precision="19" Scale="2" />
+    <Property Name="PRINC_PAID" Type="decimal" Precision="19" Scale="2" />
+    <Property Name="PRINC_BAL" Type="decimal" Precision="19" Scale="2" />
+    <Property Name="STATUS_DESCR" Type="varchar" MaxLength="50" />
+    <Property Name="CLT_NAME" Type="varchar" MaxLength="50" />
+    <Property Name="CLT_ADDR1" Type="varchar" MaxLength="50" />
+    <Property Name="CLT_CITY_ST_ZIP" Type="varchar" MaxLength="40" />
+    <Property Name="DEBT_ID" Type="int" />
+    <Property Name="DEBT_NO" Type="smallint" />
+    <Property Name="ORIG_CLT" Type="varchar" MaxLength="8" />
+    <Property Name="ENTERED_DATE" Type="varchar" MaxLength="10" />
+    <Property Name="SERV_DATE" Type="varchar" MaxLength="10" />
+    <Property Name="LAST_CHARGE_DATE" Type="varchar" MaxLength="10" />
+    <Property Name="STATUTE_DATE" Type="varchar" MaxLength="10" />
+    <Property Name="DEBT_TYPE" Type="varchar" MaxLength="3" />
+    <Property Name="DEBT_DESCR" Type="varchar" MaxLength="40" />
+    <Property Name="COMMENTS" Type="varchar" MaxLength="100" />
+    <Property Name="STATUS_CODE" Type="varchar" MaxLength="3" />
+    <Property Name="STATUS_DATE" Type="varchar" MaxLength="10" />
+    <Property Name="SALES_REP" Type="varchar" MaxLength="3" />
+    <Property Name="BUREAU_REPORT" Type="varchar" MaxLength="1" />
+    <Property Name="ADJUST_PRINC" Type="decimal" Precision="19" Scale="13" />
+    <Property Name="ORIG_INT_AMT" Type="decimal" Precision="19" Scale="13" />
+    <Property Name="INT_PAID" Type="decimal" Precision="19" Scale="13" />
+    <Property Name="ADJUST_INT" Type="decimal" Precision="19" Scale="13" />
+    <Property Name="INT_RATE" Type="decimal" Precision="19" Scale="13" />
+    <Property Name="INT_CALC_DATE" Type="varchar" MaxLength="10" />
+    <Property Name="UNPAID_INT_ACCRUED" Type="decimal" Precision="19" Scale="13" />
+    <Property Name="DAILY_INT_AMT" Type="decimal" Precision="19" Scale="13" />
+    <Property Name="COLLPLAN_ID" Type="varchar" MaxLength="3" />
+    <Property Name="FEEPLAN_ID" Type="varchar" MaxLength="3" />
+    <Property Name="CONTPLAN_ID" Type="varchar" MaxLength="3" />
+    <Property Name="PRIMARY_DEBTOR_ID" Type="varchar" MaxLength="9" />
+    <Property Name="DELQ_DATE" Type="varchar" MaxLength="10" />
+    <Property Name="REFERENCE_NO" Type="varchar" MaxLength="20" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="10" />
+    <Property Name="USER_ID_STAMP" Type="varchar" MaxLength="3" />
+    <Property Name="POS_CLERK" Type="varchar" MaxLength="6" />
+    <Property Name="SECOND_DEPOSIT" Type="char" MaxLength="1" />
+    <Property Name="UPDATE_FEES" Type="char" MaxLength="1" />
+    <Property Name="UDFPLAN_ID" Type="varchar" MaxLength="4" />
+    <Property Name="DBTRUDFPLAN_ID" Type="varchar" MaxLength="4" />
+    <Property Name="CHARGEOFF_DATE" Type="varchar" MaxLength="10" />
+    <Property Name="LAST_ORIG_PMT_AMT" Type="decimal" Precision="19" Scale="13" />
+    <Property Name="LAST_ORIG_PMT_DATE" Type="varchar" MaxLength="10" />
+    <Property Name="ACA_MARKET" Type="int" />
+    <Property Name="ACA_SERVICE" Type="int" />
+    <Property Name="DEBT_ID_NO" Type="char" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="debtadj">
+    <Key>
+      <PropertyRef Name="DEBT_ID" />
+      <PropertyRef Name="DEBT_NO" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBT_ID" Type="int" Nullable="false" />
+    <Property Name="DEBT_NO" Type="smallint" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="ADJ_CODE" Type="varchar" MaxLength="1" />
+    <Property Name="ADJ_AMT" Type="decimal" Precision="14" />
+    <Property Name="ADJ_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="debtfee">
+    <Key>
+      <PropertyRef Name="DEBT_ID" />
+      <PropertyRef Name="DEBT_NO" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBT_ID" Type="int" Nullable="false" />
+    <Property Name="DEBT_NO" Type="smallint" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="FEE_CODE" Type="char" MaxLength="1" />
+    <Property Name="FEE_AMT" Type="decimal" Precision="14" />
+    <Property Name="FEE_PAID" Type="decimal" Precision="14" />
+    <Property Name="ADJUST_FEE" Type="decimal" Precision="14" />
+    <Property Name="THIS_REBATE_PAID" Type="decimal" Precision="14" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="debtfwd">
+    <Key>
+      <PropertyRef Name="DEBT_ID" />
+      <PropertyRef Name="DEBT_NO" />
+    </Key>
+    <Property Name="DEBT_ID" Type="int" Nullable="false" />
+    <Property Name="DEBT_NO" Type="smallint" Nullable="false" />
+    <Property Name="FWD_ID" Type="varchar" MaxLength="2" />
+    <Property Name="FWD_COLL_RATE" Type="double" />
+    <Property Name="FWD_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="FWD_TEXT" Type="blob" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="debtlgl">
+    <Key>
+      <PropertyRef Name="DEBT_ID" />
+      <PropertyRef Name="DEBT_NO" />
+    </Key>
+    <Property Name="DEBT_ID" Type="int" Nullable="false" />
+    <Property Name="DEBT_NO" Type="smallint" Nullable="false" />
+    <Property Name="LEGAL_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="LEGAL_COUNTY" Type="varchar" MaxLength="11" />
+    <Property Name="LEGAL_COURT_CODE" Type="varchar" MaxLength="1" />
+    <Property Name="LEGAL_CASE_NO" Type="varchar" MaxLength="10" />
+    <Property Name="LEGAL_INT" Type="decimal" Precision="14" />
+    <Property Name="FILING_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="PROCESS_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="PROCESS_SERVER" Type="varchar" MaxLength="11" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'ACCT_TYPE_CODE' in the table 'def.test.debttype' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'CHKVER_REASON_CODE' in the table 'def.test.debttype' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'SCAN_REASON_CODE' in the table 'def.test.debttype' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'BUREAU_CHECK_DEBT' in the table 'def.test.debttype' was excluded.
+-->
+  <EntityType Name="debttype">
+    <Key>
+      <PropertyRef Name="TYPE" />
+    </Key>
+    <Property Name="TYPE" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DESCR" Type="varchar" MaxLength="8" />
+    <Property Name="STATUTE_YEARS" Type="int" />
+    <Property Name="ICON" Type="longblob" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="DBTRUDFPLAN_ID" Type="varchar" MaxLength="1" />
+    <Property Name="DEBTUDFPLAN_ID" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="debtudf">
+    <Key>
+      <PropertyRef Name="DEBT_ID" />
+      <PropertyRef Name="DEBT_NO" />
+      <PropertyRef Name="LABEL" />
+    </Key>
+    <Property Name="DEBT_ID" Type="int" Nullable="false" />
+    <Property Name="DEBT_NO" Type="smallint" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="LABEL" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="DATE1" Type="varchar" MaxLength="8" />
+    <Property Name="AMT" Type="decimal" Precision="14" />
+    <Property Name="LONGSTR" Type="varchar" MaxLength="85" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="dialer_actions">
+    <Key>
+      <PropertyRef Name="DIALER_TYPE" />
+      <PropertyRef Name="RESULT" />
+    </Key>
+    <Property Name="DIALER_TYPE" Type="smallint" Nullable="false" />
+    <Property Name="RESULT" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="DESCR" Type="varchar" MaxLength="16" />
+    <Property Name="ACTCODE_ID" Type="int" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="dst">
+    <Key>
+      <PropertyRef Name="YEAR" />
+    </Key>
+    <Property Name="YEAR" Type="int" Nullable="false" />
+    <Property Name="UTA_DST_ON" Type="char" MaxLength="8" />
+    <Property Name="EURO_DST_ON" Type="char" MaxLength="8" />
+    <Property Name="DST_OFF" Type="char" MaxLength="8" />
+  </EntityType>
+  <EntityType Name="dsttype">
+    <Key>
+      <PropertyRef Name="TYPE" />
+    </Key>
+    <Property Name="TYPE" Type="smallint" Nullable="false" />
+    <Property Name="DESCR" Type="varchar" MaxLength="10" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="eodlog">
+    <Key>
+      <PropertyRef Name="EOD_DATE" />
+    </Key>
+    <Property Name="EOD_DATE" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="NEXT_WORK_DAY" Type="varchar" MaxLength="8" />
+    <Property Name="STATION_SK" Type="smallint" />
+    <Property Name="LOG" Type="blob" />
+    <Property Name="MODULES" Type="blob" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="eodproc">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="PROCESS" Type="varchar" MaxLength="11" />
+    <Property Name="SENDER" Type="varchar" MaxLength="11" />
+    <Property Name="P1" Type="varchar" MaxLength="11" />
+    <Property Name="P2" Type="varchar" MaxLength="11" />
+    <Property Name="P3" Type="varchar" MaxLength="11" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'COLLATE' in the table 'def.test.eodrep' was excluded.
+-->
+  <EntityType Name="eodrep">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="REPORTNAME" Type="varchar" MaxLength="6" />
+    <Property Name="RESPONSES" Type="blob" />
+    <Property Name="COPIES" Type="smallint" />
+    <Property Name="PRINTER" Type="blob" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="FILENAME" Type="varchar" MaxLength="83" />
+  </EntityType>
+  <EntityType Name="feecode">
+    <Key>
+      <PropertyRef Name="FEE_CODE_ID" />
+    </Key>
+    <Property Name="FEE_CODE_ID" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DESCR" Type="varchar" MaxLength="5" />
+    <Property Name="COLL_RATE" Type="varchar" MaxLength="3" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="feepdet">
+    <Key>
+      <PropertyRef Name="FEEPLAN_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="FEEPLAN_ID" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="FEE_CODE" Type="char" MaxLength="1" />
+    <Property Name="AMT" Type="varchar" MaxLength="13" />
+    <Property Name="AGE" Type="int" />
+    <Property Name="MIN" Type="varchar" MaxLength="13" />
+    <Property Name="MAX" Type="varchar" MaxLength="13" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="feeplan">
+    <Key>
+      <PropertyRef Name="FEEPLAN_ID" />
+    </Key>
+    <Property Name="FEEPLAN_ID" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DESCR" Type="varchar" MaxLength="10" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="holiday">
+    <Key>
+      <PropertyRef Name="HOLIDAY_DATE" />
+    </Key>
+    <Property Name="HOLIDAY_DATE" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="DESCR" Type="varchar" MaxLength="8" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="ic_request">
+    <Key>
+      <PropertyRef Name="REQUEST_TYPE" />
+      <PropertyRef Name="REQUEST_CODE" />
+    </Key>
+    <Property Name="REQUEST_TYPE" Type="smallint" Nullable="false" />
+    <Property Name="REQUEST_CODE" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="DESCRIPTION" Type="varchar" MaxLength="8" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'KEY_FIELD' in the table 'def.test.impfield' was excluded.
+-->
+  <EntityType Name="impfield">
+    <Key>
+      <PropertyRef Name="IMPORT_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="IMPORT_ID" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="FIELD_NAME" Type="varchar" MaxLength="83" />
+    <Property Name="LENGTH" Type="int" />
+    <Property Name="GROUP_ID" Type="varchar" MaxLength="4" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'MASTER' in the table 'def.test.impgroup' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'APPEND_DEBT' in the table 'def.test.impgroup' was excluded.
+-->
+  <EntityType Name="impgroup">
+    <Key>
+      <PropertyRef Name="IMPORT_ID" />
+      <PropertyRef Name="GROUP_ID" />
+    </Key>
+    <Property Name="IMPORT_ID" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="GROUP_ID" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="FILE" Type="varchar" MaxLength="6" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'TYPE' in the table 'def.test.import' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'MULTI_RECORD' in the table 'def.test.import' was excluded.
+-->
+  <EntityType Name="import">
+    <Key>
+      <PropertyRef Name="IMPORT_ID" />
+    </Key>
+    <Property Name="IMPORT_ID" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="FILE" Type="varchar" MaxLength="6" />
+    <Property Name="DELIMITER" Type="varchar" MaxLength="2" />
+    <Property Name="END_OF_REC_MARK" Type="varchar" MaxLength="2" />
+    <Property Name="HEADER" Type="int" />
+    <Property Name="TRAILER" Type="int" />
+    <Property Name="IMPLIED_DECIMAL" Type="int" />
+    <Property Name="DATE_FORMAT" Type="varchar" MaxLength="8" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="HEADER_LENGTH" Type="int" />
+  </EntityType>
+  <EntityType Name="indexing">
+    <Key>
+      <PropertyRef Name="TABLENAME" />
+    </Key>
+    <Property Name="TABLENAME" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="SEARCHFIELDS" Type="blob" />
+    <Property Name="DISPLAYSQL" Type="blob" />
+    <Property Name="CRITERIASQL" Type="blob" />
+    <Property Name="IDFIELD" Type="varchar" MaxLength="16" />
+    <Property Name="SORTSTRING" Type="blob" />
+    <Property Name="XREFFILENAME" Type="varchar" MaxLength="2" />
+    <Property Name="XREFFIELDS" Type="blob" />
+    <Property Name="MASTERFIELDNAMES" Type="blob" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="language">
+    <Key>
+      <PropertyRef Name="LANGUAGE_ID" />
+    </Key>
+    <Property Name="LANGUAGE_ID" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DESCR" Type="varchar" MaxLength="6" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'SEND_ON_CLOSED' in the table 'def.test.letter' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'NCOA' in the table 'def.test.letter' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'PROM_REQ' in the table 'def.test.letter' was excluded.
+-->
+  <EntityType Name="letter">
+    <Key>
+      <PropertyRef Name="LETTER_ID" />
+    </Key>
+    <Property Name="LETTER_ID" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="DESCR" Type="varchar" MaxLength="11" />
+    <Property Name="DOCUMENT_NAME" Type="varchar" MaxLength="85" />
+    <Property Name="DATA_SOURCE" Type="varchar" MaxLength="85" />
+    <Property Name="DATA_FILE" Type="varchar" MaxLength="10" />
+    <Property Name="FORM_TYPE" Type="varchar" MaxLength="10" />
+    <Property Name="SELECTED_FIELDS" Type="blob" />
+    <Property Name="OUTSOURCE_ID" Type="int" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'STATE' in the table 'def.test.letter_state_sub' was excluded.
+warning 6031: The column 'STATE' on the table/view 'def.test.letter_state_sub' was excluded, and is a key column.  The remaining key(s) were used and table/view has been created as read-only.
+-->
+  <EntityType Name="letter_state_sub">
+    <Key>
+      <PropertyRef Name="LETTER_ID" />
+    </Key>
+    <Property Name="LETTER_ID" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="SUB_LETTER_ID" Type="varchar" MaxLength="2" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'TESTED' in the table 'def.test.list_option' was excluded.
+-->
+  <EntityType Name="list_option">
+    <Key>
+      <PropertyRef Name="OPT_ID" />
+    </Key>
+    <Property Name="OPT_ID" Type="int" Nullable="false" />
+    <Property Name="DESCR" Type="varchar" MaxLength="10" />
+    <Property Name="CRITERIA" Type="blob" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="listoptxwrk">
+    <Key>
+      <PropertyRef Name="WORKLIST_ID" />
+      <PropertyRef Name="LIST_OPTION_ID" />
+      <PropertyRef Name="PRIORITY" />
+    </Key>
+    <Property Name="WORKLIST_ID" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="LIST_OPTION_ID" Type="int" Nullable="false" />
+    <Property Name="PRIORITY" Type="int" Nullable="false" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="locktable">
+    <Key>
+      <PropertyRef Name="TABLENAME" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="TABLENAME" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="ID" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="DB_ID" Type="varchar" MaxLength="8" />
+    <Property Name="COMPUTER_NAME" Type="varchar" MaxLength="16" />
+    <Property Name="CONNECTION_NUMBER" Type="int" />
+    <Property Name="HNDL" Type="int" />
+  </EntityType>
+  <EntityType Name="ltrfield">
+    <Key>
+      <PropertyRef Name="DATA_FILE" />
+      <PropertyRef Name="FIELD_NAME" />
+    </Key>
+    <Property Name="DATA_FILE" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="FIELD_NAME" Type="varchar" Nullable="false" MaxLength="13" />
+    <Property Name="FIELD_FNCTN" Type="varchar" MaxLength="13" />
+    <Property Name="FORMATTING_FNCTN" Type="varchar" MaxLength="13" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'NAME_WARN' in the table 'def.test.matchprm' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'SSN_WARN' in the table 'def.test.matchprm' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'DL_WARN' in the table 'def.test.matchprm' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'PHONE_WARN' in the table 'def.test.matchprm' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'ADDRESS_WARN' in the table 'def.test.matchprm' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'DOB_WARN' in the table 'def.test.matchprm' was excluded.
+-->
+  <EntityType Name="matchprm">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="smallint" Nullable="false" />
+    <Property Name="NAME_SCORE" Type="int" />
+    <Property Name="SSN_SCORE" Type="int" />
+    <Property Name="DL_SCORE" Type="int" />
+    <Property Name="PHONE_SCORE" Type="int" />
+    <Property Name="ADDRESS_SCORE" Type="int" />
+    <Property Name="DOB_SCORE" Type="int" />
+    <Property Name="TOTAL_SCORE" Type="int" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'PAYER_STATE' in the table 'def.test.micrchk' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'BANK_STATE' in the table 'def.test.micrchk' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'SIG_LINE' in the table 'def.test.micrchk' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'PRINTED' in the table 'def.test.micrchk' was excluded.
+-->
+  <EntityType Name="micrchk">
+    <Key>
+      <PropertyRef Name="MICRCHK_ID" />
+    </Key>
+    <Property Name="MICRCHK_ID" Type="int" Nullable="false" />
+    <Property Name="MICR" Type="varchar" MaxLength="13" />
+    <Property Name="TRANSIT_NO" Type="varchar" MaxLength="3" />
+    <Property Name="ABA_NO" Type="varchar" MaxLength="3" />
+    <Property Name="ACCT_NO" Type="varchar" MaxLength="5" />
+    <Property Name="CHECK_NO" Type="int" />
+    <Property Name="CHK_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="CHK_AMT" Type="decimal" Precision="12" />
+    <Property Name="PAYER_NAME" Type="varchar" MaxLength="11" />
+    <Property Name="PAYER_ADDR1" Type="varchar" MaxLength="11" />
+    <Property Name="PAYER_ADDR2" Type="varchar" MaxLength="11" />
+    <Property Name="PAYER_CITY" Type="varchar" MaxLength="8" />
+    <Property Name="PAYER_ZIP" Type="varchar" MaxLength="3" />
+    <Property Name="PAYER_PHONE" Type="varchar" MaxLength="4" />
+    <Property Name="PAYEE_NAME" Type="varchar" MaxLength="11" />
+    <Property Name="PAYEE_ADDR1" Type="varchar" MaxLength="11" />
+    <Property Name="PAYEE_ADDR2" Type="varchar" MaxLength="11" />
+    <Property Name="PAYEE_CITY" Type="varchar" MaxLength="11" />
+    <Property Name="PAYEE_STATE" Type="varchar" MaxLength="11" />
+    <Property Name="PAYEE_ZIP" Type="varchar" MaxLength="3" />
+    <Property Name="PAYEE_PHONE" Type="varchar" MaxLength="4" />
+    <Property Name="BANK_NAME" Type="varchar" MaxLength="11" />
+    <Property Name="BANK_ADDR1" Type="varchar" MaxLength="11" />
+    <Property Name="BANK_ADDR2" Type="varchar" MaxLength="11" />
+    <Property Name="BANK_CITY" Type="varchar" MaxLength="8" />
+    <Property Name="BANK_ZIP" Type="varchar" MaxLength="3" />
+    <Property Name="BANK_PHONE" Type="varchar" MaxLength="4" />
+    <Property Name="SIG_TEXT" Type="varchar" MaxLength="16" />
+    <Property Name="MEMO_TEXT" Type="varchar" MaxLength="16" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="period">
+    <Key>
+      <PropertyRef Name="PERIOD_YEAR" />
+      <PropertyRef Name="PERIOD" />
+    </Key>
+    <Property Name="PERIOD_YEAR" Type="smallint" Nullable="false" />
+    <Property Name="PERIOD" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="BEG_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="END_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="peryear">
+    <Key>
+      <PropertyRef Name="PERIOD_YEAR" />
+    </Key>
+    <Property Name="PERIOD_YEAR" Type="smallint" Nullable="false" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="pmt">
+    <Key>
+      <PropertyRef Name="PMT_ID" />
+    </Key>
+    <Property Name="PMT_ID" Type="int" Nullable="false" />
+    <Property Name="PMTB_ID" Type="int" />
+    <Property Name="DEBT_ID" Type="int" />
+    <Property Name="DEBT_NO" Type="smallint" />
+    <Property Name="DEBTOR_ID" Type="int" />
+    <Property Name="CLT_ID" Type="varchar" MaxLength="3" />
+    <Property Name="SALES_REP" Type="char" MaxLength="1" />
+    <Property Name="PMT_DATE" Type="varchar" MaxLength="9" />
+    <Property Name="PMT_CODE" Type="char" MaxLength="1" />
+    <Property Name="DIRECT" Type="char" MaxLength="1" />
+    <Property Name="CHECK_NO" Type="int" />
+    <Property Name="COLLPLAN_ID" Type="char" MaxLength="1" />
+    <Property Name="TRUST_POST_PERIOD" Type="varchar" MaxLength="3" />
+    <Property Name="OVERPMT" Type="decimal" Precision="12" />
+    <Property Name="OTHER_AGENCY_FEE" Type="decimal" Precision="12" />
+    <Property Name="PRINC_AMT" Type="decimal" Precision="12" />
+    <Property Name="CLT_PRINC_AMT" Type="decimal" Precision="12" />
+    <Property Name="INT_AMT" Type="decimal" Precision="12" />
+    <Property Name="SHOW_INT_AMT" Type="decimal" Precision="12" />
+    <Property Name="CLT_INT_AMT" Type="decimal" Precision="12" />
+    <Property Name="FEE_AMT" Type="decimal" Precision="12" />
+    <Property Name="SHOW_FEE_AMT" Type="decimal" Precision="12" />
+    <Property Name="CLT_FEE_AMT" Type="decimal" Precision="12" />
+    <Property Name="REBATE_AMT" Type="decimal" Precision="12" />
+    <Property Name="SALES_TAX_AMT" Type="decimal" Precision="12" />
+    <Property Name="BACKOUT_ID" Type="int" />
+    <Property Name="TRUST_POST_SUB_PERIOD" Type="smallint" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="9" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="UNSHARED_INT_AMT" Type="decimal" Precision="12" />
+    <Property Name="UNSHARED_FEE_AMT" Type="decimal" Precision="12" />
+    <Property Name="POSTED_DATE" Type="varchar" MaxLength="9" />
+    <Property Name="WORKLIST_ID" Type="char" MaxLength="1" />
+    <Property Name="SESSION_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="pmt_post_session">
+    <Key>
+      <PropertyRef Name="SESSION_ID" />
+    </Key>
+    <Property Name="SESSION_ID" Type="int" Nullable="false" />
+    <Property Name="SESSION_DATE_TIME" Type="varchar" MaxLength="8" />
+    <Property Name="POSTING_USER" Type="char" MaxLength="1" />
+    <Property Name="COMPUTER_NAME" Type="varchar" MaxLength="16" />
+    <Property Name="SESSION_NUMBER" Type="int" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'PAYER_STATE' in the table 'def.test.pmtb' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'BACKOUT_HIDE' in the table 'def.test.pmtb' was excluded.
+-->
+  <EntityType Name="pmtb">
+    <Key>
+      <PropertyRef Name="PMTB_ID" />
+    </Key>
+    <Property Name="PMTB_ID" Type="int" Nullable="false" />
+    <Property Name="CHECK_NO" Type="int" />
+    <Property Name="PMT_CODE" Type="char" MaxLength="1" />
+    <Property Name="PMT_AMT" Type="decimal" Precision="12" />
+    <Property Name="OTHER_AGENCY_FEE" Type="decimal" Precision="12" />
+    <Property Name="APPLIED_AMT" Type="decimal" Precision="12" />
+    <Property Name="DEBTOR_ID" Type="int" />
+    <Property Name="OTHER_AGENCY_ID" Type="varchar" MaxLength="2" />
+    <Property Name="PAYER_NAME" Type="varchar" MaxLength="11" />
+    <Property Name="PAYER_ADDR1" Type="varchar" MaxLength="11" />
+    <Property Name="PAYER_ADDR2" Type="varchar" MaxLength="11" />
+    <Property Name="PAYER_CITY" Type="varchar" MaxLength="8" />
+    <Property Name="PAYER_ZIP" Type="varchar" MaxLength="3" />
+    <Property Name="PAYER_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="PMTB_USER" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="MICR" Type="varchar" MaxLength="13" />
+  </EntityType>
+  <EntityType Name="pmtbdebt">
+    <Key>
+      <PropertyRef Name="PMTB_ID" />
+      <PropertyRef Name="DEBT_ID" />
+      <PropertyRef Name="DEBT_NO" />
+    </Key>
+    <Property Name="PMTB_ID" Type="int" Nullable="false" />
+    <Property Name="DEBT_ID" Type="int" Nullable="false" />
+    <Property Name="DEBT_NO" Type="smallint" Nullable="false" />
+    <Property Name="PMT_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="PRINC_AMT" Type="decimal" Precision="12" />
+    <Property Name="INT_AMT" Type="decimal" Precision="12" />
+    <Property Name="FEE_AMT" Type="decimal" Precision="12" />
+    <Property Name="NEW_STATUS" Type="char" MaxLength="1" />
+    <Property Name="BACKOUT_ID" Type="int" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="pmtbfee">
+    <Key>
+      <PropertyRef Name="PMTB_ID" />
+      <PropertyRef Name="DEBT_ID" />
+      <PropertyRef Name="DEBT_NO" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="PMTB_ID" Type="int" Nullable="false" />
+    <Property Name="DEBT_ID" Type="int" Nullable="false" />
+    <Property Name="DEBT_NO" Type="smallint" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="FEE_CODE" Type="char" MaxLength="1" />
+    <Property Name="THIS_FEE_AMT" Type="decimal" Precision="12" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'BACKOUT' in the table 'def.test.pmtcode' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'DIRECT' in the table 'def.test.pmtcode' was excluded.
+-->
+  <EntityType Name="pmtcode">
+    <Key>
+      <PropertyRef Name="PMT_CODE" />
+    </Key>
+    <Property Name="PMT_CODE" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DESCR" Type="varchar" MaxLength="6" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="pmtfee">
+    <Key>
+      <PropertyRef Name="PMT_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="PMT_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="FEE_CODE" Type="char" MaxLength="1" />
+    <Property Name="THIS_FEE_AMT" Type="decimal" Precision="12" />
+    <Property Name="THIS_SHOW_FEE_AMT" Type="decimal" Precision="12" />
+    <Property Name="THIS_CLT_FEE_AMT" Type="decimal" Precision="12" />
+    <Property Name="THIS_REBATE_AMT" Type="decimal" Precision="12" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="pmtuser">
+    <Key>
+      <PropertyRef Name="PMT_ID" />
+      <PropertyRef Name="USER_ID" />
+      <PropertyRef Name="LIST_TYPE" />
+    </Key>
+    <Property Name="PMT_ID" Type="int" Nullable="false" />
+    <Property Name="USER_ID" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="LIST_TYPE" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="rms_archive">
+    <Key>
+      <PropertyRef Name="FILE_DATE" />
+      <PropertyRef Name="FILE_NAME" />
+    </Key>
+    <Property Name="FILE_DATE" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="FILE_NAME" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'RMS_OPTION' in the table 'def.test.rms_code' was excluded.
+-->
+  <EntityType Name="rms_code">
+    <Key>
+      <PropertyRef Name="BANK_ID" />
+      <PropertyRef Name="CODE_TYPE" />
+      <PropertyRef Name="FROM_CODE" />
+    </Key>
+    <Property Name="BANK_ID" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="CODE_TYPE" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="FROM_CODE" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="DESCR" Type="varchar" MaxLength="16" />
+    <Property Name="TO_CODE" Type="varchar" MaxLength="83" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'ACTIVE' in the table 'def.test.rmsbank' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'ZERO_COMMISSION' in the table 'def.test.rmsbank' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'CALC_INTEREST' in the table 'def.test.rmsbank' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'BUREAU_REPORT' in the table 'def.test.rmsbank' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'DIALER' in the table 'def.test.rmsbank' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'INCLUDE_CLOSED' in the table 'def.test.rmsbank' was excluded.
+-->
+  <EntityType Name="rmsbank">
+    <Key>
+      <PropertyRef Name="BANK_ID" />
+    </Key>
+    <Property Name="BANK_ID" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="BANK_NAME" Type="varchar" MaxLength="8" />
+    <Property Name="CLT_ID" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="MAX_AGE" Type="int" />
+    <Property Name="CLOSING_STATUS" Type="char" MaxLength="1" />
+    <Property Name="INFO_REQUESTED_WORKLIST" Type="char" MaxLength="1" />
+    <Property Name="COLLPLAN_ID" Type="char" MaxLength="1" />
+    <Property Name="CONTPLAN_ID" Type="char" MaxLength="1" />
+    <Property Name="ORIG_CLT" Type="varchar" MaxLength="13" />
+    <Property Name="DEBT_TYPE" Type="char" MaxLength="1" />
+    <Property Name="FEEPLAN_ID" Type="char" MaxLength="1" />
+    <Property Name="STATUS_CODE" Type="char" MaxLength="1" />
+    <Property Name="PRIORITY" Type="smallint" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="salesrep">
+    <Key>
+      <PropertyRef Name="SALES_REP_ID" />
+    </Key>
+    <Property Name="SALES_REP_ID" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="NAME" Type="varchar" MaxLength="11" />
+    <Property Name="TERRITORY" Type="varchar" MaxLength="11" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'STATUS' in the table 'def.test.scanout' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'TRANSACTION_TYPE' in the table 'def.test.scanout' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'PURGE' in the table 'def.test.scanout' was excluded.
+-->
+  <EntityType Name="scanout">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="TRANSACTION_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="DEBT_ID" Type="int" />
+    <Property Name="DEBT_NO" Type="int" />
+    <Property Name="OUT_RECORD" Type="varchar" MaxLength="83" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'STATE' in the table 'def.test.sentltr' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'STATUS' in the table 'def.test.sentltr' was excluded.
+-->
+  <EntityType Name="sentltr">
+    <Key>
+      <PropertyRef Name="SENT_LTR_ID" />
+    </Key>
+    <Property Name="SENT_LTR_ID" Type="int" Nullable="false" />
+    <Property Name="LETTER_DATE" Type="varchar" MaxLength="8" />
+    <Property Name="DEBTOR_ID" Type="varchar" MaxLength="2" />
+    <Property Name="LETTER_ID" Type="varchar" MaxLength="2" />
+    <Property Name="DEBT_ID" Type="int" />
+    <Property Name="DEBT_NO" Type="smallint" />
+    <Property Name="LETTER_ADDR" Type="varchar" MaxLength="4" />
+    <Property Name="ADDR1" Type="varchar" MaxLength="11" />
+    <Property Name="ADDR2" Type="varchar" MaxLength="11" />
+    <Property Name="CITY" Type="varchar" MaxLength="8" />
+    <Property Name="ZIP" Type="varchar" MaxLength="3" />
+    <Property Name="FORM_TYPE" Type="varchar" MaxLength="10" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="sk">
+    <Key>
+      <PropertyRef Name="FILENAME" />
+    </Key>
+    <Property Name="FILENAME" Type="varchar" Nullable="false" MaxLength="13" />
+    <Property Name="NEXT_ID" Type="int" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="st_options">
+    <Key>
+      <PropertyRef Name="ST_OPTIONS_ID" />
+    </Key>
+    <Property Name="ST_OPTIONS_ID" Type="int" Nullable="false" />
+    <Property Name="ST_OPTIONS" Type="longblob" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'CODE_PROTECT' in the table 'def.test.statcode' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'CHARGEOFF' in the table 'def.test.statcode' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'CHECK_VER_DELETE' in the table 'def.test.statcode' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'RETURN_ACCT' in the table 'def.test.statcode' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'BUREAU_STATUS_CODE' in the table 'def.test.statcode' was excluded.
+-->
+  <EntityType Name="statcode">
+    <Key>
+      <PropertyRef Name="STATCODE_ID" />
+    </Key>
+    <Property Name="STATCODE_ID" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ABBREV" Type="char" MaxLength="1" />
+    <Property Name="DESCR" Type="varchar" MaxLength="10" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="storegrp">
+    <Key>
+      <PropertyRef Name="STORE_GROUP" />
+    </Key>
+    <Property Name="STORE_GROUP" Type="smallint" Nullable="false" />
+    <Property Name="DESCR" Type="varchar" MaxLength="8" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'SHOW_COMMENTS' in the table 'def.test.stuser' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'EODREP' in the table 'def.test.stuser' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'CLOSEACCTS' in the table 'def.test.stuser' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'REACTIVATEACCTS' in the table 'def.test.stuser' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'MODIFYDEBT' in the table 'def.test.stuser' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'CHANGEDBTRNAME' in the table 'def.test.stuser' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'VIEWOTHERWRKLST' in the table 'def.test.stuser' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'DIALER_POLLING' in the table 'def.test.stuser' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'RETRIEVECBINQ' in the table 'def.test.stuser' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'CHANGEASSIGNID' in the table 'def.test.stuser' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'PULL_CREDIT_REPORT' in the table 'def.test.stuser' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'VIEWOTHERSLSRPLST' in the table 'def.test.stuser' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'CLIENT_PRIVY' in the table 'def.test.stuser' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'AIC_POLLING' in the table 'def.test.stuser' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'MODIFY_CLIENT_INFO' in the table 'def.test.stuser' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'TEMPLATE_LOCKED' in the table 'def.test.stuser' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'CREATE_AGENT_LISTS' in the table 'def.test.stuser' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'ST_HOST' in the table 'def.test.stuser' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'VIEW_HIPAA_UDF' in the table 'def.test.stuser' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'VIEW_HIPAA_DBTR' in the table 'def.test.stuser' was excluded.
+-->
+  <EntityType Name="stuser">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="NAME" Type="varchar" MaxLength="11" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="11" />
+    <Property Name="ST_PASSWORD" Type="varchar" MaxLength="11" />
+    <Property Name="CLT_IDS" Type="blob" />
+    <Property Name="MENUGRANTS" Type="blob" />
+    <Property Name="WINDOWROGRANTS" Type="blob" />
+    <Property Name="WINDOWSETTINGS" Type="blob" />
+    <Property Name="COLLECTORDETWINS" Type="blob" />
+    <Property Name="LABOR_TYPE" Type="varchar" MaxLength="5" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="THIN_CLT_LOCATION" Type="varchar" MaxLength="3" />
+    <Property Name="THIN_CLT_TIMEZONE" Type="varchar" MaxLength="2" />
+    <Property Name="THIN_CLT_DELTA" Type="varchar" MaxLength="2" />
+    <Property Name="TEMPLATE_ID" Type="varchar" MaxLength="2" />
+    <Property Name="TEAM" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="template">
+    <Key>
+      <PropertyRef Name="TMP_ID" />
+    </Key>
+    <Property Name="TMP_ID" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="DESCR" Type="varchar" MaxLength="11" />
+    <Property Name="COLLDETWINS" Type="blob" />
+    <Property Name="WINDOWSETTINGS" Type="blob" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="test">
+    <Key>
+      <PropertyRef Name="Record" />
+    </Key>
+    <Property Name="Record" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="33" />
+  </EntityType>
+  <EntityType Name="tz">
+    <Key>
+      <PropertyRef Name="TZ_ID" />
+    </Key>
+    <Property Name="TZ_ID" Type="smallint" Nullable="false" />
+    <Property Name="ABBREV" Type="char" MaxLength="1" />
+    <Property Name="DESCR" Type="varchar" MaxLength="10" />
+    <Property Name="UTC_DELTA" Type="decimal" Precision="4" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="tzdet">
+    <Key>
+      <PropertyRef Name="ITEM_NO" />
+      <PropertyRef Name="TZ_ID" />
+      <PropertyRef Name="DST_TYPE" />
+    </Key>
+    <Property Name="ITEM_NO" Type="smallint" Nullable="false" />
+    <Property Name="TZ_ID" Type="smallint" Nullable="false" />
+    <Property Name="DST_TYPE" Type="smallint" Nullable="false" />
+    <Property Name="ABBREV" Type="char" MaxLength="1" />
+    <Property Name="BEGIN_DT" Type="varchar" MaxLength="8" />
+    <Property Name="END_DT" Type="varchar" MaxLength="8" />
+    <Property Name="DST_DELTA" Type="decimal" Precision="4" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'HIPAA_RESTRICT' in the table 'def.test.udfcode' was excluded.
+-->
+  <EntityType Name="udfcode">
+    <Key>
+      <PropertyRef Name="LABEL" />
+    </Key>
+    <Property Name="LABEL" Type="varchar" Nullable="false" MaxLength="6" />
+    <Property Name="TYPE" Type="int" />
+    <Property Name="MASK" Type="varchar" MaxLength="6" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="SORT_VALUE" Type="decimal" Precision="14" />
+  </EntityType>
+  <EntityType Name="udfpdet">
+    <Key>
+      <PropertyRef Name="UDFPLAN_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="UDFPLAN_ID" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="ITEM_NO" Type="int" Nullable="false" />
+    <Property Name="LABEL" Type="varchar" MaxLength="10" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="udfplan">
+    <Key>
+      <PropertyRef Name="UDFPLAN_ID" />
+    </Key>
+    <Property Name="UDFPLAN_ID" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="DESCR" Type="varchar" MaxLength="10" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="udftype">
+    <Key>
+      <PropertyRef Name="UDF_TYPE" />
+    </Key>
+    <Property Name="UDF_TYPE" Type="int" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="varchar" MaxLength="5" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="ul_connection_script">
+    <Key>
+      <PropertyRef Name="event" />
+    </Key>
+    <Property Name="event" Type="varchar" Nullable="false" MaxLength="42" />
+    <Property Name="script_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ul_script">
+    <Key>
+      <PropertyRef Name="script_id" />
+    </Key>
+    <Property Name="script_id" Type="int" Nullable="false" />
+    <Property Name="script" Type="blob" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ul_scripts_modified">
+    <Key>
+      <PropertyRef Name="last_modified" />
+    </Key>
+    <Property Name="last_modified" Type="char" Nullable="false" MaxLength="8" />
+  </EntityType>
+  <EntityType Name="ul_table">
+    <Key>
+      <PropertyRef Name="table_id" />
+    </Key>
+    <Property Name="table_id" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="42" />
+  </EntityType>
+  <EntityType Name="ul_table_script">
+    <Key>
+      <PropertyRef Name="table_id" />
+      <PropertyRef Name="event" />
+    </Key>
+    <Property Name="table_id" Type="int" Nullable="false" />
+    <Property Name="event" Type="varchar" Nullable="false" MaxLength="42" />
+    <Property Name="script_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ul_user">
+    <Key>
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="user_id" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="42" />
+    <Property Name="commit_state" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="userstat">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+      <PropertyRef Name="STAT_DATE" />
+    </Key>
+    <Property Name="USER_ID" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="STAT_DATE" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="WORKED" Type="int" />
+    <Property Name="TOTAL_TIME" Type="double" />
+    <Property Name="LETTERS" Type="int" />
+    <Property Name="PROMISES" Type="int" />
+    <Property Name="POST_DATES" Type="int" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'COMMISSIONABLE' in the table 'def.test.userxsales' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'INCLUDE_IN_WKLST' in the table 'def.test.userxsales' was excluded.
+-->
+  <EntityType Name="userxsales">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+      <PropertyRef Name="SALES_REP_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="SALES_REP_ID" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'COMMISSIONABLE' in the table 'def.test.userxwrk' was excluded.
+-->
+  <EntityType Name="userxwrk">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+      <PropertyRef Name="WORKLIST_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="WORKLIST_ID" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'STATE' in the table 'def.test.vend' was excluded.
+-->
+  <EntityType Name="vend">
+    <Key>
+      <PropertyRef Name="VEND_ID" />
+    </Key>
+    <Property Name="VEND_ID" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="COMPANY" Type="varchar" MaxLength="11" />
+    <Property Name="NAME" Type="varchar" MaxLength="11" />
+    <Property Name="ADDR1" Type="varchar" MaxLength="11" />
+    <Property Name="ADDR2" Type="varchar" MaxLength="11" />
+    <Property Name="CITY" Type="varchar" MaxLength="8" />
+    <Property Name="ZIP" Type="varchar" MaxLength="3" />
+    <Property Name="PHONE" Type="varchar" MaxLength="4" />
+    <Property Name="COMMENTS" Type="varchar" MaxLength="11" />
+    <Property Name="TAX_ID" Type="varchar" MaxLength="3" />
+    <Property Name="ACCT_REF_NO" Type="varchar" MaxLength="5" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="vendamt">
+    <Key>
+      <PropertyRef Name="VEND_ID" />
+      <PropertyRef Name="VEND_YEAR" />
+    </Key>
+    <Property Name="VEND_ID" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="VEND_YEAR" Type="smallint" Nullable="false" />
+    <Property Name="AMT" Type="decimal" Precision="14" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'PREDICTIVE_DIALER' in the table 'def.test.worklist' was excluded.
+-->
+  <EntityType Name="worklist">
+    <Key>
+      <PropertyRef Name="WORKLIST_ID" />
+    </Key>
+    <Property Name="WORKLIST_ID" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ALIAS" Type="varchar" MaxLength="11" />
+    <Property Name="WORKLIST_TYPE" Type="char" MaxLength="1" />
+    <Property Name="LANGUAGE" Type="varchar" MaxLength="7" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'STATE' in the table 'def.test.zip' was excluded.
+-->
+  <EntityType Name="zip">
+    <Key>
+      <PropertyRef Name="ZIP" />
+    </Key>
+    <Property Name="ZIP" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="CITY" Type="varchar" MaxLength="8" />
+    <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+    <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+    <Property Name="TIMEZONE" Type="smallint" />
+    <Property Name="DST_TYPE" Type="smallint" />
+    <Property Name="COUNTY" Type="varchar" MaxLength="8" />
+    <Property Name="COUNTRY" Type="char" MaxLength="1" />
+    <Property Name="AREA_CODE" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'CODE' in the table 'def.test.bureau_acct_sts' was excluded.
+warning 6031: The column 'CODE' on the table/view 'def.test.bureau_acct_sts' was excluded, and is a key column.  The table/view has been excluded.  Please fix the entity in the schema file, and uncomment.
+
+<EntityType Name="bureau_acct_sts">
+  <Property Name="DESCR" Type="varchar" MaxLength="13" />
+  <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+  <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+</EntityType>
+Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'CODE' in the table 'def.test.bureau_acct_type' was excluded.
+warning 6031: The column 'CODE' on the table/view 'def.test.bureau_acct_type' was excluded, and is a key column.  The table/view has been excluded.  Please fix the entity in the schema file, and uncomment.
+
+<EntityType Name="bureau_acct_type">
+  <Property Name="DESCR" Type="varchar" MaxLength="13" />
+  <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+  <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+</EntityType>
+Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'CODE' in the table 'def.test.bureau_addr_ind' was excluded.
+warning 6031: The column 'CODE' on the table/view 'def.test.bureau_addr_ind' was excluded, and is a key column.  The table/view has been excluded.  Please fix the entity in the schema file, and uncomment.
+
+<EntityType Name="bureau_addr_ind">
+  <Property Name="DESCR" Type="varchar" MaxLength="13" />
+  <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+  <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+</EntityType>
+Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'CODE' in the table 'def.test.bureau_comp_cond_code' was excluded.
+warning 6031: The column 'CODE' on the table/view 'def.test.bureau_comp_cond_code' was excluded, and is a key column.  The table/view has been excluded.  Please fix the entity in the schema file, and uncomment.
+
+<EntityType Name="bureau_comp_cond_code">
+  <Property Name="DESCR" Type="varchar" MaxLength="13" />
+  <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+  <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+</EntityType>
+Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'CODE' in the table 'def.test.bureau_cons_info_ind' was excluded.
+warning 6031: The column 'CODE' on the table/view 'def.test.bureau_cons_info_ind' was excluded, and is a key column.  The table/view has been excluded.  Please fix the entity in the schema file, and uncomment.
+
+<EntityType Name="bureau_cons_info_ind">
+  <Property Name="DESCR" Type="varchar" MaxLength="13" />
+  <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+  <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+</EntityType>
+Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'CODE' in the table 'def.test.bureau_creditor_class_code' was excluded.
+warning 6031: The column 'CODE' on the table/view 'def.test.bureau_creditor_class_code' was excluded, and is a key column.  The table/view has been excluded.  Please fix the entity in the schema file, and uncomment.
+
+<EntityType Name="bureau_creditor_class_code">
+  <Property Name="DESCR" Type="varchar" MaxLength="13" />
+  <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+  <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+</EntityType>
+Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'CODE' in the table 'def.test.bureau_spec_comm_code' was excluded.
+warning 6031: The column 'CODE' on the table/view 'def.test.bureau_spec_comm_code' was excluded, and is a key column.  The table/view has been excluded.  Please fix the entity in the schema file, and uncomment.
+
+<EntityType Name="bureau_spec_comm_code">
+  <Property Name="DESCR" Type="varchar" MaxLength="13" />
+  <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+  <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+</EntityType>
+Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'ID' in the table 'def.test.company' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'STATE' in the table 'def.test.company' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'CB_INCLUDE_INT' in the table 'def.test.company' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'MATCH_TYPE' in the table 'def.test.company' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'HIPAA_REG' in the table 'def.test.company' was excluded.
+warning 6031: The column 'ID' on the table/view 'def.test.company' was excluded, and is a key column.  The table/view has been excluded.  Please fix the entity in the schema file, and uncomment.
+
+<EntityType Name="company">
+  <Property Name="COMPANY_NAME" Type="varchar" MaxLength="11" />
+  <Property Name="ADDR1" Type="varchar" MaxLength="11" />
+  <Property Name="ADDR2" Type="varchar" MaxLength="11" />
+  <Property Name="CITY" Type="varchar" MaxLength="8" />
+  <Property Name="ZIP" Type="varchar" MaxLength="3" />
+  <Property Name="PHONE" Type="varchar" MaxLength="4" />
+  <Property Name="FAX" Type="varchar" MaxLength="3" />
+  <Property Name="COLL_MGR_NAME" Type="varchar" MaxLength="11" />
+  <Property Name="COLL_MGR_PHONE" Type="varchar" MaxLength="4" />
+  <Property Name="TRUST_CHART" Type="smallint" />
+  <Property Name="OPER_CHART" Type="smallint" />
+  <Property Name="LOGOFILE" Type="varchar" MaxLength="16" />
+  <Property Name="TAX_RATE" Type="decimal" Precision="30" />
+  <Property Name="TAX_ID" Type="varchar" MaxLength="3" />
+  <Property Name="EIN_TAX_ID" Type="varchar" MaxLength="8" />
+  <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+  <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+  <Property Name="CB_GRACE_DAYS" Type="varchar" MaxLength="4" />
+  <Property Name="CB_MIN_AMT" Type="varchar" MaxLength="4" />
+</EntityType>
+Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'CODE' in the table 'def.test.country_code' was excluded.
+warning 6031: The column 'CODE' on the table/view 'def.test.country_code' was excluded, and is a key column.  The table/view has been excluded.  Please fix the entity in the schema file, and uncomment.
+
+<EntityType Name="country_code">
+  <Property Name="DESCR" Type="varchar" MaxLength="13" />
+  <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+  <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+</EntityType>
+Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'ECOA_CODE' in the table 'def.test.ecoacode' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'CREDIT_BUREAU_CODE' in the table 'def.test.ecoacode' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'HIDDEN' in the table 'def.test.ecoacode' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'OBSOLETE' in the table 'def.test.ecoacode' was excluded.
+warning 6031: The column 'ECOA_CODE' on the table/view 'def.test.ecoacode' was excluded, and is a key column.  The table/view has been excluded.  Please fix the entity in the schema file, and uncomment.
+
+<EntityType Name="ecoacode">
+  <Property Name="DESCR" Type="varchar" MaxLength="12" />
+  <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+  <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+</EntityType>
+Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'PHONE_STATUS' in the table 'def.test.phonests' was excluded.
+warning 6031: The column 'PHONE_STATUS' on the table/view 'def.test.phonests' was excluded, and is a key column.  The table/view has been excluded.  Please fix the entity in the schema file, and uncomment.
+
+<EntityType Name="phonests">
+  <Property Name="DESCRIPTION" Type="varchar" MaxLength="8" />
+  <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+  <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+</EntityType>
+Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'IMPORT_ERROR_CODE' in the table 'def.test.scan_import_error' was excluded.
+warning 6031: The column 'IMPORT_ERROR_CODE' on the table/view 'def.test.scan_import_error' was excluded, and is a key column.  The table/view has been excluded.  Please fix the entity in the schema file, and uncomment.
+
+<EntityType Name="scan_import_error">
+  <Property Name="IMPORT_ERROR_DESCR" Type="varchar" MaxLength="20" />
+  <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+  <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+</EntityType>
+Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'STATE' in the table 'def.test.state' was excluded.
+warning 6031: The column 'STATE' on the table/view 'def.test.state' was excluded, and is a key column.  The table/view has been excluded.  Please fix the entity in the schema file, and uncomment.
+
+<EntityType Name="state">
+  <Property Name="DESCR" Type="varchar" MaxLength="10" />
+  <Property Name="TIMEZONE" Type="smallint" />
+  <Property Name="DST_TYPE" Type="smallint" />
+  <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+  <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+</EntityType>
+Errors Found During Generation:
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'STATE_ABBR' in the table 'def.test.states' was excluded.
+warning 6006: The facet 'MaxLength' with a value '0' is outside the range 1-255 specified by the facet description.  The column 'DL_PATTERN' in the table 'def.test.states' was excluded.
+warning 6031: The column 'STATE_ABBR' on the table/view 'def.test.states' was excluded, and is a key column.  The table/view has been excluded.  Please fix the entity in the schema file, and uncomment.
+
+<EntityType Name="states">
+  <Property Name="STATE_DESCR" Type="varchar" MaxLength="10" />
+  <Property Name="STATE_CODE" Type="int" />
+  <Property Name="DL_MIN" Type="int" />
+  <Property Name="DL_MAX" Type="int" />
+  <Property Name="TIME_STAMP" Type="varchar" MaxLength="8" />
+  <Property Name="USER_ID_STAMP" Type="char" MaxLength="1" />
+</EntityType>-->
+</Schema>

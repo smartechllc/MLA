@@ -1,0 +1,2273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="mlaMVC2" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="Model1Entities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+    <EntitySet Name="accurint_batch_setup" EntityType="mlaMVC2.accurint_batch_setup" />
+    <EntitySet Name="actcode" EntityType="mlaMVC2.actcode" />
+    <EntitySet Name="actcode_ltr" EntityType="mlaMVC2.actcode_ltr" />
+    <EntitySet Name="action_sched" EntityType="mlaMVC2.action_sched" />
+    <EntitySet Name="action_setup" EntityType="mlaMVC2.action_setup" />
+    <EntitySet Name="aic_code" EntityType="mlaMVC2.aic_code" />
+    <EntitySet Name="aic_request" EntityType="mlaMVC2.aic_request" />
+    <EntitySet Name="aj" EntityType="mlaMVC2.aj" />
+    <EntitySet Name="ajdet" EntityType="mlaMVC2.ajdet" />
+    <EntitySet Name="ap" EntityType="mlaMVC2.ap" />
+    <EntitySet Name="apdet" EntityType="mlaMVC2.apdet" />
+    <EntitySet Name="apidesc" EntityType="mlaMVC2.apidesc" />
+    <EntitySet Name="ar" EntityType="mlaMVC2.ar" />
+    <EntitySet Name="ardet" EntityType="mlaMVC2.ardet" />
+    <EntitySet Name="assign" EntityType="mlaMVC2.assign" />
+    <EntitySet Name="att" EntityType="mlaMVC2.att" />
+    <EntitySet Name="bank" EntityType="mlaMVC2.bank" />
+    <EntitySet Name="bankdups" EntityType="mlaMVC2.bankdups" />
+    <EntitySet Name="bnchmrk" EntityType="mlaMVC2.bnchmrk" />
+    <EntitySet Name="bureau_options" EntityType="mlaMVC2.bureau_options" />
+    <EntitySet Name="cbinqdepts" EntityType="mlaMVC2.cbinqdepts" />
+    <EntitySet Name="cbinqfields" EntityType="mlaMVC2.cbinqfields" />
+    <EntitySet Name="chart" EntityType="mlaMVC2.chart" />
+    <EntitySet Name="checkver" EntityType="mlaMVC2.checkver" />
+    <EntitySet Name="chkverreason" EntityType="mlaMVC2.chkverreason" />
+    <EntitySet Name="clt" EntityType="mlaMVC2.clt" />
+    <EntitySet Name="clt_online" EntityType="mlaMVC2.clt_online" />
+    <EntitySet Name="clt230_view" EntityType="mlaMVC2.clt230_view" />
+    <EntitySet Name="cltact" EntityType="mlaMVC2.cltact" />
+    <EntitySet Name="cltapprovedltr" EntityType="mlaMVC2.cltapprovedltr" />
+    <EntitySet Name="cltltr" EntityType="mlaMVC2.cltltr" />
+    <EntitySet Name="cltphon" EntityType="mlaMVC2.cltphon" />
+    <EntitySet Name="cltrcvr" EntityType="mlaMVC2.cltrcvr" />
+    <EntitySet Name="clttrust" EntityType="mlaMVC2.clttrust" />
+    <EntitySet Name="clttrust_historical" EntityType="mlaMVC2.clttrust_historical" />
+    <EntitySet Name="clttype" EntityType="mlaMVC2.clttype" />
+    <EntitySet Name="cltudf" EntityType="mlaMVC2.cltudf" />
+    <EntitySet Name="cltxref" EntityType="mlaMVC2.cltxref" />
+    <EntitySet Name="coa" EntityType="mlaMVC2.coa" />
+    <EntitySet Name="coadet" EntityType="mlaMVC2.coadet" />
+    <EntitySet Name="collpdet" EntityType="mlaMVC2.collpdet" />
+    <EntitySet Name="collplan" EntityType="mlaMVC2.collplan" />
+    <EntitySet Name="contpdet" EntityType="mlaMVC2.contpdet" />
+    <EntitySet Name="contplan" EntityType="mlaMVC2.contplan" />
+    <EntitySet Name="costs" EntityType="mlaMVC2.costs" />
+    <EntitySet Name="courtcod" EntityType="mlaMVC2.courtcod" />
+    <EntitySet Name="credit_bureau" EntityType="mlaMVC2.credit_bureau" />
+    <EntitySet Name="dbtr" EntityType="mlaMVC2.dbtr" />
+    <EntitySet Name="dbtract" EntityType="mlaMVC2.dbtract" />
+    <EntitySet Name="dbtraddr" EntityType="mlaMVC2.dbtraddr" />
+    <EntitySet Name="dbtraic" EntityType="mlaMVC2.dbtraic" />
+    <EntitySet Name="dbtraka" EntityType="mlaMVC2.dbtraka" />
+    <EntitySet Name="dbtrapi" EntityType="mlaMVC2.dbtrapi" />
+    <EntitySet Name="dbtrbank" EntityType="mlaMVC2.dbtrbank" />
+    <EntitySet Name="dbtrcbinq" EntityType="mlaMVC2.dbtrcbinq" />
+    <EntitySet Name="dbtrctc" EntityType="mlaMVC2.dbtrctc" />
+    <EntitySet Name="dbtrdial" EntityType="mlaMVC2.dbtrdial" />
+    <EntitySet Name="dbtrdup" EntityType="mlaMVC2.dbtrdup" />
+    <EntitySet Name="dbtremp" EntityType="mlaMVC2.dbtremp" />
+    <EntitySet Name="dbtrltr" EntityType="mlaMVC2.dbtrltr" />
+    <EntitySet Name="dbtrold" EntityType="mlaMVC2.dbtrold" />
+    <EntitySet Name="dbtrpaym" EntityType="mlaMVC2.dbtrpaym" />
+    <EntitySet Name="dbtrphon" EntityType="mlaMVC2.dbtrphon" />
+    <EntitySet Name="dbtrpost" EntityType="mlaMVC2.dbtrpost" />
+    <EntitySet Name="dbtrprom" EntityType="mlaMVC2.dbtrprom" />
+    <EntitySet Name="dbtrrms" EntityType="mlaMVC2.dbtrrms" />
+    <EntitySet Name="dbtrsent" EntityType="mlaMVC2.dbtrsent" />
+    <EntitySet Name="dbtrudf" EntityType="mlaMVC2.dbtrudf" />
+    <EntitySet Name="dbtrxdbt" EntityType="mlaMVC2.dbtrxdbt" />
+    <EntitySet Name="dbtrxref" EntityType="mlaMVC2.dbtrxref" />
+    <EntitySet Name="debt" EntityType="mlaMVC2.debt" />
+    <EntitySet Name="debt_bureau" EntityType="mlaMVC2.debt_bureau" />
+    <EntitySet Name="debt2yy_view" EntityType="mlaMVC2.debt2yy_view" />
+    <EntitySet Name="debtadj" EntityType="mlaMVC2.debtadj" />
+    <EntitySet Name="debtfee" EntityType="mlaMVC2.debtfee" />
+    <EntitySet Name="debtfwd" EntityType="mlaMVC2.debtfwd" />
+    <EntitySet Name="debtlgl" EntityType="mlaMVC2.debtlgl" />
+    <EntitySet Name="debttype" EntityType="mlaMVC2.debttype" />
+    <EntitySet Name="debtudf" EntityType="mlaMVC2.debtudf" />
+    <EntitySet Name="dialer_actions" EntityType="mlaMVC2.dialer_actions" />
+    <EntitySet Name="dst" EntityType="mlaMVC2.dst" />
+    <EntitySet Name="dsttype" EntityType="mlaMVC2.dsttype" />
+    <EntitySet Name="eodlog" EntityType="mlaMVC2.eodlog" />
+    <EntitySet Name="eodproc" EntityType="mlaMVC2.eodproc" />
+    <EntitySet Name="eodrep" EntityType="mlaMVC2.eodrep" />
+    <EntitySet Name="feecode" EntityType="mlaMVC2.feecode" />
+    <EntitySet Name="feepdet" EntityType="mlaMVC2.feepdet" />
+    <EntitySet Name="feeplan" EntityType="mlaMVC2.feeplan" />
+    <EntitySet Name="holiday" EntityType="mlaMVC2.holiday" />
+    <EntitySet Name="ic_request" EntityType="mlaMVC2.ic_request" />
+    <EntitySet Name="impfield" EntityType="mlaMVC2.impfield" />
+    <EntitySet Name="impgroup" EntityType="mlaMVC2.impgroup" />
+    <EntitySet Name="import" EntityType="mlaMVC2.import" />
+    <EntitySet Name="indexing" EntityType="mlaMVC2.indexing" />
+    <EntitySet Name="language" EntityType="mlaMVC2.language" />
+    <EntitySet Name="letter" EntityType="mlaMVC2.letter" />
+    <EntitySet Name="letter_state_sub" EntityType="mlaMVC2.letter_state_sub" />
+    <EntitySet Name="list_option" EntityType="mlaMVC2.list_option" />
+    <EntitySet Name="listoptxwrk" EntityType="mlaMVC2.listoptxwrk" />
+    <EntitySet Name="locktable" EntityType="mlaMVC2.locktable" />
+    <EntitySet Name="ltrfield" EntityType="mlaMVC2.ltrfield" />
+    <EntitySet Name="matchprm" EntityType="mlaMVC2.matchprm" />
+    <EntitySet Name="micrchk" EntityType="mlaMVC2.micrchk" />
+    <EntitySet Name="period" EntityType="mlaMVC2.period" />
+    <EntitySet Name="peryear" EntityType="mlaMVC2.peryear" />
+    <EntitySet Name="pmt" EntityType="mlaMVC2.pmt" />
+    <EntitySet Name="pmt_post_session" EntityType="mlaMVC2.pmt_post_session" />
+    <EntitySet Name="pmtb" EntityType="mlaMVC2.pmtb" />
+    <EntitySet Name="pmtbdebt" EntityType="mlaMVC2.pmtbdebt" />
+    <EntitySet Name="pmtbfee" EntityType="mlaMVC2.pmtbfee" />
+    <EntitySet Name="pmtcode" EntityType="mlaMVC2.pmtcode" />
+    <EntitySet Name="pmtfee" EntityType="mlaMVC2.pmtfee" />
+    <EntitySet Name="pmtuser" EntityType="mlaMVC2.pmtuser" />
+    <EntitySet Name="rms_archive" EntityType="mlaMVC2.rms_archive" />
+    <EntitySet Name="rms_code" EntityType="mlaMVC2.rms_code" />
+    <EntitySet Name="rmsbank" EntityType="mlaMVC2.rmsbank" />
+    <EntitySet Name="salesrep" EntityType="mlaMVC2.salesrep" />
+    <EntitySet Name="scanout" EntityType="mlaMVC2.scanout" />
+    <EntitySet Name="sentltr" EntityType="mlaMVC2.sentltr" />
+    <EntitySet Name="sk" EntityType="mlaMVC2.sk" />
+    <EntitySet Name="st_options" EntityType="mlaMVC2.st_options" />
+    <EntitySet Name="statcode" EntityType="mlaMVC2.statcode" />
+    <EntitySet Name="storegrp" EntityType="mlaMVC2.storegrp" />
+    <EntitySet Name="stuser" EntityType="mlaMVC2.stuser" />
+    <EntitySet Name="template" EntityType="mlaMVC2.template" />
+    <EntitySet Name="test" EntityType="mlaMVC2.test" />
+    <EntitySet Name="tz" EntityType="mlaMVC2.tz" />
+    <EntitySet Name="tzdet" EntityType="mlaMVC2.tzdet" />
+    <EntitySet Name="udfcode" EntityType="mlaMVC2.udfcode" />
+    <EntitySet Name="udfpdet" EntityType="mlaMVC2.udfpdet" />
+    <EntitySet Name="udfplan" EntityType="mlaMVC2.udfplan" />
+    <EntitySet Name="udftype" EntityType="mlaMVC2.udftype" />
+    <EntitySet Name="ul_connection_script" EntityType="mlaMVC2.ul_connection_script" />
+    <EntitySet Name="ul_script" EntityType="mlaMVC2.ul_script" />
+    <EntitySet Name="ul_scripts_modified" EntityType="mlaMVC2.ul_scripts_modified" />
+    <EntitySet Name="ul_table" EntityType="mlaMVC2.ul_table" />
+    <EntitySet Name="ul_table_script" EntityType="mlaMVC2.ul_table_script" />
+    <EntitySet Name="ul_user" EntityType="mlaMVC2.ul_user" />
+    <EntitySet Name="userstat" EntityType="mlaMVC2.userstat" />
+    <EntitySet Name="userxsales" EntityType="mlaMVC2.userxsales" />
+    <EntitySet Name="userxwrk" EntityType="mlaMVC2.userxwrk" />
+    <EntitySet Name="vend" EntityType="mlaMVC2.vend" />
+    <EntitySet Name="vendamt" EntityType="mlaMVC2.vendamt" />
+    <EntitySet Name="worklist" EntityType="mlaMVC2.worklist" />
+    <EntitySet Name="zip" EntityType="mlaMVC2.zip" />
+  </EntityContainer>
+  <EntityType Name="accurint_batch_setup">
+    <Key>
+      <PropertyRef Name="BATCH_ID" />
+    </Key>
+    <Property Name="BATCH_ID" Type="String" Nullable="false" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="BATCH_DESCR" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="IMPORT_FILE_LAYOUT" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="FTP_FROM_FILE_MANAGEMENT" Type="Int16" />
+    <Property Name="FTP_FROM_RENAME_PATH" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="IMPORT_PATH" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="IMPORT_FILE_MANAGEMENT" Type="Int16" />
+    <Property Name="IMPORT_FILE_RENAME_PATH" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="IMPORT_ACTION_TYPE" Type="Int16" />
+    <Property Name="IMPORT_ACTION_CODE" Type="Int16" />
+    <Property Name="IMPORT_STATUS_CODE" Type="Int16" />
+    <Property Name="IMPORT_WORKLIST_ID" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="IMPORT_NEXT_CONTACT_ADV" Type="Int16" />
+    <Property Name="IMPORT_COMMENT" Type="String" MaxLength="18" Unicode="false" FixedLength="false" />
+    <Property Name="EXPORT_FIELDS" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="EXPORT_PATH" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="EXPORT_FILE_MANAGEMENT" Type="Int16" />
+    <Property Name="EXPORT_FILE_RENAME_PATH" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="FTP_TO_FILE_MANAGEMENT" Type="Int16" />
+    <Property Name="EXPORT_COMMENT" Type="String" MaxLength="18" Unicode="false" FixedLength="false" />
+    <Property Name="EXPORT_CRITERIA" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="FTP_USER_ID" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="FTP_PASSWORD" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="actcode">
+    <Key>
+      <PropertyRef Name="ACTCODE_ID" />
+    </Key>
+    <Property Name="ACTCODE_ID" Type="Int32" Nullable="false" />
+    <Property Name="DESCR" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+    <Property Name="ACT_COMMENT" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="STATUS_CODE" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="NEXT_CONTACT_DATE_ADV" Type="Int16" />
+    <Property Name="WORKLIST_ID" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="DIALER" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="TYPE" Type="Int16" Nullable="false" />
+    <Property Name="TEXT" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="CB_DEPT" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="actcode_ltr">
+    <Key>
+      <PropertyRef Name="ACTCODE_ID" />
+      <PropertyRef Name="LETTER_ID" />
+    </Key>
+    <Property Name="ACTCODE_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="LETTER_ID" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="DESCR" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="DATE_TO_SEND_ADV" Type="Int32" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="action_sched">
+    <Key>
+      <PropertyRef Name="ACTION_ITEM_ID" />
+      <PropertyRef Name="RUN_DATE" />
+    </Key>
+    <Property Name="ACTION_ITEM_ID" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="RUN_DATE" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="ACTCODE_ID" Type="Int32" />
+    <Property Name="SCHEDULED" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="SCRIPT" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="TYPE" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="action_setup">
+    <Key>
+      <PropertyRef Name="ACTION_ITEM_ID" />
+    </Key>
+    <Property Name="ACTION_ITEM_ID" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="RUN_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="ACTCODE_ID" Type="Int32" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="16" Unicode="false" FixedLength="false" />
+    <Property Name="SCHEDULED" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="OCCURRENCES" Type="Int32" />
+    <Property Name="SCRIPT" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="ACTION_OPTION" Type="Int32" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="aic_code">
+    <Key>
+      <PropertyRef Name="CODE_TYPE" />
+      <PropertyRef Name="FROM_CODE" />
+    </Key>
+    <Property Name="CODE_TYPE" Type="Int16" Nullable="false" />
+    <Property Name="FROM_CODE" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="DESCR" Type="String" MaxLength="16" Unicode="false" FixedLength="false" />
+    <Property Name="TO_CODE" Type="String" MaxLength="83" Unicode="false" FixedLength="false" />
+    <Property Name="AIC_OPTION" Type="Int16" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="aic_request">
+    <Key>
+      <PropertyRef Name="REQUEST_CODE" />
+    </Key>
+    <Property Name="REQUEST_CODE" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="aj">
+    <Key>
+      <PropertyRef Name="AJ_ID" />
+    </Key>
+    <Property Name="AJ_ID" Type="Int32" Nullable="false" />
+    <Property Name="AJ_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ajdet">
+    <Key>
+      <PropertyRef Name="AJ_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="AJ_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="TRN_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="DESCR" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="AMT" Type="Decimal" />
+    <Property Name="CR_ID" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="DB_ID" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ap">
+    <Key>
+      <PropertyRef Name="AP_ID" />
+    </Key>
+    <Property Name="AP_ID" Type="Int32" Nullable="false" />
+    <Property Name="AP_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="CLT_ID" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="VEND_ID" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="NAME" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="ADDR1" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="ADDR2" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="CITY" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="ZIP" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="STATUS" Type="Int16" />
+    <Property Name="RECUR_FREQ" Type="Int16" />
+    <Property Name="RECUR_TIMES" Type="Int16" />
+    <Property Name="INVOICE_NO" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="DUE_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="OUTSTANDING" Type="Decimal" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="apdet">
+    <Key>
+      <PropertyRef Name="AP_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="AP_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="TRN_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="DESCR" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="CHECK_NO" Type="Int32" />
+    <Property Name="AMT" Type="Decimal" />
+    <Property Name="CR_ID" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="DB_ID" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="TRUST_PERIOD" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="TRUST_SUB_PERIOD" Type="Int16" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="STATUS_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="apidesc">
+    <Key>
+      <PropertyRef Name="API_CODE" />
+    </Key>
+    <Property Name="API_CODE" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="DESCR" Type="String" MaxLength="13" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ar">
+    <Key>
+      <PropertyRef Name="AR_ID" />
+    </Key>
+    <Property Name="AR_ID" Type="Int32" Nullable="false" />
+    <Property Name="AR_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="CLT_ID" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="NAME" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="STATUS" Type="Int16" />
+    <Property Name="RECUR_FREQ" Type="Int16" />
+    <Property Name="RECUR_TIMES" Type="Int16" />
+    <Property Name="OUTSTANDING" Type="Decimal" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ardet">
+    <Key>
+      <PropertyRef Name="AR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="AR_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="TRN_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="DESCR" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="CHECK_NO" Type="Int32" />
+    <Property Name="AMT" Type="Decimal" />
+    <Property Name="CR_ID" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="DB_ID" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="TRUST_PERIOD" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="TRUST_SUB_PERIOD" Type="Int16" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="assign">
+    <Key>
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="WORKLIST_ID" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="F_ALPHA" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="T_ALPHA" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="F_AMT" Type="Decimal" />
+    <Property Name="T_AMT" Type="Decimal" />
+    <Property Name="F_AGE" Type="Int32" />
+    <Property Name="T_AGE" Type="Int32" />
+    <Property Name="CLT_ID" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="LANGUAGE" Type="String" MaxLength="7" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="att">
+    <Key>
+      <PropertyRef Name="ATT_ID" />
+    </Key>
+    <Property Name="ATT_ID" Type="Int32" Nullable="false" />
+    <Property Name="FIRM" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="NAME" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="ADDR1" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="ADDR2" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="CITY" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="ZIP" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="PHONE" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="FAX" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="bank">
+    <Key>
+      <PropertyRef Name="TRANSIT_NO" />
+    </Key>
+    <Property Name="TRANSIT_NO" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="NAME" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="ADDR1" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="ADDR2" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="CITY" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="ZIP" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="PHONE" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="ABA_NO" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="RECTYPE" Type="Int16" />
+  </EntityType>
+  <EntityType Name="bankdups">
+    <Key>
+      <PropertyRef Name="TRANSIT_NO" />
+      <PropertyRef Name="NAME" />
+    </Key>
+    <Property Name="TRANSIT_NO" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="NAME" Type="String" Nullable="false" MaxLength="33" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="bnchmrk">
+    <Key>
+      <PropertyRef Name="FIELD1" />
+    </Key>
+    <Property Name="FIELD1" Type="Int32" Nullable="false" />
+    <Property Name="FIELD2" Type="Int32" />
+    <Property Name="FIELD3" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="bureau_options">
+    <Key>
+      <PropertyRef Name="BUREAU_ID" />
+    </Key>
+    <Property Name="BUREAU_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="CTRL_NO" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="CREDIT_GRANTOR_CODE" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="REPORTER_NAME" Type="String" MaxLength="13" Unicode="false" FixedLength="false" />
+    <Property Name="REPORTER_FULL_ADDR" Type="String" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="REPORTER_PHONE" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="ID_NO" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="cbinqdepts">
+    <Key>
+      <PropertyRef Name="DEPARTMENT" />
+    </Key>
+    <Property Name="DEPARTMENT" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="DESCR" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="FILENAME" Type="String" MaxLength="83" Unicode="false" FixedLength="false" />
+    <Property Name="CBINQFIELDS" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="cbinqfields">
+    <Key>
+      <PropertyRef Name="SERVICE" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="SERVICE" Type="Int16" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="CBINQFIELD" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="DMDBTRFIELD" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="chart">
+    <Key>
+      <PropertyRef Name="CHART1" />
+    </Key>
+    <Property Name="CHART1" Type="Int16" Nullable="false" />
+    <Property Name="CASH" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="RET_EARN" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="PRINC_INCOME" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="INT_INCOME" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="FEE_INCOME" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="CLT_DISB" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="OVERPMT" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="CLT_INCOME" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="ACCT_PAY" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="ACCT_REC" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="checkver">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="TRANSACTION_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="TRANSACTION_TYPE" Type="Int32" />
+    <Property Name="DEBT_ID" Type="Int32" />
+    <Property Name="DEBT_NO" Type="Int32" />
+    <Property Name="OUT_RECORD" Type="String" MaxLength="83" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="chkverreason">
+    <Key>
+      <PropertyRef Name="CHKVER_COMPANY" />
+    </Key>
+    <Property Name="CHKVER_COMPANY" Type="Int32" Nullable="false" />
+    <Property Name="DESCR" Type="String" MaxLength="13" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="clt">
+    <Key>
+      <PropertyRef Name="CLT_ID" />
+    </Key>
+    <Property Name="CLT_ID" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="NAME" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="ADDR1" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="ADDR2" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="CITY" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+    <Property Name="STATE" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="ZIP" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="SALES_REP" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="NEXT_CONTACT_DATE" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="CLT_TYPE" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="DEBT_TYPE" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="BUREAU_PERMISSION" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="BUREAU_REPORT" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="COLLPLAN_ID" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="FEEPLAN_ID" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="CONTPLAN_ID" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="TAX_ID" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="TAX_EXEMPT" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="REMIT_TYPE" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="BALANCE_DEDUCT" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="CREDIT_APPLY" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="CREDIT_REFUND" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="MASTER_ID" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="STATUS_CODE" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="FWD_AGENCY" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="FWD_COLL_RATE" Type="Decimal" />
+    <Property Name="PC_CONV_DELAY" Type="Int16" />
+    <Property Name="COMPANY_ID" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="VER_LOCATION_CODE" Type="Int32" />
+    <Property Name="VER_STORE_GROUP" Type="Int16" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="SCAN_STORE_NO" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="SCAN_MERCHANT_ID" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="NEXT_CONTACT_TIME" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="PRIORITY" Type="Int16" />
+    <Property Name="UDFPLAN_ID" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="HIPAA_REG" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="MATCH_TYPE" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="EXTRA_STATEMENT_FIELD" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="EXTRA_STATEMENT_LABEL" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="TAXCODE_ID" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="256" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="clt_online">
+    <Key>
+      <PropertyRef Name="record_id" />
+    </Key>
+    <Property Name="record_id" Type="Int32" Nullable="false" />
+    <Property Name="clt_id" Type="Int32" />
+    <Property Name="name" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="clt_enabled" Type="Int32" />
+    <Property Name="clt_type" Type="Int32" />
+    <Property Name="clt_user_id" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="clt_user_pwd" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="clt_user_enabled" Type="Int32" />
+    <Property Name="clt_user_type" Type="Int32" />
+  </EntityType>
+  <EntityType Name="clt230_view">
+    <Key>
+      <PropertyRef Name="RECORD_ID" />
+    </Key>
+    <Property Name="RECORD_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="COMPANY_ADDR1" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="COMPANY_CITY_ST_ZIP" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="COMPANY_PHONE" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="COMPANY_FAX" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="NAME" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="CONTACT_NAME" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="CLT_ADDR1" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="CLT_CITY_ST_ZIP" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="CLT_ID" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="PERIOD" Type="String" MaxLength="7" Unicode="false" FixedLength="false" />
+    <Property Name="LD_LIST_ACCTS" Type="Int32" />
+    <Property Name="LD_LIST_AMT" Type="Decimal" />
+    <Property Name="AVG_MONTH_LIST" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="LD_AVE_AGE" Type="Int32" />
+    <Property Name="LD_GROSS" Type="Decimal" />
+    <Property Name="LD_RECOVER_PERCENT" Type="Decimal" />
+    <Property Name="LD_RETURN_ACCTS" Type="Int32" />
+    <Property Name="LD_RETURN_AMT" Type="Decimal" />
+    <Property Name="LD_ACTIVE_PAID_ACCTS" Type="Int32" />
+    <Property Name="LD_ACTIVE_PAID_AMT" Type="Decimal" />
+    <Property Name="MASTER_ID" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="RETURN_AMT" Type="Decimal" />
+    <Property Name="ADDR1" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="STATUS_CODE" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="CITY_ST_ZIP" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="LD_AGE" Type="Int32" />
+  </EntityType>
+  <EntityType Name="cltact">
+    <Key>
+      <PropertyRef Name="CLT_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="CLT_ID" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="ACT_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="ACT_TIME" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="COMMENTS" Type="String" MaxLength="18" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="GMT_OFFSET" Type="Int16" />
+  </EntityType>
+  <EntityType Name="cltapprovedltr">
+    <Key>
+      <PropertyRef Name="CLT_ID" />
+      <PropertyRef Name="LETTER_ID" />
+    </Key>
+    <Property Name="CLT_ID" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="LETTER_ID" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="DEBTOR_LIMIT" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="cltltr">
+    <Key>
+      <PropertyRef Name="CLT_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="CLT_ID" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="LETTER_TO_SEND" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="DATE_TO_SEND" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="cltphon">
+    <Key>
+      <PropertyRef Name="CLT_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="CLT_ID" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="CONTACT_NAME" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="PHONE" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="cltrcvr">
+    <Key>
+      <PropertyRef Name="CLT_ID" />
+      <PropertyRef Name="PERIOD" />
+    </Key>
+    <Property Name="CLT_ID" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="PERIOD" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="LD_LIST_ACCTS" Type="Int32" />
+    <Property Name="LD_AGE" Type="Int32" />
+    <Property Name="LD_LIST_AMT" Type="Decimal" />
+    <Property Name="LD_RETURN_ACCTS" Type="Int32" />
+    <Property Name="LD_RETURN_AMT" Type="Decimal" />
+    <Property Name="LD_GROSS" Type="Decimal" />
+    <Property Name="LD_NET" Type="Decimal" />
+    <Property Name="RETURN_ACCTS" Type="Int32" />
+    <Property Name="RETURN_AMT" Type="Decimal" />
+    <Property Name="GROSS" Type="Decimal" />
+    <Property Name="NET" Type="Decimal" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="LD_CHARGEOFF_AMT" Type="Decimal" />
+    <Property Name="LD_RETURN_PAID_AMT" Type="Decimal" />
+    <Property Name="RETURN_PAID_AMT" Type="Decimal" />
+  </EntityType>
+  <EntityType Name="clttrust">
+    <Key>
+      <PropertyRef Name="CLT_ID" />
+      <PropertyRef Name="PERIOD" />
+      <PropertyRef Name="SUB_PERIOD" />
+    </Key>
+    <Property Name="CLT_ID" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="PERIOD" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="SUB_PERIOD" Type="Int16" Nullable="false" />
+    <Property Name="PRIOR_CREDIT" Type="Decimal" />
+    <Property Name="CREDIT_APPLY_AMT" Type="Decimal" />
+    <Property Name="CREDIT_REFUND_AMT" Type="Decimal" />
+    <Property Name="PRIOR_BALANCE" Type="Decimal" />
+    <Property Name="BALANCE_DEDUCT_AMT" Type="Decimal" />
+    <Property Name="CHECK_AMT" Type="Decimal" />
+    <Property Name="REMIT_AMT" Type="Decimal" />
+    <Property Name="FILENAME" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="clttrust_historical">
+    <Key>
+      <PropertyRef Name="CLT_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="CLT_ID" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="SUB_CLT_ID" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="PERIOD" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="SUB_PERIOD" Type="Int16" />
+    <Property Name="TRN_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="TRN_DESCR" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="TRN_AMOUNT" Type="Double" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="clttype">
+    <Key>
+      <PropertyRef Name="TYPE" />
+    </Key>
+    <Property Name="TYPE" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="DESCR" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="UDFPLAN_ID" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="cltudf">
+    <Key>
+      <PropertyRef Name="CLT_ID" />
+    </Key>
+    <Property Name="CLT_ID" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="LABEL" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="LONGSTR" Type="String" MaxLength="256" Unicode="false" FixedLength="false" />
+    <Property Name="ITEM_NO" Type="Int32" />
+    <Property Name="DATE1" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="AMT" Type="Decimal" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="cltxref">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="FIELDNAME" />
+      <PropertyRef Name="FVALUE" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="FIELDNAME" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="FVALUE" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="coa">
+    <Key>
+      <PropertyRef Name="ACCT_ID" />
+    </Key>
+    <Property Name="ACCT_ID" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="DESCR" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="CHART" Type="Int16" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="coadet">
+    <Key>
+      <PropertyRef Name="ACCT_ID" />
+      <PropertyRef Name="PERIOD" />
+    </Key>
+    <Property Name="ACCT_ID" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="PERIOD" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="OPEN_BAL" Type="Decimal" />
+    <Property Name="DEBITS" Type="Decimal" />
+    <Property Name="CREDITS" Type="Decimal" />
+    <Property Name="BUDGET" Type="Decimal" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="collpdet">
+    <Key>
+      <PropertyRef Name="COLLPLAN_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="COLLPLAN_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="COLL_RATE" Type="Double" />
+    <Property Name="F_LIST_AMT" Type="Decimal" />
+    <Property Name="T_LIST_AMT" Type="Decimal" />
+    <Property Name="F_BALANCE" Type="Decimal" />
+    <Property Name="T_BALANCE" Type="Decimal" />
+    <Property Name="F_PMT_AMT" Type="Decimal" />
+    <Property Name="T_PMT_AMT" Type="Decimal" />
+    <Property Name="F_LIST_AGE" Type="Int32" />
+    <Property Name="T_LIST_AGE" Type="Int32" />
+    <Property Name="F_SERV_AGE" Type="Int32" />
+    <Property Name="T_SERV_AGE" Type="Int32" />
+    <Property Name="F_STATUS" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="T_STATUS" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="F_PLACE_AGE" Type="Int32" />
+    <Property Name="T_PLACE_AGE" Type="Int32" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="collplan">
+    <Key>
+      <PropertyRef Name="COLLPLAN_ID" />
+    </Key>
+    <Property Name="COLLPLAN_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="DESCR" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="contpdet">
+    <Key>
+      <PropertyRef Name="CONTPLAN_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="CONTPLAN_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="AGE" Type="Int32" />
+    <Property Name="LETTER_TO_SEND" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="F_CUR_BAL" Type="Decimal" />
+    <Property Name="T_CUR_BAL" Type="Decimal" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="contplan">
+    <Key>
+      <PropertyRef Name="CONTPLAN_ID" />
+    </Key>
+    <Property Name="CONTPLAN_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="DESCR" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="costs">
+    <Key>
+      <PropertyRef Name="DEBT_ID" />
+      <PropertyRef Name="DEBT_NO" />
+    </Key>
+    <Property Name="DEBT_ID" Type="Int32" Nullable="false" />
+    <Property Name="DEBT_NO" Type="Int16" Nullable="false" />
+    <Property Name="CLERICAL_LABOR" Type="Decimal" />
+    <Property Name="COLL_LABOR" Type="Decimal" />
+    <Property Name="MGMT_LABOR" Type="Decimal" />
+    <Property Name="OTHER_LABOR" Type="Decimal" />
+    <Property Name="PRINTING" Type="Decimal" />
+    <Property Name="MAILING" Type="Decimal" />
+    <Property Name="LONG_DISTANCE" Type="Decimal" />
+    <Property Name="SKIP_TRACING" Type="Decimal" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="courtcod">
+    <Key>
+      <PropertyRef Name="COURT_CODE" />
+    </Key>
+    <Property Name="COURT_CODE" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="DESCR" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="ADDR1" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="ADDR2" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="CITY" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="ZIP" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="PHONE" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="credit_bureau">
+    <Key>
+      <PropertyRef Name="BUREAU_ID" />
+    </Key>
+    <Property Name="BUREAU_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="BUREAU_NAME" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="dbtr">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="Int32" Nullable="false" />
+    <Property Name="NAME1" Type="String" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="NAME2" Type="String" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="SORT_NAME" Type="String" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="SSN1" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="SSN2" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="DOB1" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="DOB2" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="DL1" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="DL2" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="DL_STATE1" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="DL_STATE2" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="LANGUAGE" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="PRIORITY" Type="Int16" />
+    <Property Name="STATUS_CODE" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="STATUS_DATE" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="DEBTOR_TYPE" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="ASSIGN_ID" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="NEXT_CONTACT_DATE" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="NEXT_CONTACT_TIME" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="AGCY_ATT_ID" Type="Int32" />
+    <Property Name="AGCY_ATT_DETAILS" Type="String" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="DBTR_ATT_ID" Type="Int32" />
+    <Property Name="DBTR_ATT_DETAILS" Type="String" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="PM_AUTH_REQ" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="PM_AUTH_REC" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="PROM_KEPT" Type="Int32" />
+    <Property Name="PROM_BROK" Type="Int32" />
+    <Property Name="REFERENCE_NO" Type="String" MaxLength="7" Unicode="false" FixedLength="false" />
+    <Property Name="DIALER" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="RMS_ACCT_ID" Type="String" MaxLength="7" Unicode="false" FixedLength="false" />
+    <Property Name="KENWOOD_CODE" Type="Int16" />
+    <Property Name="WARNING" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="dbtract">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="ACT_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="ACT_TIME" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="COMMENTS" Type="String" MaxLength="18" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="GMT_OFFSET" Type="Int16" />
+  </EntityType>
+  <EntityType Name="dbtraddr">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="ADDR1" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="ADDR2" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="CITY" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="ZIP" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="BUREAU_DBTRNAMEXADDR" Type="Int16" />
+  </EntityType>
+  <EntityType Name="dbtraic">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="TYPE" Type="Int16" />
+    <Property Name="TRANSACTION_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="REQUEST_CODE" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="dbtraka">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="AKA_NAME" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="dbtrapi">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="API_CODE" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="REPORT_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="RESULTS" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="dbtrbank">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="ACCT" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="TRANSIT_NO" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="DETAILS" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="dbtrcbinq">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="USER_ID" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="DEPARTMENT" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="REQUESTED" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="SUBMITTED" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="RECEIVED" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="REQUEST_INFO" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="dbtrctc">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="Int32" Nullable="false" />
+    <Property Name="EXPTYPE" Type="Int16" Nullable="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="dbtrdial">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="TYPE" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="TRANSACTION_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="LOG" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="dbtrdup">
+    <Key>
+      <PropertyRef Name="MASTER_ID" />
+      <PropertyRef Name="MATCH_ID" />
+    </Key>
+    <Property Name="MASTER_ID" Type="Int32" Nullable="false" />
+    <Property Name="MATCH_ID" Type="Int32" Nullable="false" />
+    <Property Name="FIELDSCORES" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="SCORE" Type="Int16" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="dbtremp">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="ADDR1" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="ADDR2" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="CITY" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="ZIP" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="DETAILS" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="DUM_PHONE" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="BUREAU_DBTRNAMEXEMP" Type="Int16" />
+  </EntityType>
+  <EntityType Name="dbtrltr">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="DEBT_ID" Type="Int32" />
+    <Property Name="DEBT_NO" Type="Int16" />
+    <Property Name="LETTER_TO_SEND" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="DATE_TO_SEND" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="LETTER_ADDR" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="TYPE" Type="Int16" />
+  </EntityType>
+  <EntityType Name="dbtrold">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="USER_ID" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="FIELDNAME" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+    <Property Name="OLDVALUE" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="CHANGE_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="dbtrpaym">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="MICR" Type="String" MaxLength="13" Unicode="false" FixedLength="false" />
+    <Property Name="PM_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="PM_AMT" Type="Decimal" />
+    <Property Name="CHECK_NO" Type="Int32" />
+    <Property Name="CHECK_NAME" Type="String" MaxLength="13" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="dbtrphon">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="PHONE" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="DESCR" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="BUREAU_DBTRNAMEXPHON" Type="Int16" />
+  </EntityType>
+  <EntityType Name="dbtrpost">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="POST_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="POST_AMT" Type="Decimal" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="dbtrprom">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="PROM_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="PROM_AMT" Type="Decimal" />
+    <Property Name="PAID_AMT" Type="Decimal" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="dbtrrms">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="BANK_ID" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="TYPE" Type="Int16" />
+    <Property Name="STATUS" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="STATUS_DATE" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="TRANS_AMOUNT" Type="Double" />
+    <Property Name="OUT_RECORD" Type="String" MaxLength="84" Unicode="false" FixedLength="false" />
+    <Property Name="PURGE" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="dbtrsent">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="LETTER_ID" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="SENT_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="dbtrudf">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="LABEL" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="LABEL" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="DATE1" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="AMT" Type="Decimal" />
+    <Property Name="LONGSTR" Type="String" MaxLength="85" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="dbtrxdbt">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="DEBT_ID" />
+      <PropertyRef Name="DEBT_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="Int32" Nullable="false" />
+    <Property Name="DEBT_ID" Type="Int32" Nullable="false" />
+    <Property Name="DEBT_NO" Type="Int16" Nullable="false" />
+    <Property Name="BUREAU_CODE" Type="Int32" />
+    <Property Name="BUREAU_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="CHK_VER_CODE" Type="Int32" />
+    <Property Name="CHK_VER_TRANSIT_NO" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="CHK_VER_ACCT_NO" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="SCAN_STATUS" Type="Int32" />
+  </EntityType>
+  <EntityType Name="dbtrxref">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="FIELDNAME" />
+      <PropertyRef Name="FVALUE" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="FIELDNAME" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="FVALUE" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="debt">
+    <Key>
+      <PropertyRef Name="DEBT_ID" />
+      <PropertyRef Name="DEBT_NO" />
+    </Key>
+    <Property Name="DEBT_ID" Type="Int32" Nullable="false" />
+    <Property Name="DEBT_NO" Type="Int16" Nullable="false" />
+    <Property Name="CLT_ID" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="CLT_REF_NO" Type="String" MaxLength="7" Unicode="false" FixedLength="false" />
+    <Property Name="ORIG_CLT" Type="String" MaxLength="14" Unicode="false" FixedLength="false" />
+    <Property Name="ENTERED_DATE" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="LIST_DATE" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="SERV_DATE" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="LAST_CHARGE_DATE" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="STATUTE_DATE" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="DEBT_TYPE" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="DEBT_DESCR" Type="String" MaxLength="14" Unicode="false" FixedLength="false" />
+    <Property Name="COMMENTS" Type="String" MaxLength="14" Unicode="false" FixedLength="false" />
+    <Property Name="STATUS_CODE" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="STATUS_DATE" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="SALES_REP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="BUREAU_REPORT" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="ORIG_PRINC_AMT" Type="Decimal" />
+    <Property Name="PRINC_PAID" Type="Decimal" />
+    <Property Name="ADJUST_PRINC" Type="Decimal" />
+    <Property Name="ORIG_INT_AMT" Type="Decimal" />
+    <Property Name="INT_PAID" Type="Decimal" />
+    <Property Name="ADJUST_INT" Type="Decimal" />
+    <Property Name="INT_RATE" Type="Double" />
+    <Property Name="INT_CALC_DATE" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="UNPAID_INT_ACCRUED" Type="Decimal" />
+    <Property Name="DAILY_INT_AMT" Type="Double" />
+    <Property Name="COLLPLAN_ID" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="FEEPLAN_ID" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="CONTPLAN_ID" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="PRIMARY_DEBTOR_ID" Type="Int32" />
+    <Property Name="DELQ_DATE" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="REFERENCE_NO" Type="String" MaxLength="7" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="POS_CLERK" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="SECOND_DEPOSIT" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="UPDATE_FEES" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="UDFPLAN_ID" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="DBTRUDFPLAN_ID" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="CHARGEOFF_DATE" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="LAST_ORIG_PMT_AMT" Type="Decimal" />
+    <Property Name="LAST_ORIG_PMT_DATE" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="debt_bureau">
+    <Key>
+      <PropertyRef Name="DEBT_ID" />
+      <PropertyRef Name="DEBT_NO" />
+    </Key>
+    <Property Name="DEBT_ID" Type="Int32" Nullable="false" />
+    <Property Name="DEBT_NO" Type="Int16" Nullable="false" />
+    <Property Name="BUREAU_PORTFOLIO_IND" Type="Int16" />
+    <Property Name="BUREAU_PORTFOLIO_NAME" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="debt2yy_view">
+    <Key>
+      <PropertyRef Name="RECORD_ID" />
+    </Key>
+    <Property Name="RECORD_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="COMPANY_ADDR1" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="COMPANY_CITY_ST_ZIP" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="COMPANY_PHONE" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="COMPANY_FAX" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="NAME" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CONTACT_NAME" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ADDR1" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CITY_ST_ZIP" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="CLT_ID" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="PRIMARY_SORT_NAME" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CLT_REF_NO" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="LIST_DATE" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="ORIG_PRINC_AMT" Type="Decimal" />
+    <Property Name="PRINC_PAID" Type="Decimal" />
+    <Property Name="PRINC_BAL" Type="Decimal" />
+    <Property Name="STATUS_DESCR" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CLT_NAME" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CLT_ADDR1" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CLT_CITY_ST_ZIP" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="DEBT_ID" Type="Int32" />
+    <Property Name="DEBT_NO" Type="Int16" />
+    <Property Name="ORIG_CLT" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="ENTERED_DATE" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="SERV_DATE" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="LAST_CHARGE_DATE" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="STATUTE_DATE" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="DEBT_TYPE" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="DEBT_DESCR" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="COMMENTS" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="STATUS_CODE" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="STATUS_DATE" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="SALES_REP" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="BUREAU_REPORT" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="ADJUST_PRINC" Type="Decimal" />
+    <Property Name="ORIG_INT_AMT" Type="Decimal" />
+    <Property Name="INT_PAID" Type="Decimal" />
+    <Property Name="ADJUST_INT" Type="Decimal" />
+    <Property Name="INT_RATE" Type="Decimal" />
+    <Property Name="INT_CALC_DATE" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="UNPAID_INT_ACCRUED" Type="Decimal" />
+    <Property Name="DAILY_INT_AMT" Type="Decimal" />
+    <Property Name="COLLPLAN_ID" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="FEEPLAN_ID" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="CONTPLAN_ID" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="PRIMARY_DEBTOR_ID" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="DELQ_DATE" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="REFERENCE_NO" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="POS_CLERK" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+    <Property Name="SECOND_DEPOSIT" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="UPDATE_FEES" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="UDFPLAN_ID" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="DBTRUDFPLAN_ID" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="CHARGEOFF_DATE" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="LAST_ORIG_PMT_AMT" Type="Decimal" />
+    <Property Name="LAST_ORIG_PMT_DATE" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="ACA_MARKET" Type="Int32" />
+    <Property Name="ACA_SERVICE" Type="Int32" />
+    <Property Name="DEBT_ID_NO" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="debtadj">
+    <Key>
+      <PropertyRef Name="DEBT_ID" />
+      <PropertyRef Name="DEBT_NO" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBT_ID" Type="Int32" Nullable="false" />
+    <Property Name="DEBT_NO" Type="Int16" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="ADJ_CODE" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="ADJ_AMT" Type="Decimal" />
+    <Property Name="ADJ_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="debtfee">
+    <Key>
+      <PropertyRef Name="DEBT_ID" />
+      <PropertyRef Name="DEBT_NO" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBT_ID" Type="Int32" Nullable="false" />
+    <Property Name="DEBT_NO" Type="Int16" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="FEE_CODE" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="FEE_AMT" Type="Decimal" />
+    <Property Name="FEE_PAID" Type="Decimal" />
+    <Property Name="ADJUST_FEE" Type="Decimal" />
+    <Property Name="THIS_REBATE_PAID" Type="Decimal" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="debtfwd">
+    <Key>
+      <PropertyRef Name="DEBT_ID" />
+      <PropertyRef Name="DEBT_NO" />
+    </Key>
+    <Property Name="DEBT_ID" Type="Int32" Nullable="false" />
+    <Property Name="DEBT_NO" Type="Int16" Nullable="false" />
+    <Property Name="FWD_ID" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="FWD_COLL_RATE" Type="Double" />
+    <Property Name="FWD_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="FWD_TEXT" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="debtlgl">
+    <Key>
+      <PropertyRef Name="DEBT_ID" />
+      <PropertyRef Name="DEBT_NO" />
+    </Key>
+    <Property Name="DEBT_ID" Type="Int32" Nullable="false" />
+    <Property Name="DEBT_NO" Type="Int16" Nullable="false" />
+    <Property Name="LEGAL_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="LEGAL_COUNTY" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="LEGAL_COURT_CODE" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="LEGAL_CASE_NO" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="LEGAL_INT" Type="Decimal" />
+    <Property Name="FILING_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="PROCESS_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="PROCESS_SERVER" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="debttype">
+    <Key>
+      <PropertyRef Name="TYPE" />
+    </Key>
+    <Property Name="TYPE" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="DESCR" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="STATUTE_YEARS" Type="Int32" />
+    <Property Name="ICON" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="DBTRUDFPLAN_ID" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="DEBTUDFPLAN_ID" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="debtudf">
+    <Key>
+      <PropertyRef Name="DEBT_ID" />
+      <PropertyRef Name="DEBT_NO" />
+      <PropertyRef Name="LABEL" />
+    </Key>
+    <Property Name="DEBT_ID" Type="Int32" Nullable="false" />
+    <Property Name="DEBT_NO" Type="Int16" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="LABEL" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="DATE1" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="AMT" Type="Decimal" />
+    <Property Name="LONGSTR" Type="String" MaxLength="85" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="dialer_actions">
+    <Key>
+      <PropertyRef Name="DIALER_TYPE" />
+      <PropertyRef Name="RESULT" />
+    </Key>
+    <Property Name="DIALER_TYPE" Type="Int16" Nullable="false" />
+    <Property Name="RESULT" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="DESCR" Type="String" MaxLength="16" Unicode="false" FixedLength="false" />
+    <Property Name="ACTCODE_ID" Type="Int32" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="dst">
+    <Key>
+      <PropertyRef Name="YEAR" />
+    </Key>
+    <Property Name="YEAR" Type="Int32" Nullable="false" />
+    <Property Name="UTA_DST_ON" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="EURO_DST_ON" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="DST_OFF" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="dsttype">
+    <Key>
+      <PropertyRef Name="TYPE" />
+    </Key>
+    <Property Name="TYPE" Type="Int16" Nullable="false" />
+    <Property Name="DESCR" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="eodlog">
+    <Key>
+      <PropertyRef Name="EOD_DATE" />
+    </Key>
+    <Property Name="EOD_DATE" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="NEXT_WORK_DAY" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="STATION_SK" Type="Int16" />
+    <Property Name="LOG" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="MODULES" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="eodproc">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="PROCESS" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="SENDER" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="P1" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="P2" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="P3" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="eodrep">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="REPORTNAME" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+    <Property Name="RESPONSES" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="COPIES" Type="Int16" />
+    <Property Name="PRINTER" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="FILENAME" Type="String" MaxLength="83" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="feecode">
+    <Key>
+      <PropertyRef Name="FEE_CODE_ID" />
+    </Key>
+    <Property Name="FEE_CODE_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="DESCR" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="COLL_RATE" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="feepdet">
+    <Key>
+      <PropertyRef Name="FEEPLAN_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="FEEPLAN_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="FEE_CODE" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="AMT" Type="String" MaxLength="13" Unicode="false" FixedLength="false" />
+    <Property Name="AGE" Type="Int32" />
+    <Property Name="MIN" Type="String" MaxLength="13" Unicode="false" FixedLength="false" />
+    <Property Name="MAX" Type="String" MaxLength="13" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="feeplan">
+    <Key>
+      <PropertyRef Name="FEEPLAN_ID" />
+    </Key>
+    <Property Name="FEEPLAN_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="DESCR" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="holiday">
+    <Key>
+      <PropertyRef Name="HOLIDAY_DATE" />
+    </Key>
+    <Property Name="HOLIDAY_DATE" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="DESCR" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ic_request">
+    <Key>
+      <PropertyRef Name="REQUEST_TYPE" />
+      <PropertyRef Name="REQUEST_CODE" />
+    </Key>
+    <Property Name="REQUEST_TYPE" Type="Int16" Nullable="false" />
+    <Property Name="REQUEST_CODE" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="impfield">
+    <Key>
+      <PropertyRef Name="IMPORT_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="IMPORT_ID" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="FIELD_NAME" Type="String" MaxLength="83" Unicode="false" FixedLength="false" />
+    <Property Name="LENGTH" Type="Int32" />
+    <Property Name="GROUP_ID" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="impgroup">
+    <Key>
+      <PropertyRef Name="IMPORT_ID" />
+      <PropertyRef Name="GROUP_ID" />
+    </Key>
+    <Property Name="IMPORT_ID" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="GROUP_ID" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="FILE" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="import">
+    <Key>
+      <PropertyRef Name="IMPORT_ID" />
+    </Key>
+    <Property Name="IMPORT_ID" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="FILE" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+    <Property Name="DELIMITER" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="END_OF_REC_MARK" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="HEADER" Type="Int32" />
+    <Property Name="TRAILER" Type="Int32" />
+    <Property Name="IMPLIED_DECIMAL" Type="Int32" />
+    <Property Name="DATE_FORMAT" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="HEADER_LENGTH" Type="Int32" />
+  </EntityType>
+  <EntityType Name="indexing">
+    <Key>
+      <PropertyRef Name="TABLENAME" />
+    </Key>
+    <Property Name="TABLENAME" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="SEARCHFIELDS" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="DISPLAYSQL" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="CRITERIASQL" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="IDFIELD" Type="String" MaxLength="16" Unicode="false" FixedLength="false" />
+    <Property Name="SORTSTRING" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="XREFFILENAME" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="XREFFIELDS" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="MASTERFIELDNAMES" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="language">
+    <Key>
+      <PropertyRef Name="LANGUAGE_ID" />
+    </Key>
+    <Property Name="LANGUAGE_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="DESCR" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="letter">
+    <Key>
+      <PropertyRef Name="LETTER_ID" />
+    </Key>
+    <Property Name="LETTER_ID" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="DESCR" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="DOCUMENT_NAME" Type="String" MaxLength="85" Unicode="false" FixedLength="false" />
+    <Property Name="DATA_SOURCE" Type="String" MaxLength="85" Unicode="false" FixedLength="false" />
+    <Property Name="DATA_FILE" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="FORM_TYPE" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="SELECTED_FIELDS" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="OUTSOURCE_ID" Type="Int32" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="letter_state_sub">
+    <Key>
+      <PropertyRef Name="LETTER_ID" />
+    </Key>
+    <Property Name="LETTER_ID" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="SUB_LETTER_ID" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="list_option">
+    <Key>
+      <PropertyRef Name="OPT_ID" />
+    </Key>
+    <Property Name="OPT_ID" Type="Int32" Nullable="false" />
+    <Property Name="DESCR" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="CRITERIA" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="listoptxwrk">
+    <Key>
+      <PropertyRef Name="WORKLIST_ID" />
+      <PropertyRef Name="LIST_OPTION_ID" />
+      <PropertyRef Name="PRIORITY" />
+    </Key>
+    <Property Name="WORKLIST_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="LIST_OPTION_ID" Type="Int32" Nullable="false" />
+    <Property Name="PRIORITY" Type="Int32" Nullable="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="locktable">
+    <Key>
+      <PropertyRef Name="TABLENAME" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="TABLENAME" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="DB_ID" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="COMPUTER_NAME" Type="String" MaxLength="16" Unicode="false" FixedLength="false" />
+    <Property Name="CONNECTION_NUMBER" Type="Int32" />
+    <Property Name="HNDL" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ltrfield">
+    <Key>
+      <PropertyRef Name="DATA_FILE" />
+      <PropertyRef Name="FIELD_NAME" />
+    </Key>
+    <Property Name="DATA_FILE" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="FIELD_NAME" Type="String" Nullable="false" MaxLength="13" Unicode="false" FixedLength="false" />
+    <Property Name="FIELD_FNCTN" Type="String" MaxLength="13" Unicode="false" FixedLength="false" />
+    <Property Name="FORMATTING_FNCTN" Type="String" MaxLength="13" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="matchprm">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int16" Nullable="false" />
+    <Property Name="NAME_SCORE" Type="Int32" />
+    <Property Name="SSN_SCORE" Type="Int32" />
+    <Property Name="DL_SCORE" Type="Int32" />
+    <Property Name="PHONE_SCORE" Type="Int32" />
+    <Property Name="ADDRESS_SCORE" Type="Int32" />
+    <Property Name="DOB_SCORE" Type="Int32" />
+    <Property Name="TOTAL_SCORE" Type="Int32" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="micrchk">
+    <Key>
+      <PropertyRef Name="MICRCHK_ID" />
+    </Key>
+    <Property Name="MICRCHK_ID" Type="Int32" Nullable="false" />
+    <Property Name="MICR" Type="String" MaxLength="13" Unicode="false" FixedLength="false" />
+    <Property Name="TRANSIT_NO" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="ABA_NO" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="ACCT_NO" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="CHECK_NO" Type="Int32" />
+    <Property Name="CHK_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="CHK_AMT" Type="Decimal" />
+    <Property Name="PAYER_NAME" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="PAYER_ADDR1" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="PAYER_ADDR2" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="PAYER_CITY" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="PAYER_ZIP" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="PAYER_PHONE" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="PAYEE_NAME" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="PAYEE_ADDR1" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="PAYEE_ADDR2" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="PAYEE_CITY" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="PAYEE_STATE" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="PAYEE_ZIP" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="PAYEE_PHONE" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="BANK_NAME" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="BANK_ADDR1" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="BANK_ADDR2" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="BANK_CITY" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="BANK_ZIP" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="BANK_PHONE" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="SIG_TEXT" Type="String" MaxLength="16" Unicode="false" FixedLength="false" />
+    <Property Name="MEMO_TEXT" Type="String" MaxLength="16" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="period">
+    <Key>
+      <PropertyRef Name="PERIOD_YEAR" />
+      <PropertyRef Name="PERIOD1" />
+    </Key>
+    <Property Name="PERIOD_YEAR" Type="Int16" Nullable="false" />
+    <Property Name="PERIOD1" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="BEG_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="END_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="peryear">
+    <Key>
+      <PropertyRef Name="PERIOD_YEAR" />
+    </Key>
+    <Property Name="PERIOD_YEAR" Type="Int16" Nullable="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="pmt">
+    <Key>
+      <PropertyRef Name="PMT_ID" />
+    </Key>
+    <Property Name="PMT_ID" Type="Int32" Nullable="false" />
+    <Property Name="PMTB_ID" Type="Int32" />
+    <Property Name="DEBT_ID" Type="Int32" />
+    <Property Name="DEBT_NO" Type="Int16" />
+    <Property Name="DEBTOR_ID" Type="Int32" />
+    <Property Name="CLT_ID" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="SALES_REP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="PMT_DATE" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="PMT_CODE" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="DIRECT" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="CHECK_NO" Type="Int32" />
+    <Property Name="COLLPLAN_ID" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="TRUST_POST_PERIOD" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="OVERPMT" Type="Decimal" />
+    <Property Name="OTHER_AGENCY_FEE" Type="Decimal" />
+    <Property Name="PRINC_AMT" Type="Decimal" />
+    <Property Name="CLT_PRINC_AMT" Type="Decimal" />
+    <Property Name="INT_AMT" Type="Decimal" />
+    <Property Name="SHOW_INT_AMT" Type="Decimal" />
+    <Property Name="CLT_INT_AMT" Type="Decimal" />
+    <Property Name="FEE_AMT" Type="Decimal" />
+    <Property Name="SHOW_FEE_AMT" Type="Decimal" />
+    <Property Name="CLT_FEE_AMT" Type="Decimal" />
+    <Property Name="REBATE_AMT" Type="Decimal" />
+    <Property Name="SALES_TAX_AMT" Type="Decimal" />
+    <Property Name="BACKOUT_ID" Type="Int32" />
+    <Property Name="TRUST_POST_SUB_PERIOD" Type="Int16" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="UNSHARED_INT_AMT" Type="Decimal" />
+    <Property Name="UNSHARED_FEE_AMT" Type="Decimal" />
+    <Property Name="POSTED_DATE" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="WORKLIST_ID" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="SESSION_ID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="pmt_post_session">
+    <Key>
+      <PropertyRef Name="SESSION_ID" />
+    </Key>
+    <Property Name="SESSION_ID" Type="Int32" Nullable="false" />
+    <Property Name="SESSION_DATE_TIME" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="POSTING_USER" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="COMPUTER_NAME" Type="String" MaxLength="16" Unicode="false" FixedLength="false" />
+    <Property Name="SESSION_NUMBER" Type="Int32" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="pmtb">
+    <Key>
+      <PropertyRef Name="PMTB_ID" />
+    </Key>
+    <Property Name="PMTB_ID" Type="Int32" Nullable="false" />
+    <Property Name="CHECK_NO" Type="Int32" />
+    <Property Name="PMT_CODE" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="PMT_AMT" Type="Decimal" />
+    <Property Name="OTHER_AGENCY_FEE" Type="Decimal" />
+    <Property Name="APPLIED_AMT" Type="Decimal" />
+    <Property Name="DEBTOR_ID" Type="Int32" />
+    <Property Name="OTHER_AGENCY_ID" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="PAYER_NAME" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="PAYER_ADDR1" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="PAYER_ADDR2" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="PAYER_CITY" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="PAYER_ZIP" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="PAYER_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="PMTB_USER" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="MICR" Type="String" MaxLength="13" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="pmtbdebt">
+    <Key>
+      <PropertyRef Name="PMTB_ID" />
+      <PropertyRef Name="DEBT_ID" />
+      <PropertyRef Name="DEBT_NO" />
+    </Key>
+    <Property Name="PMTB_ID" Type="Int32" Nullable="false" />
+    <Property Name="DEBT_ID" Type="Int32" Nullable="false" />
+    <Property Name="DEBT_NO" Type="Int16" Nullable="false" />
+    <Property Name="PMT_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="PRINC_AMT" Type="Decimal" />
+    <Property Name="INT_AMT" Type="Decimal" />
+    <Property Name="FEE_AMT" Type="Decimal" />
+    <Property Name="NEW_STATUS" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="BACKOUT_ID" Type="Int32" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="pmtbfee">
+    <Key>
+      <PropertyRef Name="PMTB_ID" />
+      <PropertyRef Name="DEBT_ID" />
+      <PropertyRef Name="DEBT_NO" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="PMTB_ID" Type="Int32" Nullable="false" />
+    <Property Name="DEBT_ID" Type="Int32" Nullable="false" />
+    <Property Name="DEBT_NO" Type="Int16" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="FEE_CODE" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="THIS_FEE_AMT" Type="Decimal" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="pmtcode">
+    <Key>
+      <PropertyRef Name="PMT_CODE" />
+    </Key>
+    <Property Name="PMT_CODE" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="DESCR" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="pmtfee">
+    <Key>
+      <PropertyRef Name="PMT_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="PMT_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="FEE_CODE" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="THIS_FEE_AMT" Type="Decimal" />
+    <Property Name="THIS_SHOW_FEE_AMT" Type="Decimal" />
+    <Property Name="THIS_CLT_FEE_AMT" Type="Decimal" />
+    <Property Name="THIS_REBATE_AMT" Type="Decimal" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="pmtuser">
+    <Key>
+      <PropertyRef Name="PMT_ID" />
+      <PropertyRef Name="USER_ID" />
+      <PropertyRef Name="LIST_TYPE" />
+    </Key>
+    <Property Name="PMT_ID" Type="Int32" Nullable="false" />
+    <Property Name="USER_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="LIST_TYPE" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="rms_archive">
+    <Key>
+      <PropertyRef Name="FILE_DATE" />
+      <PropertyRef Name="FILE_NAME" />
+    </Key>
+    <Property Name="FILE_DATE" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="FILE_NAME" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="rms_code">
+    <Key>
+      <PropertyRef Name="BANK_ID" />
+      <PropertyRef Name="CODE_TYPE" />
+      <PropertyRef Name="FROM_CODE" />
+    </Key>
+    <Property Name="BANK_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="CODE_TYPE" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="FROM_CODE" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="DESCR" Type="String" MaxLength="16" Unicode="false" FixedLength="false" />
+    <Property Name="TO_CODE" Type="String" MaxLength="83" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="rmsbank">
+    <Key>
+      <PropertyRef Name="BANK_ID" />
+    </Key>
+    <Property Name="BANK_ID" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="BANK_NAME" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="CLT_ID" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="MAX_AGE" Type="Int32" />
+    <Property Name="CLOSING_STATUS" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="INFO_REQUESTED_WORKLIST" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="COLLPLAN_ID" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="CONTPLAN_ID" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="ORIG_CLT" Type="String" MaxLength="13" Unicode="false" FixedLength="false" />
+    <Property Name="DEBT_TYPE" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="FEEPLAN_ID" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="STATUS_CODE" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="PRIORITY" Type="Int16" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="salesrep">
+    <Key>
+      <PropertyRef Name="SALES_REP_ID" />
+    </Key>
+    <Property Name="SALES_REP_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="NAME" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="TERRITORY" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="scanout">
+    <Key>
+      <PropertyRef Name="DEBTOR_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="DEBTOR_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="TRANSACTION_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="DEBT_ID" Type="Int32" />
+    <Property Name="DEBT_NO" Type="Int32" />
+    <Property Name="OUT_RECORD" Type="String" MaxLength="83" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="sentltr">
+    <Key>
+      <PropertyRef Name="SENT_LTR_ID" />
+    </Key>
+    <Property Name="SENT_LTR_ID" Type="Int32" Nullable="false" />
+    <Property Name="LETTER_DATE" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="DEBTOR_ID" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="LETTER_ID" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="DEBT_ID" Type="Int32" />
+    <Property Name="DEBT_NO" Type="Int16" />
+    <Property Name="LETTER_ADDR" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="ADDR1" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="ADDR2" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="CITY" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="ZIP" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="FORM_TYPE" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="sk">
+    <Key>
+      <PropertyRef Name="FILENAME" />
+    </Key>
+    <Property Name="FILENAME" Type="String" Nullable="false" MaxLength="13" Unicode="false" FixedLength="false" />
+    <Property Name="NEXT_ID" Type="Int32" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="st_options">
+    <Key>
+      <PropertyRef Name="ST_OPTIONS_ID" />
+    </Key>
+    <Property Name="ST_OPTIONS_ID" Type="Int32" Nullable="false" />
+    <Property Name="ST_OPTIONS1" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="statcode">
+    <Key>
+      <PropertyRef Name="STATCODE_ID" />
+    </Key>
+    <Property Name="STATCODE_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="ABBREV" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="DESCR" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="storegrp">
+    <Key>
+      <PropertyRef Name="STORE_GROUP" />
+    </Key>
+    <Property Name="STORE_GROUP" Type="Int16" Nullable="false" />
+    <Property Name="DESCR" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="stuser">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="NAME" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="ST_PASSWORD" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="CLT_IDS" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="MENUGRANTS" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="WINDOWROGRANTS" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="WINDOWSETTINGS" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="COLLECTORDETWINS" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="LABOR_TYPE" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="THIN_CLT_LOCATION" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="THIN_CLT_TIMEZONE" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="THIN_CLT_DELTA" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="TEMPLATE_ID" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="TEAM" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="template">
+    <Key>
+      <PropertyRef Name="TMP_ID" />
+    </Key>
+    <Property Name="TMP_ID" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="DESCR" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="COLLDETWINS" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="WINDOWSETTINGS" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="test">
+    <Key>
+      <PropertyRef Name="Record" />
+    </Key>
+    <Property Name="Record" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="33" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tz">
+    <Key>
+      <PropertyRef Name="TZ_ID" />
+    </Key>
+    <Property Name="TZ_ID" Type="Int16" Nullable="false" />
+    <Property Name="ABBREV" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="DESCR" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="UTC_DELTA" Type="Decimal" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tzdet">
+    <Key>
+      <PropertyRef Name="ITEM_NO" />
+      <PropertyRef Name="TZ_ID" />
+      <PropertyRef Name="DST_TYPE" />
+    </Key>
+    <Property Name="ITEM_NO" Type="Int16" Nullable="false" />
+    <Property Name="TZ_ID" Type="Int16" Nullable="false" />
+    <Property Name="DST_TYPE" Type="Int16" Nullable="false" />
+    <Property Name="ABBREV" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="BEGIN_DT" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="END_DT" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="DST_DELTA" Type="Decimal" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="udfcode">
+    <Key>
+      <PropertyRef Name="LABEL" />
+    </Key>
+    <Property Name="LABEL" Type="String" Nullable="false" MaxLength="6" Unicode="false" FixedLength="false" />
+    <Property Name="TYPE" Type="Int32" />
+    <Property Name="MASK" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="SORT_VALUE" Type="Decimal" />
+  </EntityType>
+  <EntityType Name="udfpdet">
+    <Key>
+      <PropertyRef Name="UDFPLAN_ID" />
+      <PropertyRef Name="ITEM_NO" />
+    </Key>
+    <Property Name="UDFPLAN_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="ITEM_NO" Type="Int32" Nullable="false" />
+    <Property Name="LABEL" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="udfplan">
+    <Key>
+      <PropertyRef Name="UDFPLAN_ID" />
+    </Key>
+    <Property Name="UDFPLAN_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="DESCR" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="udftype">
+    <Key>
+      <PropertyRef Name="UDF_TYPE" />
+    </Key>
+    <Property Name="UDF_TYPE" Type="Int32" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ul_connection_script">
+    <Key>
+      <PropertyRef Name="event" />
+    </Key>
+    <Property Name="event" Type="String" Nullable="false" MaxLength="42" Unicode="false" FixedLength="false" />
+    <Property Name="script_id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ul_script">
+    <Key>
+      <PropertyRef Name="script_id" />
+    </Key>
+    <Property Name="script_id" Type="Int32" Nullable="false" />
+    <Property Name="script" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ul_scripts_modified">
+    <Key>
+      <PropertyRef Name="last_modified" />
+    </Key>
+    <Property Name="last_modified" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ul_table">
+    <Key>
+      <PropertyRef Name="table_id" />
+    </Key>
+    <Property Name="table_id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="42" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ul_table_script">
+    <Key>
+      <PropertyRef Name="table_id" />
+      <PropertyRef Name="event" />
+    </Key>
+    <Property Name="table_id" Type="Int32" Nullable="false" />
+    <Property Name="event" Type="String" Nullable="false" MaxLength="42" Unicode="false" FixedLength="false" />
+    <Property Name="script_id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ul_user">
+    <Key>
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="42" Unicode="false" FixedLength="false" />
+    <Property Name="commit_state" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="userstat">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+      <PropertyRef Name="STAT_DATE" />
+    </Key>
+    <Property Name="USER_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="STAT_DATE" Type="String" Nullable="false" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="WORKED" Type="Int32" />
+    <Property Name="TOTAL_TIME" Type="Double" />
+    <Property Name="LETTERS" Type="Int32" />
+    <Property Name="PROMISES" Type="Int32" />
+    <Property Name="POST_DATES" Type="Int32" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="userxsales">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+      <PropertyRef Name="SALES_REP_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="SALES_REP_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="userxwrk">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+      <PropertyRef Name="WORKLIST_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="WORKLIST_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vend">
+    <Key>
+      <PropertyRef Name="VEND_ID" />
+    </Key>
+    <Property Name="VEND_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="COMPANY" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="NAME" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="ADDR1" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="ADDR2" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="CITY" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="ZIP" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="PHONE" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="COMMENTS" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="TAX_ID" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="ACCT_REF_NO" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vendamt">
+    <Key>
+      <PropertyRef Name="VEND_ID" />
+      <PropertyRef Name="VEND_YEAR" />
+    </Key>
+    <Property Name="VEND_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="VEND_YEAR" Type="Int16" Nullable="false" />
+    <Property Name="AMT" Type="Decimal" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="worklist">
+    <Key>
+      <PropertyRef Name="WORKLIST_ID" />
+    </Key>
+    <Property Name="WORKLIST_ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="ALIAS" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="WORKLIST_TYPE" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="LANGUAGE" Type="String" MaxLength="7" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="zip">
+    <Key>
+      <PropertyRef Name="ZIP1" />
+    </Key>
+    <Property Name="ZIP1" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="CITY" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="TIME_STAMP" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="USER_ID_STAMP" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="TIMEZONE" Type="Int16" />
+    <Property Name="DST_TYPE" Type="Int16" />
+    <Property Name="COUNTY" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="COUNTRY" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="AREA_CODE" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+</Schema>
