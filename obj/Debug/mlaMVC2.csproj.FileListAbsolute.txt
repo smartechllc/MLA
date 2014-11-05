@@ -8,3 +8,4 @@ C:\Users\dyates\Documents\Visual Studio 2013\Projects\mlaMVC2\mlaMVC2\bin\Entity
 C:\Users\dyates\Documents\Visual Studio 2013\Projects\mlaMVC2\mlaMVC2\bin\MySql.Data.Entity.EF6.dll
 C:\Users\dyates\Documents\Visual Studio 2013\Projects\mlaMVC2\mlaMVC2\bin\EntityFramework.xml
 C:\Users\dyates\Documents\Visual Studio 2013\Projects\mlaMVC2\mlaMVC2\bin\EntityFramework.SqlServer.xml
+C:\Users\dyates\Documents\Visual Studio 2013\Projects\mlaMVC2\mlaMVC2\obj\Debug\mlaMVC2.csprojResolveAssemblyReference.cache
