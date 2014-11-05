@@ -10,7 +10,7 @@ namespace mlaMVC2.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Welcome, to your new MVC application!";
+            ViewBag.Message = "Welcome, to MurphyLomon Online!";
 
             return View();
         }
